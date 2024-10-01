@@ -1,0 +1,7 @@
+{
+  "name": "united-for-palestine",
+  "devDependencies": {
+    "@parcel/packager-xml": "^2.12.0",
+    "@parcel/transformer-xml": "^2.12.0"
+  }
+}

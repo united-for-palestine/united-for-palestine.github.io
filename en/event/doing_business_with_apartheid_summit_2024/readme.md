@@ -10,6 +10,8 @@
 
 📌 Meet us at 8.00am, Wednesday 18th of September, outside the Hilton Hotel, Nicosia to protest against the “Doing business with Israel summit”.
 
+**Greek**
+
 <div lang="el">
 💶 ΜΠΟΪΚΟΤΑΖ, ΑΠΟΚΛΕΙΣΜΟΣ & ΚΥΡΩΣΕΙΣ ΣΤΟ ΙΣΡΑΗΛ
 ✂️ ΔΙΑΚΟΠΗ ΟΛΩΝ ΤΩΝ ΣΧΕΣΕΩΝ ΜΕ ΤΟ ΙΣΡΑΗΛ

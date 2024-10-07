@@ -2,8 +2,9 @@
 
 ## Protests
 
+- [75 + 1 Year of Genocide - Paphos](/en/event/75_plus_1_year_of_genocide_paphos)
 - [One Year of Genocide, 76 Years of Resistance](/en/event/one_year_of_genocide_76_years_of_resistance)
-- [75 + 1 Years of Genocide Limassol](/en/event/oct_5_2024_limassol_protest)
+- [75 + 1 Years of Genocide - Limassol](/en/event/oct_5_2024_limassol_protest)
 - [Doing Business with Apartheid Summit 2024](/en/event/doing_business_with_apartheid_summit_2024)
 - [End Cyprus Complicity in Genocide](/en/event/end_cyprus_complicity_in_genocide)
 

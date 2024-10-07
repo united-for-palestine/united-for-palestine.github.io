@@ -2,7 +2,7 @@
 
 ## Arabic
 
-<div lang="ar">
+<div dir='rtl' lang="ar">
 
 - من النهر والماء / فلسطين عربية men elmaye lelmaye / falastin arabie (From the \[river\] water to the \[sea\] water / Palestine is Arab)
 - بالروح / بالدم / نفديك يا غزة bilroh / bildam / nafdik ya ghazza (With our souls / With our blood / We’ll sacrifice ourselves for you, oh Gaza)

@@ -12,6 +12,7 @@
 
 ## Articles
 
+- [Israel’s Torture & Rape of Palestinian Prisoners Defended by Knesset Members, Far-Right Mobs](https://www.youtube.com/watch?v=2Ver8-aky-w)
 - [Israel: Palestinian Healthcare Workers Tortured](https://www.hrw.org/news/2024/08/26/israel-palestinian-healthcare-workers-tortured)
 - [Half of Gaza water sites damaged or destroyed, BBC satellite data reveals](https://www.bbc.com/news/world-middle-east-68969239)
 - [Israeli Authorities’ Cutting of Water Leading to Public Health Crisis in Gaza](https://www.hrw.org/news/2023/11/16/israeli-authorities-cutting-water-leading-public-health-crisis-gaza)
@@ -22,6 +23,7 @@
 
 ### Cypriot Complicity
 
+- [US Senators praise Cyprus' regional role in a meeting with President at air base](https://www.cbn.com.cy/article/2024/10/7/799326/us-senators-praise-cyprus-regional-role-in-a-meeting-with-president-at-air-base/)
 - [OSINT Shows U.S. Deploying More Arms and Troops to Israel, Cyprus and Jordan](https://www.haaretz.com/israel-news/security-aviation/2023-10-24/ty-article/u-s-deploys-more-arms-and-troops-to-israel-cyprus-and-jordan/0000018b-5cbf-d307-adbb-7dbf1aa80000)
 - [Western special operations activity is on the rise around a new US partner in a strategic but unstable area of the Mediterranean](https://www.businessinsider.com/new-us-partner-cyprus-increased-western-special-operations-activity-mediterranean-2024-3)
 - [Revealed: America’s secret special forces flights to Israel from UK base on Cyprus](https://www.declassifieduk.org/revealed-americas-secret-special-forces-flights-to-israel-from-uk-base-on-cyprus/)

@@ -12,7 +12,6 @@
 
 ## Articles
 
-- [Israel’s Torture & Rape of Palestinian Prisoners Defended by Knesset Members, Far-Right Mobs](https://www.youtube.com/watch?v=2Ver8-aky-w)
 - [Israel: Palestinian Healthcare Workers Tortured](https://www.hrw.org/news/2024/08/26/israel-palestinian-healthcare-workers-tortured)
 - [Half of Gaza water sites damaged or destroyed, BBC satellite data reveals](https://www.bbc.com/news/world-middle-east-68969239)
 - [Israeli Authorities’ Cutting of Water Leading to Public Health Crisis in Gaza](https://www.hrw.org/news/2023/11/16/israeli-authorities-cutting-water-leading-public-health-crisis-gaza)
@@ -39,6 +38,7 @@
 
 
 ## YouTube
+- [Israel’s Torture & Rape of Palestinian Prisoners Defended by Knesset Members, Far-Right Mobs](https://www.youtube.com/watch?v=2Ver8-aky-w)
 - [Inspector General report says Gaza aid pier warnings ignored | Al Jazeera Newsfeed](https://www.youtube.com/watch?v=NIKqf4nx8ZI)
 - [The One Video Israel REALLY Doesn't Want You To See](https://www.youtube.com/watch?v=-mxfnya3ZRc)
 - [Surgeon, Dr. Mark Perlmutter, on what he witnessed in his first month in Gaza.](https://www.youtube.com/watch?v=zTunKJYrWug)

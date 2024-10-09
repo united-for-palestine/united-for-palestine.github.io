@@ -16,7 +16,7 @@ Lasting peace for Palestine now, Israeli apartheid down!
 
 <div lang="el">
 
-**Greek**
+## Greek
 
 ![75 + 1 Year of Genocide at Paphos Poster - Greek](../../../asset/75_plus_one_year_of_genocide_el.jpeg)
 
@@ -26,7 +26,7 @@ Lasting peace for Palestine now, Israeli apartheid down!
 
 <div dir="rtl" lang="ar">
 
-**Arabic**
+## Arabic
 
 ![75 + 1 Year of Genocide at Paphos Poster - Arabic](../../../asset/75_plus_one_year_of_genocide_ar.jpeg)
 

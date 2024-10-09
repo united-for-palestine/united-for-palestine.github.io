@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Allow all agents to scrape the entire site
+Allow: /

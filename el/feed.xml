@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+
+
+<title>United for Palestine</title>
+<link>https://united-for-palestine.github.io</link>
+<atom:link href="https://united-for-palestine.github.io/en/feed.xml" rel="self" type="application/rss+xml"/>
+<description>Get notified about protests and more.</description>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<image>
+<url>https://github.com/united-for-palestine/united-for-palestine.github.io/blob/main/asset/united_for_palestine_cyprus.png?raw=true</url>
+<title>United for Palestine</title>
+<link>https://united-for-palestine.github.io</link>
+
+
+
+</image>
+
+
+
+
+
+
+<item>
+<title>We are looking for people that can translate to Greek</title>
+<link>https://united-for-palestine.github.io/el</link>
+
+
+
+
+
+
+
+
+
+
+
+</item>
+<item>
+<title>Limassol Oct 5 Protest</title>
+<link>https://united-for-palestine.github.io/el</link>
+<description><p>🇵🇸 Ελάτε μαζί μας να τιμήσουμε τα θύματα των ισραηλινών εγκλημάτων πολέμου στην Παλαιστίνη και τον Λίβανο, καθώς κλείνει ένας χρόνος κατά τον οποίο η γενοκτονία που μεταδίδεται ζωντανά έχει ανοίξει τα μάτια της δυτικής κοινής γνώμης στις τρομακτικές επιπτώσεις του σιωνισμού και της αποικιοκρατίας.</p>
+<p>🇱🇧 Καθώς το Ισραήλ, υποστηριζόμενο από τους δυτικούς του συμμάχους, επεκτείνει τον πόλεμό του, η κυπριακή κοινωνία εκτίθεται σε σοβαρό κίνδυνο χωρίς καμία προστασία από τα κυβερνώντα πολιτικά κόμματα.</p>
+<p>🚨 Πρέπει να γίνουν δραστικές αλλαγές κατεύθυνσης για την αποκλιμάκωση της στρατιωτικής δράσης σε όλα τα μέτωπα, να τεθεί το Ισραήλ προ των ευθυνών του και να χαραχθεί ένας δρόμος προς την αποαποικιοποίηση, την ειρήνη και τη δικαιοσύνη.</p>
+📌Συναντήστε μας στις 4μμ, 5 Οκτωβρίου, στην οδό Ανεξαρτησίας (απέναντι από το Zara) για να μάθετε περισσότερα για το ιστορικό πλαίσιο, τα τρέχοντα γεγονότα και να σταθείτε αλληλέγγυοι με την Παλαιστίνη &amp; το Λίβανο.</description>
+
+
+
+
+
+
+<enclosure url="https://united-for-palestine.github.io/asset/oct_5_limassol_protest.jpg" length="170508" type="image/jpeg" />
+
+
+
+</item>
+</channel>
+</rss>

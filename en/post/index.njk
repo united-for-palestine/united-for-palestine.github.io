@@ -1,0 +1,27 @@
+---
+eleventyExcludeFromCollections: true
+title: Posts
+eleventyNavigation:
+  key: Posts
+  parent: English
+---
+
+{% for post in collections.post %}
+
+
+  <article>
+    <header>
+      <h2>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </h2>
+      <p class="deck">{{ post.data.deck }}</p>
+    </header>
+
+    <footer>
+      <time datetime="{{ post.data.published }}">
+        Published: {{ post.data.published | date }}
+      </time>
+    </footer>
+  </article>
+
+{% endfor %}

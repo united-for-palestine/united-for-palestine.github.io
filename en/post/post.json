@@ -1,0 +1,7 @@
+{
+  "tags": "post",
+  "eleventyNavigation": {
+    "key": "Posts",
+    "parent": "English"
+  }
+}

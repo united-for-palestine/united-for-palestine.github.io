@@ -4,102 +4,229 @@
   <subtitle>This is a longer description about your blog.</subtitle>
   <link href="https://united-for-palestine.github.io/en/feed.xml" rel="self" />
   <link href="https://united-for-palestine.github.io/" />
-  <updated>2024-10-10T05:56:20Z</updated>
+  <updated>2024-10-10T19:15:10Z</updated>
   <id>https://united-for-palestine.github.io/</id>
   <author>
     <name>United for Palestine</name>
     <email>crept-hurt-recount@duck.com</email>
   </author>
   <entry>
-    <title>Cyprus: A Rest Stop and Propaganda Tool for the IDF</title>
+    <title>Markdown Test</title>
     <link href="https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/" />
-    <updated>2024-10-10T05:56:20Z</updated>
+    <updated>2024-10-10T19:15:10Z</updated>
     <id>https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/</id>
-    <content type="html">&lt;p&gt;A wellness retreat and healing spa near the sleepy town of Miliou serves as a
-rest stop and propaganda tool for the &lt;a href=&quot;https://www.aljazeera.com/news/2024/10/3/what-did-al-jazeeras-investigation-into-israeli-war-crimes-in-gaza-reveal&quot;&gt;IDF&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;h1&gt;h1 Heading&lt;/h1&gt;
+&lt;h2&gt;h2 Heading&lt;/h2&gt;
+&lt;h3&gt;h3 Heading&lt;/h3&gt;
+&lt;h4&gt;h4 Heading&lt;/h4&gt;
+&lt;h5&gt;h5 Heading&lt;/h5&gt;
+&lt;h6&gt;h6 Heading&lt;/h6&gt;
+&lt;h2&gt;Horizontal Rules&lt;/h2&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h2&gt;Typographic replacements&lt;/h2&gt;
+&lt;p&gt;Enable typographer option to see result.&lt;/p&gt;
+&lt;p&gt;(c) (C) (r) (R) (tm) (TM) (p) (P) +-&lt;/p&gt;
+&lt;p&gt;test.. test... test..... test?..... test!....&lt;/p&gt;
+&lt;p&gt;!!!!!! ???? ,,  -- ---&lt;/p&gt;
+&lt;p&gt;&amp;quot;Smartypants, double quotes&amp;quot; and &#39;single quotes&#39;&lt;/p&gt;
+&lt;h2&gt;Emphasis&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is bold text&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This is italic text&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;s&gt;Strikethrough&lt;/s&gt;&lt;/p&gt;
+&lt;h2&gt;Blockquotes&lt;/h2&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Lone soldiers who made aliyah and served during the Iron Swords War attended a
-healing retreat in Cyprus as part of the Wings program, offering much-needed
-support and reflection.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.jpost.com/health-and-wellness/mind-and-spirit/article-820503&quot;&gt;https://www.jpost.com/health-and-wellness/mind-and-spirit/article-820503&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The &lt;a href=&quot;https://merage.org/initiatives/merage-foundation-israel/&quot;&gt;David &amp;amp; Laura Merage Foundation&lt;/a&gt;, through its
-&lt;a href=&quot;https://www.wings.org.il/&quot;&gt;Wings&lt;/a&gt; program, uses the Cyprus spa resort to support lone soldiers.
-Massages and nature walks are offered to those who &lt;a href=&quot;https://www.jpost.com/health-and-wellness/mind-and-spirit/article-820503&quot;&gt;directly participated in the
-Gaza Genocide&lt;/a&gt;. After some much-needed relaxation, the soldiers
-either continue their &amp;quot;service&amp;quot; in the IDF or transition into &amp;quot;civil&amp;quot; society.&lt;/p&gt;
+&lt;p&gt;Blockquotes can also be nested...&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Each year the Wings program provides more than 3,000 immigrant youth and lone
-soldiers with the tools they need to enter Israeli society as confident and
-active citizens. In partnership with the &lt;a href=&quot;https://www.jewishagency.org/aliyah/&quot;&gt;Jewish Agency&lt;/a&gt;, Wings
-offers a continuum of services, from the time they first arrive in Israel and
-years after their release from the IDF, helping them achieve their personal
-goals and aspirations.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://merage.org/2023/03/09/the-jerusalem-post-features-mfis-lone-soldier-program/&quot;&gt;Merage Foundation Wings Program&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;The function of these articles is clearly to appeal to young people seeking a
-better future. They aim to make the idea of joining the IDF attractive and
-desirable by offering perks like a vacation, assistance with finding an
-apartment, and more.&lt;/p&gt;
+&lt;p&gt;...by using additional greater-than signs right next to each other...&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;From a financial advisor who helps with rental agreements, cell phone plans,
-and opening a bank account to an occupational psychologist who helps with
-academic studies and career placement the Wings program aims to facilitate
-this transition.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.jpost.com/special-content/empowering-lone-soldier-olim-733692&quot;&gt;https://www.jpost.com/special-content/empowering-lone-soldier-olim-733692&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;...or with spaces between arrows.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;After injuring and traumatizing these young individuals, the Merage Foundation
-offers them &lt;a href=&quot;https://unitedwithisrael.org/watch-belav-echads-healing-retreats-supporting-wounded-idf-soldiers-in-cyprus/&quot;&gt;healing retreats&lt;/a&gt; in Cyprus—a band-aid on
-a bullet wound. For those killed by resistance fighters, they offer the &lt;a href=&quot;https://www.timesofisrael.com/in-the-cyprus-mountains-bereaved-israelis-find-solace-during-wartime/&quot;&gt;Cyprus
-weekend for mourning parents&lt;/a&gt;. These parents, like any,
-would choose their son over the ambitions of Israel, a state that prioritizes
-land and war over the well-being of its citizens.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;p&gt;Unordered&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a list by starting a line with &lt;code&gt;+&lt;/code&gt;, &lt;code&gt;-&lt;/code&gt;, or &lt;code&gt;*&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Sub-lists are made by indenting 2 spaces:
+&lt;ul&gt;
+&lt;li&gt;Marker character change forces new list start:
+&lt;ul&gt;
+&lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Very easy!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ordered&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Consectetur adipiscing elit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integer molestie lorem at massa&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can use sequential numbers...&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;...or keep all the numbers as &lt;code&gt;1.&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Start numbering with offset:&lt;/p&gt;
+&lt;ol start=&quot;57&quot;&gt;
+&lt;li&gt;foo&lt;/li&gt;
+&lt;li&gt;bar&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Code&lt;/h2&gt;
+&lt;p&gt;Inline &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Indented code&lt;/p&gt;
+&lt;p&gt;// Some comments
+line 1 of code
+line 2 of code
+line 3 of code&lt;/p&gt;
+&lt;p&gt;Block code &amp;quot;fences&amp;quot;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Sample text here...
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Syntax highlighting&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;Tables&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Option&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;data&lt;/td&gt;
+&lt;td&gt;path to data files to supply the data that will be passed into templates.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;engine&lt;/td&gt;
+&lt;td&gt;engine to be used for processing templates. Handlebars is the default.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ext&lt;/td&gt;
+&lt;td&gt;extension to be used for dest files.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Right aligned columns&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Option&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;data&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;path to data files to supply the data that will be passed into templates.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;engine&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;engine to be used for processing templates. Handlebars is the default.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;ext&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;extension to be used for dest files.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Links&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://dev.nodeca.com&quot;&gt;link text&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://nodeca.github.io/pica/demo/&quot; title=&quot;title text!&quot;&gt;link with title&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Autoconverted link &lt;a href=&quot;https://github.com/nodeca/pica&quot;&gt;https://github.com/nodeca/pica&lt;/a&gt; (enable linkify to see)&lt;/p&gt;
+&lt;h2&gt;Images&lt;/h2&gt;
 &lt;p&gt;
         &lt;/p&gt;&lt;figure&gt;
-          &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/FDUZT2Vd8e-400.webp 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/FDUZT2Vd8e-800.webp 800w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/FDUZT2Vd8e-1280.webp 1280w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/FDUZT2Vd8e-400.jpeg&quot; alt=&quot;Family Members waving the Flag of IDF [Golani Brigade][Golani_Brigade] on Cyprus Soil&quot; width=&quot;1280&quot; height=&quot;1440&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/FDUZT2Vd8e-400.jpeg 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/FDUZT2Vd8e-800.jpeg 800w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/FDUZT2Vd8e-1280.jpeg 1280w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
-          &lt;figcaption&gt;Family Members waving the Flag of IDF &lt;a href=&quot;https://en.wikipedia.org/wiki/Golani_Brigade&quot;&gt;Golani Brigade&lt;/a&gt; on Cyprus Soil&lt;/figcaption&gt;
+          &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-400.webp 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-800.webp 800w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-896.webp 896w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-400.jpeg&quot; alt=&quot;Minion&quot; width=&quot;896&quot; height=&quot;896&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-400.jpeg 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-800.jpeg 800w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-896.jpeg 896w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
+          &lt;figcaption&gt;Minion&lt;/figcaption&gt;
+        &lt;/figure&gt;
+      
+
+        &lt;figure&gt;
+          &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-400.webp 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-704.webp 704w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-400.jpeg&quot; alt=&quot;Stormtroopocat&quot; width=&quot;704&quot; height=&quot;676&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-400.jpeg 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-704.jpeg 704w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
+          &lt;figcaption&gt;Stormtroopocat&lt;/figcaption&gt;
         &lt;/figure&gt;
       &lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Like links, Images also have a footnote style syntax&lt;/p&gt;
+&lt;p&gt;
+        &lt;/p&gt;&lt;figure&gt;
+          &lt;picture&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-400.webp 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-800.webp 800w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-896.webp 896w&quot; sizes=&quot;100vw&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-400.jpeg&quot; alt=&quot;Alt text&quot; width=&quot;896&quot; height=&quot;896&quot; srcset=&quot;https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-400.jpeg 400w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-800.jpeg 800w, https://united-for-palestine.github.io/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-896.jpeg 896w&quot; sizes=&quot;100vw&quot;&gt;&lt;/picture&gt;
+          &lt;figcaption&gt;Alt text&lt;/figcaption&gt;
+        &lt;/figure&gt;
+      &lt;p&gt;&lt;/p&gt;
+&lt;p&gt;With a reference later in the document defining the URL location:&lt;/p&gt;
+&lt;h2&gt;Plugins&lt;/h2&gt;
+&lt;p&gt;The killer feature of &lt;code&gt;markdown-it&lt;/code&gt; is very effective support of
+&lt;a href=&quot;https://www.npmjs.org/browse/keyword/markdown-it-plugin&quot;&gt;syntax plugins&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-emoji&quot;&gt;Emojies&lt;/a&gt;&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The Golani Brigade&#39;s 13th and 51st Battalions suffered heavy casualties during
-the Hamas offensive of southern Israel in October 2023. According to the
-Israel Defense Forces at least 72 Golani soldiers were killed and an unknown
-number had been captured while defending the Iron Wall. This was by far the
-highest number of fatalities for any single unit in the IDF during the
-offensive. Golani soldiers were underequipped and overstretched all along the
-border and were not able to repel the militants on the first line of military
-bases and kibbutzim that they assigned numerous platoons to defend.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Golani_Brigade#2023_Israel%E2%80%93Hamas_War&quot;&gt;https://en.wikipedia.org/wiki/Golani_Brigade#2023_Israel–Hamas_War&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Classic markup: :wink: :cry: :laughing: :yum:&lt;/p&gt;
+&lt;p&gt;Shortcuts (emoticons): :-) :-( 8-) ;)&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Lives are irreparably damaged as Israel pursues conflict-driven policies and
-disregards a path of peace and stability, failing to serve its own citizens and
-soldiers. Meanwhile, some on our island offer to massage the feet of those who
-use them to trample on the Palestinians and Lebanese.&lt;/p&gt;
-&lt;p&gt;Cyprus assists Israel in actions that violate international law and contribute
-to humanitarian crises. Nations have an obligation to refrain from supporting
-actions that may exacerbate violence and suffering, especially in situations
-where allegations of genocide and breaches of international law are raised.&lt;/p&gt;
-&lt;p&gt;Although Nikos Christodoulides has &lt;a href=&quot;https://www.presidency.gov.cy/cypresidency/cypresidency.nsf/All/E0A53CDCC74D92E7C2258B3A0025556F?OpenDocument&quot;&gt;reiterated&lt;/a&gt; that Cyprus only
-functions as a humanitarian corridor, it is evident that he either lacks
-awareness of the realities in Cyprus and abroad or is not fully grasping the
-implications of this stance.&lt;/p&gt;
-&lt;h2&gt;Sources&lt;/h2&gt;
+&lt;p&gt;see &lt;a href=&quot;https://github.com/markdown-it/markdown-it-emoji#change-output&quot;&gt;how to change output&lt;/a&gt; with twemoji.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-sub&quot;&gt;Subscript&lt;/a&gt; / &lt;a href=&quot;https://github.com/markdown-it/markdown-it-sup&quot;&gt;Superscript&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Golani_Brigade&quot;&gt;https://en.wikipedia.org/wiki/Golani_Brigade&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://merage.org/2016/12/15/the-wings-program-ventures-to-the-u-s/&quot;&gt;https://merage.org/2016/12/15/the-wings-program-ventures-to-the-u-s/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://merage.org/2023/03/09/the-jerusalem-post-features-mfis-lone-soldier-program/&quot;&gt;https://merage.org/2023/03/09/the-jerusalem-post-features-mfis-lone-soldier-program/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://merage.org/2023/10/10/merage-foundation-israel-responds-to-emergency-needs-amidst-devastation/&quot;&gt;https://merage.org/2023/10/10/merage-foundation-israel-responds-to-emergency-needs-amidst-devastation/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://merage.org/initiatives/merage-foundation-israel/&quot;&gt;https://merage.org/initiatives/merage-foundation-israel/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://unitedwithisrael.org/watch-belav-echads-healing-retreats-supporting-wounded-idf-soldiers-in-cyprus/&quot;&gt;https://unitedwithisrael.org/watch-belav-echads-healing-retreats-supporting-wounded-idf-soldiers-in-cyprus/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.aljazeera.com/news/2024/10/3/what-did-al-jazeeras-investigation-into-israeli-war-crimes-in-gaza-reveal&quot;&gt;https://www.aljazeera.com/news/2024/10/3/what-did-al-jazeeras-investigation-into-israeli-war-crimes-in-gaza-reveal&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.jewishagency.org/aliyah/&quot;&gt;https://www.jewishagency.org/aliyah/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.jpost.com/health-and-wellness/mind-and-spirit/article-820503&quot;&gt;https://www.jpost.com/health-and-wellness/mind-and-spirit/article-820503&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.jpost.com/special-content/empowering-lone-soldier-olim-733692&quot;&gt;https://www.jpost.com/special-content/empowering-lone-soldier-olim-733692&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.presidency.gov.cy/cypresidency/cypresidency.nsf/All/E0A53CDCC74D92E7C2258B3A0025556F?OpenDocument&quot;&gt;https://www.presidency.gov.cy/cypresidency/cypresidency.nsf/All/E0A53CDCC74D92E7C2258B3A0025556F?OpenDocument&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.timesofisrael.com/in-the-cyprus-mountains-bereaved-israelis-find-solace-during-wartime/&quot;&gt;https://www.timesofisrael.com/in-the-cyprus-mountains-bereaved-israelis-find-solace-during-wartime/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.wings.org.il/&quot;&gt;https://www.wings.org.il/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.wings.org.il/?categoryId=143342#&quot;&gt;https://www.wings.org.il/?categoryId=143342#&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;19^th^&lt;/li&gt;
+&lt;li&gt;H~2~O&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-ins&quot;&gt;&amp;lt;ins&amp;gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;++Inserted text++&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-mark&quot;&gt;&amp;lt;mark&amp;gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;==Marked text==&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-footnote&quot;&gt;Footnotes&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Footnote 1 link[^first].&lt;/p&gt;
+&lt;p&gt;Footnote 2 link[^second].&lt;/p&gt;
+&lt;p&gt;Inline footnote^[Text of inline footnote] definition.&lt;/p&gt;
+&lt;p&gt;Duplicated footnote reference[^second].&lt;/p&gt;
+&lt;p&gt;[^first]: Footnote &lt;strong&gt;can have markup&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;and multiple paragraphs.&lt;/p&gt;
+&lt;p&gt;[^second]: Footnote text.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-deflist&quot;&gt;Definition lists&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Term 1&lt;/p&gt;
+&lt;p&gt;:   Definition 1
+with lazy continuation.&lt;/p&gt;
+&lt;p&gt;Term 2 with &lt;em&gt;inline markup&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;:   Definition 2&lt;/p&gt;
+&lt;p&gt;{ some code, part of Definition 2 }&lt;/p&gt;
+&lt;p&gt;Third paragraph of definition 2.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Compact style:&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Term 1
+~ Definition 1&lt;/p&gt;
+&lt;p&gt;Term 2
+~ Definition 2a
+~ Definition 2b&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-abbr&quot;&gt;Abbreviations&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;This is HTML abbreviation example.&lt;/p&gt;
+&lt;p&gt;It converts &amp;quot;HTML&amp;quot;, but keep intact partial entries like &amp;quot;xxxHTMLyyy&amp;quot; and so on.&lt;/p&gt;
+&lt;p&gt;*[HTML]: Hyper Text Markup Language&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/markdown-it/markdown-it-container&quot;&gt;Custom containers&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;::: warning
+&lt;em&gt;here be dragons&lt;/em&gt;
+:::&lt;/p&gt;
 </content>
   </entry>
   <entry>

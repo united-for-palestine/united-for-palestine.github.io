@@ -21,6 +21,57 @@
     /* External CSS */
     @import url('https://unpkg.com/simpledotcss/simple.min.css');
 
+    :root, ::backdrop {
+      --accent: #007A33;
+      --accent-hover: #D50032;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root,
+      ::backdrop {
+        --accent: lightgreen;
+        --accent-hover: #e5352d;
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    article {
+      position: relative;
+    }
+
+    a:focus {
+      outline: 2px solid;
+    }
+
+    article:has(a:hover) {
+      background: var(--accent-bg);
+    }
+
+    article:has(a:focus-within),
+    article:has(a:focus) {
+      outline: 2px solid;
+    }
+
+    article a {
+      outline: none !important;
+    }
+
+    article a::after {
+      position: absolute;
+      content: '';
+      z-index: 1;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
 
     article footer {
       font-size: 90%;
@@ -78,19 +129,6 @@
     @media (min-width: 180ch) {
       #menu {
         grid-column: 3;
-      }
-    }
-
-    :root, ::backdrop {
-      --accent: #007A33;              /* Green */
-      --accent-hover: #D50032;        /* Red on hover */
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root,
-      ::backdrop {
-        --accent: lightgreen;              /* Green */
-        --accent-hover: #e5352d;        /* Red on hover */
       }
     }
 

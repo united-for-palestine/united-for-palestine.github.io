@@ -1,0 +1,22 @@
+---
+title: Recent
+---
+
+{% from 'card.njk' import card %}
+
+<div class="card-grid compact">
+
+{% for item in collections.feed_item | reverse | head(20) %}
+
+  {{card(
+    item.data.title,
+    content=item.data.description | truncate,
+    href=item.url,
+    lang="en",
+    location=item.data.location,
+    date=item.date,
+    image=item.data.image
+  )}}
+
+{% endfor %}
+</div>

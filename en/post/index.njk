@@ -1,0 +1,21 @@
+---
+eleventyExcludeFromCollections: true
+title: Posts
+---
+
+{% from 'card.njk' import card %}
+
+{% for post in collections.post_en %}
+
+  {{card(
+    post.data.title,
+    content=post.data.description,
+    href=post.url,
+    lang="en",
+    location=post.data.location,
+    date=post.date,
+    image=post.data.image
+  )}}
+
+
+{% endfor %}

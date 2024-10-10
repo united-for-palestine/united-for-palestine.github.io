@@ -1,0 +1,27 @@
+---
+eleventyExcludeFromCollections: true
+title: Speeches
+---
+
+<p>
+A list of speeches given at events.
+</p>
+
+{% for speech in collections.speech_en %}
+
+  <article>
+    <header>
+      <h2>
+        <a href="{{ speech.url }}">{{ speech.data.title }}</a>
+      </h2>
+      <p>{{ speech.data.description }}</p>
+    </header>
+
+    <footer>
+      <time datetime="{{ speech.date }}">
+        Published: {{ speech.date | date }}
+      </time>
+    </footer>
+  </article>
+
+{% endfor %}

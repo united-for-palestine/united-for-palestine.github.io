@@ -1,4 +1,6 @@
-# Larnaca
+---
+title: Larnaca
+---
 
 ## Socials
 

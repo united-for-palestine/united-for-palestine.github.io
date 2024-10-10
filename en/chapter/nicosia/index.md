@@ -1,4 +1,6 @@
-# Nicosia
+---
+title: Nicosia
+---
 
 ## Socials
 

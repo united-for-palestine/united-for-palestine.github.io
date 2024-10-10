@@ -1,4 +1,6 @@
-# Paphos
+---
+title: Paphos
+---
 
 ![United for Palestine Paphos Chapter Logo](../../../asset/paphos_logo.jpeg)
 

@@ -2,6 +2,7 @@
 title: Markdown Test
 published: 2024-10-10
 edited: 2024-11-10
+tags: home_post
 deck: |
   Deck text
 

@@ -1,27 +1,47 @@
 # United for Palestine
 
-## [Events](/en/event)
+## Events
 
+{% for event in collections.home_event | reverse %}
 
-{% for event in collections.event %}
-- [{{event.data.title}}]({{event.url}}){% endfor %}
+<article>
 
-## [Posts](/en/post)
+### [{{event.data.title}}]({{event.url}})
 
-{% for post in collections.post %}
+{{event.data.deck}}
 
-- [{{post.data.title}}]({{post.url}})
+</article>
 
 {% endfor %}
 
-## [Chapters](/en/chapter)
+[More events](/en/event)
+
+## Posts
+
+{% for post in collections.home_post %}
+<article>
+
+### [{{post.data.title}}]({{post.url}})
+
+{{post.data.deck}}
+
+</article>
+
+{% endfor %}
+
+[More posts](/en/post)
+
+## Chapters
 
 {% for chapter in collections.chapter %}
 - [{{chapter.data.title}}]({{chapter.url}}){% endfor %}
 
 ## About
 
-United for Palestine is an inclusive grassroots movement of organizers in Cyprus who stand in solidarity with the Palestinian people. Our mission is to support the liberation of Palestine, raise awareness of Israel’s genocide and apartheid against Palestinians, and drive meaningful change within Cyprus.
+United for Palestine is an inclusive grassroots movement of organizers in Cyprus
+who stand in solidarity with the Palestinian people. Our mission is to support
+the liberation of Palestine, raise awareness of Israel’s genocide and apartheid
+against Palestinians, and drive meaningful change within Cyprus.
 
 ## Resources
 

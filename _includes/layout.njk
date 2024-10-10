@@ -127,11 +127,12 @@
     {{ content | safe }}
 
 
-    <hr>
-    <h2>Spotlight</h2>
-    <div class="spotlight">
-      {{ "/en/spotlight.md" | markdownFile | safe }}
-    </div>
+    <section>
+      <h1>Spotlight</h1>
+      <div class="spotlight">
+        {{ "/en/spotlight.md" | markdownFile | safe }}
+      </div>
+    </section>
 
   </main>
 

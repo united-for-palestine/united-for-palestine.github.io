@@ -21,4 +21,4 @@ Please send us a an email:
 
 ## Education
 
-- [Know Your Rights (pdf)](/asset/Leaflet_know your rights_GR.pdf)
+- [Know Your Rights (pdf)](/asset/Leaflet_know_your_rights_GR.pdf)

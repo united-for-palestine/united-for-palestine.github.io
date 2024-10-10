@@ -1,0 +1,33 @@
+---
+eleventyExcludeFromCollections: true
+title: Events
+---
+
+{% for event in collections.event | reverse %}
+
+  <article>
+    <header>
+      <h2>
+        <a href="{{ event.url }}">{{ event.data.title }}</a>
+      </h2>
+      <p class="deck">{{ event.data.deck }}</p>
+    </header>
+
+    <footer>
+      <ul>
+        {% if event.data.location %}
+        <li>
+          Location: {{ event.data.location }}
+        </li>
+        {% endif %}
+
+        <li>
+        <time datetime="{{ event.data.published }}">
+          Published: {{ event.data.date | date }}
+        </time>
+        </li>
+      </ul>
+    </footer>
+  </article>
+
+{% endfor %}

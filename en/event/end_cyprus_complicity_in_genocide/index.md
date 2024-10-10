@@ -1,4 +1,7 @@
-# End Cyprus Complicity in Genocide
+---
+title: End Cyprus Complicity in Genocide
+date: 2024-10-09
+---
 
 ![End Cyprus Complicity in Genocide Poster](../../../asset/aug_25_larnaca_end_cyprus_complicity_en.jpg)
 

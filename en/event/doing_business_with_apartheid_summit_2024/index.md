@@ -1,4 +1,7 @@
-# Doing Business with Apartheid Summit 2024
+---
+title: Doing Business with Apartheid Summit 2024
+date: 2024-10-09
+---
 
 ![Doing Business with Apartheid Summit 2024 Poster](../../../asset/doing_business_with_apartheid_en.jpg)
 

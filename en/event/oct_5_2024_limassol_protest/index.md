@@ -1,4 +1,7 @@
-# 75 + 1 Years of Genocide
+---
+title: 75 + 1 Years of Genocide
+date: 2024-10-09
+---
 
 ![Limassol Oct 5th Protest Poster](/asset/oct_5_limassol_protest_en.jpg)
 

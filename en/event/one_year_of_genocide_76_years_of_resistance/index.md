@@ -1,4 +1,7 @@
-# One Year of Genocide, 76 Years of Resistance
+---
+title: One Year of Genocide, 76 Years of Resistance
+date: 2024-10-09
+---
 
 ![One Year of Genocide, 76 Years of Resistance Poster](../../../asset/one_year_of_genocide_76_years_of_resistance.jpg)
 

@@ -29,9 +29,10 @@ export default function (eleventyConfig) {
   });
 
   const breadcrumbNamesArray = [
-    { url: "/", name: "Home" },
+    { url: "/", name: "UFP" },
     { url: "/en/", name: "English" },
     { url: "/en/post/", name: "Posts" },
+    { url: "/en/event/", name: "Events" },
   ];
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {

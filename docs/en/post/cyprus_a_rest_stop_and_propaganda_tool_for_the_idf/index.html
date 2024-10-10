@@ -1,0 +1,430 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Test</title>
+  <meta name="description" content="Your description here">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇵🇸</text></svg>">
+  <link rel="apple-touch-icon" sizes="180x180" href="/asset/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon-16x16.png">
+  <link rel="manifest" href="/asset/site.webmanifest">
+  <meta property="og:title" content="Your Title Here">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="Your image URL here">
+  <meta property="og:url" content="Your URL here">
+  <meta property="og:description" content="Your description here">
+
+  <style>
+
+    /* External CSS */
+    @import url('https://unpkg.com/simpledotcss/simple.min.css');
+
+
+    article footer {
+      font-size: 90%;
+      opacity: 0.8;
+    }
+
+    .breadcrumbs {
+      padding-top: 2em;
+    }
+
+    .breadcrumbs ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .breadcrumbs li {
+      display: inline-block;
+
+    }
+
+    .breadcrumbs a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .breadcrumbs li + li::before {
+      content: " / ";
+      margin: 0 5px; /* adjust spacing as needed */
+      color: inherit; /* inherit the color of the text */
+    }
+
+    @view-transition {
+      navigation: auto;
+    }
+
+    .spotlight ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    body {
+      word-wrap: break-word;
+    }
+
+    #menu {
+      z-index: 1000;
+      margin: 1vw;
+      position: sticky;
+      top: 1vw;
+      overflow-y: auto;
+      max-height: 100vh;
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: 180ch) {
+      #menu {
+        grid-column: 3;
+      }
+    }
+
+    :root, ::backdrop {
+      --accent: #007A33;              /* Green */
+      --accent-hover: #D50032;        /* Red on hover */
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root,
+      ::backdrop {
+        --accent: lightgreen;              /* Green */
+        --accent-hover: #e5352d;        /* Red on hover */
+      }
+    }
+
+    figure embed {
+      width: 100%;
+    }
+
+    /* Unvisited links */
+    a {
+      color: var(--accent-hover) !important; /* Set unvisited links to red */
+    }
+
+    /* Visited links */
+    a:visited {
+      color: var(--accent) !important; /* Green for visited links */
+    }
+  </style>
+</head>
+<body>
+
+
+    <nav id="top" class="breadcrumbs">
+      <ul>
+      
+        <li>
+          <a href="/">UFP</a>
+        </li>
+      
+        <li>
+          <a href="/en/">English</a>
+        </li>
+      
+        <li>
+          <a href="/en/post/">Posts</a>
+        </li>
+      
+      </ul>
+    </nav>
+
+  <main id="main">
+    <h1>Markdown Test</h1>
+    <h1>h1 Heading</h1>
+<h2>h2 Heading</h2>
+<h3>h3 Heading</h3>
+<h4>h4 Heading</h4>
+<h5>h5 Heading</h5>
+<h6>h6 Heading</h6>
+<h2>Horizontal Rules</h2>
+<hr>
+<hr>
+<hr>
+<h2>Typographic replacements</h2>
+<p>Enable typographer option to see result.</p>
+<p>(c) (C) (r) (R) (tm) (TM) (p) (P) +-</p>
+<p>test.. test... test..... test?..... test!....</p>
+<p>!!!!!! ???? ,,  -- ---</p>
+<p>&quot;Smartypants, double quotes&quot; and 'single quotes'</p>
+<h2>Emphasis</h2>
+<p><strong>This is bold text</strong></p>
+<p><strong>This is bold text</strong></p>
+<p><em>This is italic text</em></p>
+<p><em>This is italic text</em></p>
+<p><s>Strikethrough</s></p>
+<h2>Blockquotes</h2>
+<blockquote>
+<p>Blockquotes can also be nested...</p>
+<blockquote>
+<p>...by using additional greater-than signs right next to each other...</p>
+<blockquote>
+<p>...or with spaces between arrows.</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2>Lists</h2>
+<p>Unordered</p>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+<ul>
+<li>Facilisis in pretium nisl aliquet</li>
+</ul>
+<ul>
+<li>Nulla volutpat aliquam velit</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Very easy!</li>
+</ul>
+<p>Ordered</p>
+<ol>
+<li>
+<p>Lorem ipsum dolor sit amet</p>
+</li>
+<li>
+<p>Consectetur adipiscing elit</p>
+</li>
+<li>
+<p>Integer molestie lorem at massa</p>
+</li>
+<li>
+<p>You can use sequential numbers...</p>
+</li>
+<li>
+<p>...or keep all the numbers as <code>1.</code></p>
+</li>
+</ol>
+<p>Start numbering with offset:</p>
+<ol start="57">
+<li>foo</li>
+<li>bar</li>
+</ol>
+<h2>Code</h2>
+<p>Inline <code>code</code></p>
+<p>Indented code</p>
+<p>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code</p>
+<p>Block code &quot;fences&quot;</p>
+<pre><code>Sample text here...
+</code></pre>
+<p>Syntax highlighting</p>
+<pre><code class="language-js">var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+</code></pre>
+<h2>Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<p>Right aligned columns</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:right">Option</th>
+<th style="text-align:right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">data</td>
+<td style="text-align:right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td style="text-align:right">engine</td>
+<td style="text-align:right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td style="text-align:right">ext</td>
+<td style="text-align:right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+<h2>Links</h2>
+<p><a href="http://dev.nodeca.com">link text</a></p>
+<p><a href="http://nodeca.github.io/pica/demo/" title="title text!">link with title</a></p>
+<p>Autoconverted link <a href="https://github.com/nodeca/pica">https://github.com/nodeca/pica</a> (enable linkify to see)</p>
+<h2>Images</h2>
+<p>
+        </p><figure>
+          <picture><source type="image/webp" srcset="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-400.webp 400w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-800.webp 800w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-896.webp 896w" sizes="100vw"><img loading="lazy" decoding="async" src="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-400.jpeg" alt="Minion" width="896" height="896" srcset="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-400.jpeg 400w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-800.jpeg 800w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/Umn9MXSo0W-896.jpeg 896w" sizes="100vw"></picture>
+          <figcaption>Minion</figcaption>
+        </figure>
+      
+
+        <figure>
+          <picture><source type="image/webp" srcset="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-400.webp 400w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-704.webp 704w" sizes="100vw"><img loading="lazy" decoding="async" src="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-400.jpeg" alt="Stormtroopocat" width="704" height="676" srcset="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-400.jpeg 400w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/fVHjIqNB3G-704.jpeg 704w" sizes="100vw"></picture>
+          <figcaption>Stormtroopocat</figcaption>
+        </figure>
+      <p></p>
+<p>Like links, Images also have a footnote style syntax</p>
+<p>
+        </p><figure>
+          <picture><source type="image/webp" srcset="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-400.webp 400w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-800.webp 800w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-896.webp 896w" sizes="100vw"><img loading="lazy" decoding="async" src="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-400.jpeg" alt="Alt text" width="896" height="896" srcset="/en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-400.jpeg 400w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-800.jpeg 800w, /en/post/cyprus_a_rest_stop_and_propaganda_tool_for_the_idf/4y1g32_Abx-896.jpeg 896w" sizes="100vw"></picture>
+          <figcaption>Alt text</figcaption>
+        </figure>
+      <p></p>
+<p>With a reference later in the document defining the URL location:</p>
+<h2>Plugins</h2>
+<p>The killer feature of <code>markdown-it</code> is very effective support of
+<a href="https://www.npmjs.org/browse/keyword/markdown-it-plugin">syntax plugins</a>.</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-emoji">Emojies</a></h3>
+<blockquote>
+<p>Classic markup: :wink: :cry: :laughing: :yum:</p>
+<p>Shortcuts (emoticons): :-) :-( 8-) ;)</p>
+</blockquote>
+<p>see <a href="https://github.com/markdown-it/markdown-it-emoji#change-output">how to change output</a> with twemoji.</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-sub">Subscript</a> / <a href="https://github.com/markdown-it/markdown-it-sup">Superscript</a></h3>
+<ul>
+<li>19^th^</li>
+<li>H~2~O</li>
+</ul>
+<h3><a href="https://github.com/markdown-it/markdown-it-ins">&lt;ins&gt;</a></h3>
+<p>++Inserted text++</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-mark">&lt;mark&gt;</a></h3>
+<p>==Marked text==</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
+<p>Footnote 1 link[^first].</p>
+<p>Footnote 2 link[^second].</p>
+<p>Inline footnote^[Text of inline footnote] definition.</p>
+<p>Duplicated footnote reference[^second].</p>
+<p>[^first]: Footnote <strong>can have markup</strong></p>
+<p>and multiple paragraphs.</p>
+<p>[^second]: Footnote text.</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
+<p>Term 1</p>
+<p>:   Definition 1
+with lazy continuation.</p>
+<p>Term 2 with <em>inline markup</em></p>
+<p>:   Definition 2</p>
+<p>{ some code, part of Definition 2 }</p>
+<p>Third paragraph of definition 2.</p>
+<p><em>Compact style:</em></p>
+<p>Term 1
+~ Definition 1</p>
+<p>Term 2
+~ Definition 2a
+~ Definition 2b</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-abbr">Abbreviations</a></h3>
+<p>This is HTML abbreviation example.</p>
+<p>It converts &quot;HTML&quot;, but keep intact partial entries like &quot;xxxHTMLyyy&quot; and so on.</p>
+<p>*[HTML]: Hyper Text Markup Language</p>
+<h3><a href="https://github.com/markdown-it/markdown-it-container">Custom containers</a></h3>
+<p>::: warning
+<em>here be dragons</em>
+:::</p>
+
+
+
+    <section>
+      <h1>Spotlight</h1>
+      <div class="spotlight">
+        <p>📢 <a href="/en/event/75_plus_1_year_of_genocide_paphos"><strong>26 Oct Paphos Protest!</strong> 75 + 1 Year of Genocide</a></p>
+<ul>
+<li>🔎 <a href="https://www.aljazeera.com/news/2024/10/3/what-did-al-jazeeras-investigation-into-israeli-war-crimes-in-gaza-reveal">What did Al Jazeera’s investigation into Israeli war crimes in Gaza reveal?</a></li>
+<li>📺 <a href="https://www.aljazeera.com/news/2024/10/5/failing-gaza-pro-israel-bias-uncovered-behind-the-lens-of-western-media">Failing Gaza: Pro-Israel bias uncovered behind the lens of Western media (Al Jazeera)</a></li>
+<li>🌹 <a href="https://www.youtube.com/watch?v=qNXH_G5r760">365 Days of Israel's war on Gaza, 76 years of occupation</a></li>
+</ul>
+
+      </div>
+    </section>
+
+  </main>
+
+    <a href="#top" id="scrollTopBtn">🔻</a>
+
+    <script>
+      const scrollBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+        if (window.scrollY > window.innerHeight / 2) {
+          scrollBtn.classList.add("show");
+        } else {
+          scrollBtn.classList.remove("show");
+        }
+      };
+    </script>
+    <style>
+
+      #scrollTopBtn {
+        font-size: 2rem;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        text-decoration: none;
+        opacity: 0;
+        transform: rotate(0deg);
+        position: fixed;
+        bottom: 2ch;
+        right: 0;
+        padding: 1ch;
+        cursor: pointer;
+        z-index: 100;
+        pointer-events: none;
+      }
+
+      #scrollTopBtn.show {
+        opacity: 1;
+        transform: rotate(180deg);
+        pointer-events: auto;
+      }
+    </style>
+
+  <footer>
+
+    <p>
+   <a lang="en" href="/en">English</a> |
+   <a lang="el" href="/el">ελληνικά</a> |
+   <a lang="ar" href="/ar">عربي</a>
+    </p>
+
+    <a href="mailto:crept-hurt-recount@duck.com">crept-hurt-recount@duck.com</a>
+  </footer>
+
+  <script id="quicklink_js" async="" src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+
+  <script>
+
+    document.getElementById("quicklink_js")
+      .addEventListener("load", () => {
+        quicklink.listen();
+      });
+
+    window.addEventListener("popstate", function () {
+      window.document.getElementById("menu").removeAttribute("open")
+    });
+
+  </script>
+
+</body>
+
+
+</html>

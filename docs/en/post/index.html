@@ -39,7 +39,7 @@
     }
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
 
     article {
@@ -61,20 +61,25 @@
 
     article a {
       outline: none !important;
+      z-index: 100;
     }
 
     article a::after {
       position: absolute;
-      content: '';
-      z-index: 1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: ' ';
+      z-index: 100;
     }
 
     h2 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
 
     h3 {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     article footer {
@@ -83,7 +88,7 @@
     }
 
     .breadcrumbs {
-      padding-top: 2em;
+      font-size: 1.5rem;
     }
 
     .breadcrumbs ul {
@@ -154,19 +159,19 @@
 <body>
 
 
-    <nav id="top" class="breadcrumbs">
-      <ul>
-      
-        <li>
-          <a href="/">UFP</a>
-        </li>
-      
-        <li>
-          <a href="/en/">English</a>
-        </li>
-      
-      </ul>
-    </nav>
+  <nav id="top" class="breadcrumbs">
+    <ul>
+    
+      <li>
+        <a href="/">UFP</a>
+      </li>
+    
+      <li>
+        <a href="/en/">English</a>
+      </li>
+    
+    </ul>
+  </nav>
 
   <main id="main">
     <h1>Posts</h1>

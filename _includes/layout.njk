@@ -27,6 +27,10 @@
       opacity: 0.8;
     }
 
+    .breadcrumbs {
+      padding-top: 2em;
+    }
+
     .breadcrumbs ul {
       list-style-type: none;
       padding: 0;
@@ -106,14 +110,9 @@
   </style>
 </head>
 <body>
-  <!--
-    {% block spotlight %}
-      Place spotlight content here
-    {% endblock %}
-  -->
-    <hr>
 
-    <nav class="breadcrumbs">
+
+    <nav id="top" class="breadcrumbs">
       <ul>
       {% for crumb in page.url | breadcrumb  %}
         <li>
@@ -126,7 +125,52 @@
   <main id="main">
     <h1>{{ title }}</h1>
     {{ content | safe }}
+
+
+    <hr>
+    <h2>Spotlight</h2>
+    <div class="spotlight">
+      {{ "/en/spotlight.md" | markdownFile | safe }}
+    </div>
+
   </main>
+
+    <a href="#top" id="scrollTopBtn">🔻</a>
+
+    <script>
+      const scrollBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+        if (window.scrollY > window.innerHeight / 2) {
+          scrollBtn.classList.add("show");
+        } else {
+          scrollBtn.classList.remove("show");
+        }
+      };
+    </script>
+    <style>
+
+      #scrollTopBtn {
+        font-size: 2rem;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        text-decoration: none;
+        opacity: 0;
+        transform: rotate(0deg);
+        position: fixed;
+        bottom: 2ch;
+        right: 0;
+        padding: 1ch;
+        cursor: pointer;
+        z-index: 100;
+        pointer-events: none;
+      }
+
+      #scrollTopBtn.show {
+        opacity: 1;
+        transform: rotate(180deg);
+        pointer-events: auto;
+      }
+    </style>
+
   <footer>
 
     <p>

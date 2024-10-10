@@ -3,10 +3,12 @@
 ![United for Palestine Paphos Chapter Logo](../../../asset/paphos_logo.jpeg)
 
 ## Register
+
 - [Become a member](https://forms.gle/E5DR58YQf9rLmX62A)
-- [مُتحِدين من أجل فلسطين  ](https://forms.gle/KVqMsZUG5DVsXz2F8)
+- [مُتحِدين من أجل فلسطين ](https://forms.gle/KVqMsZUG5DVsXz2F8)
 
 ## Socials
+
 - [Facebook](https://www.facebook.com/people/United-for-Palestine-Paphos/61561620395144/)
 - [Instagram](https://instagram.com/united.for.palestine.paphos)
 
@@ -36,8 +38,8 @@
 - [Cyprus-US joint air force exercises planned](https://cyprus-mail.com/2024/08/06/cyprus-us-joint-air-force-exercises-planned/)
 - [The US has strongly backed Israel's war against Hamas. The allies don't seem to know what comes next](https://apnews.com/article/israel-hamas-11-1-2023-blinken-netanyahu-d57766fd8e55500ff6f16b78b3560d51)
 
-
 ## YouTube
+
 - [Israel’s Torture & Rape of Palestinian Prisoners Defended by Knesset Members, Far-Right Mobs](https://www.youtube.com/watch?v=2Ver8-aky-w)
 - [Inspector General report says Gaza aid pier warnings ignored | Al Jazeera Newsfeed](https://www.youtube.com/watch?v=NIKqf4nx8ZI)
 - [The One Video Israel REALLY Doesn't Want You To See](https://www.youtube.com/watch?v=-mxfnya3ZRc)
@@ -45,6 +47,7 @@
 - [Ολοκλήρωση Διεθνούς Άσκησης ΤΑΜΣ «ΑΓΑΠΗΝΩΡ-2023»](https://www.youtube.com/watch?v=RFX5ElzklUw)
 
 ## Instagram Accounts
+
 - [Companies to Boycott](https://www.instagram.com/p/C5s-xZMMFE2/)
 - [BDS National Committee](https://www.instagram.com/bdsnationalcommittee?igsh=MWNsZzhoNHp3ODg3eA==)
 - [Hind Khoudary](https://www.instagram.com/hindkhoudary?igsh=MWg3dHB5cHZyZ3Uzbg==)
@@ -54,4 +57,3 @@
 - [Eye on Palestine](https://www.instagram.com/eye.on.palestine?igsh=MWJoMXI3NmxhbnVlYw==)
 - [AFOA.cy](https://www.instagram.com/afoa.cy?igsh=MXBqdG16b2x3aWpsbw==)
 - [GenocideFree.cy](https://www.instagram.com/genocide_free.cy?igsh=M3E1ZDN4ZGhqZ2xj)
-

@@ -1,23 +1,29 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import markdownIt from "markdown-it";
+import fs from "node:fs";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, {
     type: "atom", // or "rss", "json"
-    outputPath: "/feed.xml",
+    outputPath: "/en/feed.xml",
     collection: {
-      name: "posts", // iterate over `collections.posts`
-      limit: 10, // 0 means no limit
+      name: "post_en", // iterate over `collections.posts`
+      limit: 100, // 0 means no limit
     },
     metadata: {
       language: "en",
-      title: "Blog Title",
+      title: "United for Palestine Posts",
       subtitle: "This is a longer description about your blog.",
-      base: "https://example.com/",
+      base: "https://united-for-palestine.github.io",
       author: {
-        name: "Your Name",
-        email: "", // Optional
+        name: "United for Palestine",
+        email: "crept-hurt-recount@duck.com",
       },
     },
   });
@@ -78,4 +84,11 @@ export default function (eleventyConfig) {
   };
 
   eleventyConfig.setLibrary("md", md);
+
+  eleventyConfig.addNunjucksFilter("markdownFile", function (filePath) {
+    const absolutePath = join(__dirname, filePath);
+    const content = fs.readFileSync(absolutePath, "utf-8");
+
+    return md.render(content);
+  });
 }

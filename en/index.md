@@ -4,6 +4,7 @@ eleventyNavigation:
   parent: Home
   order: 2
 ---
+
 # United for Palestine
 
 ## Protests
@@ -16,10 +17,10 @@ eleventyNavigation:
 
 ## Chapters
 
-- [Paphos](  /en/chapter/paphos)
-- [Nicosia]( /en/chapter/nicosia)
+- [Paphos](/en/chapter/paphos)
+- [Nicosia](/en/chapter/nicosia)
 - [Limassol](/en/chapter/limassol)
-- [Larnaca]( /en/chapter/larnaca)
+- [Larnaca](/en/chapter/larnaca)
 
 ## About
 

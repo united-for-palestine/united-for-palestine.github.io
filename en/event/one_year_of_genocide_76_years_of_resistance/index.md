@@ -1,6 +1,5 @@
 # One Year of Genocide, 76 Years of Resistance
 
-
 ![One Year of Genocide, 76 Years of Resistance Poster](../../../asset/one_year_of_genocide_76_years_of_resistance.jpg)
 
 The Nakba never ended.

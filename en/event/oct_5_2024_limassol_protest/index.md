@@ -9,4 +9,3 @@
 🚨 Drastic changes of direction must be made to de-escalate military action on all fronts, bring Israel to account and lay a path forward to decolonisation, peace and justice.
 
 📌 Meet us at 4pm, October 5th, on Anexartisias Street (opposite Zara) to find out more about the historical context, current events and stand in solidarity with Palestine & Lebanon.
-

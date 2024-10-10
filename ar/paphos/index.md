@@ -4,4 +4,4 @@
 
 ## Register ( should translate )
 
-- [مُتحِدين من أجل فلسطين  ](https://forms.gle/KVqMsZUG5DVsXz2F8)
+- [مُتحِدين من أجل فلسطين ](https://forms.gle/KVqMsZUG5DVsXz2F8)

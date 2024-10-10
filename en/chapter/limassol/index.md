@@ -1,6 +1,5 @@
 # Limassol
 
-
 ![United for Palestine Limassol Logo](../../../asset/ufp_limassol_logo.jpg)
 
 ## Socials

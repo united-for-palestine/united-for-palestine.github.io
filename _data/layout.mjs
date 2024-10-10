@@ -1,1 +1,1 @@
-export default 'layout.njk'
+export default "layout.njk";

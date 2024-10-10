@@ -1,13 +1,23 @@
----
----
-
 # United for Palestine
 
 ## [Events](/en/event)
 
+
+{% for event in collections.event %}
+- [{{event.data.title}}]({{event.url}}){% endfor %}
+
 ## [Posts](/en/post)
 
+{% for post in collections.post %}
+
+- [{{post.data.title}}]({{post.url}})
+
+{% endfor %}
+
 ## [Chapters](/en/chapter)
+
+{% for chapter in collections.chapter %}
+- [{{chapter.data.title}}]({{chapter.url}}){% endfor %}
 
 ## About
 

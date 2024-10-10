@@ -92,4 +92,11 @@ export default function (eleventyConfig) {
 
     return md.render(content);
   });
+
+  eleventyConfig.addFilter("head", function find(collection = [], amount = 1) {
+    // If you want more advanced, dynamic filtering, you might need https://lodash.com/docs/4.17.15#get
+    // for fetching [deeply] nested properties.
+    return collection.slice(0, amount)
+  });
+
 }

@@ -219,6 +219,22 @@
 
     <a href="mailto:crept-hurt-recount@duck.com">crept-hurt-recount@duck.com</a>
   </footer>
+
+  <script id="quicklink_js" async="" src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+
+  <script>
+
+    document.getElementById("quicklink_js")
+      .addEventListener("load", () => {
+        quicklink.listen();
+      });
+
+    window.addEventListener("popstate", function () {
+      window.document.getElementById("menu").removeAttribute("open")
+    });
+
+  </script>
+
 </body>
 
 

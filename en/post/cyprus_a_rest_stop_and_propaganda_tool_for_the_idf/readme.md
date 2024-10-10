@@ -27,7 +27,7 @@ either continue their "service" in the IDF or transition into "civil" society.
 The function of these articles is clearly to appeal to young people seeking a
 better future. They aim to make the idea of joining the IDF attractive and
 desirable by offering perks like a vacation, assistance with finding an
-apartment, and some pocket money.
+apartment, and more.
 
 > From a financial advisor who helps with rental agreements, cell phone plans,
 > and opening a bank account to an occupational psychologist who helps with

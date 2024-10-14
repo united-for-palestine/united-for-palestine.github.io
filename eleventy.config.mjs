@@ -4,20 +4,17 @@ import markdownIt from "markdown-it";
 import fs from "node:fs";
 import { fileURLToPath } from "url";
 import path from "path";
-import mime from 'mime-types';
-import * as mm from 'music-metadata';
+import mime from "mime-types";
+import * as mm from "music-metadata";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-
-function secondsToHMS (seconds) {
+function secondsToHMS(seconds) {
   const h = Math.floor(seconds / 3600);
   const m = Math.floor((seconds % 3600) / 60);
   const s = Math.floor(seconds % 60);
-  return [h, m, s]
-    .map(v => (v < 10 ? "0" + v : v))
-    .join(":");
+  return [h, m, s].map((v) => (v < 10 ? "0" + v : v)).join(":");
 }
 
 export default function (eleventyConfig) {
@@ -38,47 +35,48 @@ export default function (eleventyConfig) {
     });
   });
 
-
-  eleventyConfig.addShortcode('renderlayoutblock', function(name) {
-      return (this.page.layoutblock ?? {})[name];
+  eleventyConfig.addShortcode("renderlayoutblock", function (name) {
+    return (this.page.layoutblock ?? {})[name];
   });
 
   eleventyConfig.addFilter("truncate", function (str, n = 256) {
-    if (typeof str !== 'string') return '';
-    return str.length > n ? str.slice(0, n - 1) + '…' : str;
+    if (typeof str !== "string") return "";
+    return str.length > n ? str.slice(0, n - 1) + "…" : str;
   });
 
-  eleventyConfig.addPairedShortcode('layoutblock', function (content, name) {
-      this.page.layoutblock = this.page.layoutblock ?? {}
-      this.page.layoutblock[name] = content;
-    return ''
+  eleventyConfig.addPairedShortcode("layoutblock", function (content, name) {
+    this.page.layoutblock = this.page.layoutblock ?? {};
+    this.page.layoutblock[name] = content;
+    return "";
   });
 
   eleventyConfig.setNunjucksEnvironmentOptions({
     // throwOnUndefined: true,
-  })
-
-  eleventyConfig.addNunjucksAsyncFilter('getAudioMetadata', async function(filePath, callback) {
-
-    // Get the file type (MIME type)
-    const absolutePath = path.join(__dirname, filePath);
-    const mimeType = mime.lookup(absolutePath);
-
-    const metadata = await mm.parseFile(absolutePath);
-    const duration = secondsToHMS(metadata.format.duration || 0);  // Duration in seconds
-
-    // Get the file size (in bytes)
-    const fileSize = fs.statSync(absolutePath).size;
-
-    const data = {
-      duration,
-      file: filePath,
-      type: mimeType || 'audio/mpeg',  // Default to 'audio/mpeg' if unknown
-      length: fileSize
-    };
-
-    return callback(null, data)
   });
+
+  eleventyConfig.addNunjucksAsyncFilter(
+    "getAudioMetadata",
+    async function (filePath, callback) {
+      // Get the file type (MIME type)
+      const absolutePath = path.join(__dirname, filePath);
+      const mimeType = mime.lookup(absolutePath);
+
+      const metadata = await mm.parseFile(absolutePath);
+      const duration = secondsToHMS(metadata.format.duration || 0); // Duration in seconds
+
+      // Get the file size (in bytes)
+      const fileSize = fs.statSync(absolutePath).size;
+
+      const data = {
+        duration,
+        file: filePath,
+        type: mimeType || "audio/mpeg", // Default to 'audio/mpeg' if unknown
+        length: fileSize,
+      };
+
+      return callback(null, data);
+    },
+  );
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
@@ -100,7 +98,7 @@ export default function (eleventyConfig) {
       day: "numeric",
     };
 
-    return new Date(date).toLocaleString(lang || 'en', options);
+    return new Date(date).toLocaleString(lang || "en", options);
   });
 
   const md = markdownIt({
@@ -126,9 +124,9 @@ export default function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", md);
 
-  eleventyConfig.addFilter('markdown', function (markdown) {
+  eleventyConfig.addFilter("markdown", function (markdown) {
     return md.render(markdown);
-  })
+  });
 
   eleventyConfig.addNunjucksFilter("markdownFile", function (filePath) {
     const absolutePath = path.join(__dirname, filePath);
@@ -140,24 +138,24 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("head", function find(collection = [], amount = 1) {
     // If you want more advanced, dynamic filtering, you might need https://lodash.com/docs/4.17.15#get
     // for fetching [deeply] nested properties.
-    return collection.slice(0, amount)
+    return collection.slice(0, amount);
   });
 
-  eleventyConfig.addFilter("files", function(dir) {
+  eleventyConfig.addFilter("files", function (dir) {
     const directoryPath = path.join(__dirname, dir);
 
-    return fs.readdirSync(directoryPath).map(file => {
+    return fs.readdirSync(directoryPath).map((file) => {
       const absolutePath = path.join(directoryPath, file);
       const type = mime.lookup(absolutePath);
 
       return {
         type,
         file: `/${path.join(dir, file)}`,
-      }
+      };
     });
   });
 
   return {
     markdownTemplateEngine: "njk",
-  }
+  };
 }

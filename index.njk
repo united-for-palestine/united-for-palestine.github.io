@@ -12,7 +12,8 @@ title: Recent
     item.data.title,
     content=item.data.description | truncate,
     href=item.url,
-    lang="en",
+    lang=item.data.lang,
+    lang_dir=item.data.lang_dir,
     location=item.data.location,
     date=item.date,
     image=item.data.image

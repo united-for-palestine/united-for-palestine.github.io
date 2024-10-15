@@ -94,7 +94,4 @@ To delete a page:
 
 ### Publish
 
-1. Navigate to the project _root_ directory.
-2. Run `npx @11ty/eleventy --output docs`.
-3. `git add docs` and `git commit`.
-4. `git push`
+Trigger the publish actions by simply pushing to the `main` branch.

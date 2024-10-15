@@ -215,7 +215,30 @@
 
   </style>
 </head>
+
+  <div class="background-blur"></div>
+
 <body>
+
+
+
+<style>
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./asset/protest_banner_picture.jpg') center/cover no-repeat;
+  opacity: 0.05;
+  /* background-color: rgba(255, 255, 255, 0.7); High-opacity overlay */
+  filter: blur(10px); /* Apply blur effect */
+}
+
+    main {
+      position: relative;
+    }
+</style>
 
   <main id="main">
 
@@ -277,11 +300,11 @@
     
 
 
+
     <h2>Resources</h2>
 <ul>
 <li><a href="/asset/Leaflet_know_your_rights_GR.pdf">Know Your Rights (pdf)</a></li>
 </ul>
-
 
 
 
@@ -300,7 +323,6 @@ contact us if you are interested.<br>
     <p></p>
     </hgroup>
   </section>
-
 
   </main>
 
@@ -371,7 +393,6 @@ contact us if you are interested.<br>
     });
 
   </script>
-
 </body>
 
 

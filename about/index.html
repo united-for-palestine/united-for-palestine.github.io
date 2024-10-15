@@ -215,7 +215,30 @@
 
   </style>
 </head>
+
+  <div class="background-blur"></div>
+
 <body>
+
+
+
+<style>
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./asset/protest_banner_picture.jpg') center/cover no-repeat;
+  opacity: 0.05;
+  /* background-color: rgba(255, 255, 255, 0.7); High-opacity overlay */
+  filter: blur(10px); /* Apply blur effect */
+}
+
+    main {
+      position: relative;
+    }
+</style>
 
   <main id="main">
 
@@ -267,6 +290,7 @@
     
 
 
+
     <h2>English</h2>
 <p>United for Palestine is an inclusive grassroots movement of organizers in Cyprus who stand in solidarity with the Palestinian people. Our mission is to support the liberation of Palestine, raise awareness of Israel’s genocide and apartheid against Palestinians, and drive meaningful change within Cyprus.</p>
 <div dir="rtl" lang="ar">
@@ -291,7 +315,6 @@
 
 
 
-
   <section class="no-print">
     <hgroup class="spotlight">
       <!--  -->
@@ -309,7 +332,6 @@
     <p></p>
     </hgroup>
   </section>
-
 
   </main>
 
@@ -380,7 +402,6 @@
     });
 
   </script>
-
 </body>
 
 

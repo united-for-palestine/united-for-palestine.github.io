@@ -5,34 +5,9 @@ date: 2024-10-15
 image: /asset/mapa_de_palestina_que_invaden_judios_israel.jpg
 ---
 
-- [1880s-1890s](#1880s-1890s)
-- [1922](#1922)
-- [1940s](#1940s)
-- [December 1948](#december-1948)
-- [1967 - NAKSA](#1967---naksa)
-- [1976 - LAND DAY](#1976---land-day)
-- [1987 - 1ST INTIFADA](#1987---1st-intifada)
-- [1993-2000 - PEACE NEGOTIATIONS](#1993-2000---peace-negotiations)
-- [1900s-1910s](#1900s-1910s)
-- [1930s](#1930s)
-- [1948 - NAKBA](#1948---nakba)
-- [1950-1967](#1950-1967)
-- [1973 - OCTOBER WAR](#1973---october-war)
-- [1978 - CAMP DAVID ACCORDS](#1978---camp-david-accords)
-- [1988 - PLO ACCEPTANCE](#1988---plo-acceptance)
-- [2002 - 2ND INTIFADA](#2002---2nd-intifada)
-- [2005 - GAZA DISENGAGEMENT](#2005---gaza-disengagement)
-- [2007 - GAZA BLOCKADE](#2007---gaza-blockade)
-- [2008-2021 - 4 WARS ON GAZA](#2008-2021---4-wars-on-gaza)
-- [2018-2019 - GREAT MARCH OF RETURN](#2018-2019---great-march-of-return)
-- [2021 - SETTLER TERRORISM](#2021---settler-terrorism)
-- [May 2023 - ISRAELI GOVERNMENT ACTIONS](#may-2023---israeli-government-actions)
-- [2023 - JENIN](#2023---jenin)
-- [October 7, 2023](#october-7-2023)
-- [West Bank Since 7/10](#west-bank-since-710)
-- [STAY UPDATED](#stay-updated)
+[Timeline of Palestine's History PDF](/asset/timeline_flyer_en.pdf).
 
-> See [PDF](/asset/timeline_flyer_en.pdf).
+${toc}
 
 ## 1880s-1890s
 Zionism emerged with the founding of Rishon Le Zion, the coining of the term "Zionism," Theodor Herzl's publication of *Der Judenstaat*, and the First Zionist Congress.

@@ -27,6 +27,8 @@
 - [West Bank Since 7/10](#west-bank-since-710)
 - [STAY UPDATED](#stay-updated)
 
+> See [PDF](/asset/timeline_flyer_en.pdf).
+
 ## 1880s-1890s
 Zionism emerged with the founding of Rishon Le Zion, the coining of the term "Zionism," Theodor Herzl's publication of *Der Judenstaat*, and the First Zionist Congress.
 

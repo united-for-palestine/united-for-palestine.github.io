@@ -1,0 +1,467 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇵🇸</text></svg>">
+  <link rel="apple-touch-icon" sizes="180x180" href="/asset/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon-16x16.png">
+  <link rel="manifest" href="/asset/site.webmanifest">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:description" content="">
+
+  <style>
+
+    /* External CSS */
+    @import url('https://unpkg.com/simpledotcss/simple.min.css');
+
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    .card-grid {
+      display: grid;                                                    /* Enable Grid layout */
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* Responsive columns */
+      gap: 20px;                                                      /* Space between cards */
+      box-sizing: border-box;                                         /* Include padding in width calculation */
+    }
+
+    .card-grid > article {
+      box-sizing: border-box;                                         /* Include padding and border in the width calculation */
+    }
+
+    .card-grid.compact > article img {
+      width: 100%;
+      max-height: 256px;
+      object-fit: cover;
+      object-position: 50% top;
+    }
+
+    :root, ::backdrop {
+      --accent: #007A33;
+      --accent-hover: #D50032;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root,
+      ::backdrop {
+        --accent: lightgreen;
+        --accent-hover: #e5352d;
+      }
+    }
+
+    * {
+      outline-offset: 0.1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    article {
+      position: relative;
+    }
+
+    a:focus {
+      outline: 2px solid;
+    }
+
+    article:has(a:hover) {
+      background: var(--accent-bg);
+    }
+
+    article:has(a:focus-within),
+    article:has(a:focus) {
+      outline: 2px solid;
+    }
+
+    article a {
+      outline: none !important;
+      z-index: 100;
+    }
+
+    article a::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: ' ';
+      z-index: 100;
+    }
+
+    article p {
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    article footer {
+      font-size: 90%;
+      opacity: 0.8;
+    }
+
+    .breadcrumbs ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .breadcrumbs li {
+      display: inline-block;
+
+    }
+
+    .breadcrumbs li::after {
+      color: var(--border);
+      content: " / ";
+      margin: 0 5px; /* adjust spacing as needed */
+    }
+
+    @view-transition {
+      navigation: auto;
+    }
+
+    .spotlight ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    body {
+      word-wrap: break-word;
+    }
+
+    #menu {
+      z-index: 1000;
+      margin: 1vw;
+      position: sticky;
+      top: 1vw;
+      overflow-y: auto;
+      max-height: 100vh;
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: 180ch) {
+      #menu {
+        grid-column: 3;
+      }
+    }
+
+    figure embed {
+      width: 100%;
+    }
+
+    /* Unvisited links */
+    a {
+      color: var(--accent-hover) !important; /* Set unvisited links to red */
+    }
+
+    /* Visited links */
+    a:visited {
+      color: var(--accent) !important; /* Green for visited links */
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .menu li {
+      display: inline-block;
+
+    }
+
+    .menu li::after {
+      color: var(--border);
+      content: " | ";
+      margin: 0 5px;
+    }
+
+    .menu li:last-child::after {
+      content: "";
+    }
+
+    a[aria-current] {
+      color: var(--text) !important;
+    }
+
+    main {
+      padding-top: 0;
+    }
+
+
+    main h1 {
+      margin-top: 3rem;
+    }
+
+    .no-margin {
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <main id="main">
+
+    
+    
+
+
+  <nav class="menu no-print">
+
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a lang="ar" href="/ar/">عربي</a></li>
+      <li><a lang="el" href="/el/">ελληνικά</a></li>
+      <li><a lang="en" aria-current="page" href="/en/">English</a></li>
+    </ul>
+  </nav>
+
+
+  <hr class="no-margin">
+
+  <nav class="menu no-print">
+    
+<ul>
+  <li><a href="/en/">Recent</a></li>
+  <li><a href="/en/post">Posts</a></li>
+  <li><a href="/en/speech">Speeches</a></li>
+  <li><a href="/en/event">Events</a></li>
+</ul>
+
+  </nav>
+
+  <!--
+  <nav class="breadcrumbs">
+    <ul>
+    
+      <li>
+        <a href="/">Home</a>
+      </li>
+    
+      <li>
+        <a href="/en/">English</a>
+      </li>
+    
+
+    </ul>
+  </nav>
+  -->
+    <h1>
+      
+    </h1>
+
+
+    
+
+
+    <h1>TIMELINE OF PALESTINE'S HISTORY</h1>
+<h2>1880s-1890s</h2>
+<p>Zionism emerged with the founding of Rishon Le Zion, the coining of the term &quot;Zionism,&quot; Theodor Herzl's publication of <em>Der Judenstaat</em>, and the First Zionist Congress.</p>
+<h2>1922</h2>
+<p>The League of Nations approves the British Mandate for Palestine, supporting a Jewish homeland.</p>
+<h2>1940s</h2>
+<p>Important events included the Zionist conference at the Biltmore Hotel, the bombing of the King David Hotel by Zionist militants <em>Irgun</em>, and the UN's adoption of Resolution 181 for partitioning Palestine.</p>
+<h2>December 1948</h2>
+<p>The UN General Assembly passed Resolution 194, affirming the right of return for Palestinian refugees.</p>
+<h2>1967 - NAKSA</h2>
+<p>Israel occupied the Gaza Strip, the West Bank, the Golan Heights (Syria), and the Sinai Peninsula (Egypt). The UN Security Council passed Resolution 242, calling for Israel's withdrawal from occupied territories.</p>
+<h2>1976 - LAND DAY</h2>
+<p>Israel confiscates thousands of hectares of land from Palestinian citizens, sparking mass protests that are brutally put down. Land Day is commemorated annually.</p>
+<h2>1987 - 1ST INTIFADA</h2>
+<p>The first Palestinian uprising (Intifada) begins in the occupied territories.</p>
+<h2>1993-2000 - PEACE NEGOTIATIONS</h2>
+<p>From 1993 to 2000, key peace negotiations included:</p>
+<ul>
+<li>The 1993 Oslo Accord establishing interim self-government</li>
+<li>The 1995 Oslo II Accord granting limited autonomy</li>
+<li>The 1997 Hebron Agreement for partial Israeli withdrawal</li>
+<li>The 2000 Camp David II Summit for final status negotiations</li>
+</ul>
+<h2>2005 - GAZA DISENGAGEMENT</h2>
+<p>Israel conducts its &quot;disengagement&quot; from Gaza, withdrawing settlements and military presence.</p>
+<h2>1900s-1910s</h2>
+<p>Key developments included:</p>
+<ul>
+<li>Herbert Samuel's support for Zionist settlement</li>
+<li>The Sykes-Picot Agreement</li>
+<li>The Balfour Declaration</li>
+<li>The King-Crane Commission</li>
+</ul>
+<h2>1930s</h2>
+<p>This decade saw mass protests against Zionist immigration, the killing of Izz ad-Din al-Qassam, a general Palestinian strike, the Peel Commission's partition plan, Zionist militant attacks, and the suppression of the Arab revolt.</p>
+<h2>1948 - NAKBA</h2>
+<p>Key incidents included:</p>
+<ul>
+<li>The bombing of the Semiramis Hotel</li>
+<li>The attack on Qisarya</li>
+<li>The massacre in Dayr Yassin</li>
+<li>The creation of Israel, leading to many Palestinian deaths, the expulsion of 750,000 Palestinians from their homes, and the demolition of 531 villages.</li>
+</ul>
+<h2>1950-1967</h2>
+<p>Significant occurrences included:</p>
+<ul>
+<li>Jordan's control of the West Bank</li>
+<li>Massacres in Palestinian villages</li>
+<li>The formation of the PLO</li>
+<li>The massacre in As-Samu'.</li>
+</ul>
+<h2>1973 - OCTOBER WAR</h2>
+<p>The UN Security Council passes Resolution 338, calling for a ceasefire and Israel's withdrawal from territories occupied in 1967.</p>
+<h2>1978 - CAMP DAVID ACCORDS</h2>
+<p>Egypt and Israel sign the Camp David Accords, leading to a peace treaty.</p>
+<h2>1988 - PLO ACCEPTANCE</h2>
+<p>The PLO accepts UN Resolutions 242 and 338, recognizing the State of Israel.</p>
+<h2>2002 - 2ND INTIFADA</h2>
+<p>Israel reoccupies Palestinian cities in the West Bank during the Second Intifada.</p>
+<h2>2007 - GAZA BLOCKADE</h2>
+<p>After Hamas seized control of the Gaza Strip, Israel imposed an indefinite blockade of Gaza.</p>
+<h2>2008-2021 - 4 WARS ON GAZA</h2>
+<p>This period saw multiple Israeli military operations against Gaza:</p>
+<ul>
+<li>&quot;Operation Cast Lead&quot; in 2008</li>
+<li>&quot;Operation Pillar of Defense&quot; in 2012</li>
+<li>&quot;Operation Protective Edge&quot; in 2014<br>
+Leading to significant destruction and casualties.</li>
+</ul>
+<h2>2021 - SETTLER TERRORISM</h2>
+<p>In May 2021, a court ruled to evict Palestinian families from East Jerusalem, leading to far-right Zionist groups occupying these properties and invading East Jerusalem, the Al-Aqsa Mosque, and Palestinian neighborhoods. On May 30, Eyad al-Hallaq, an unarmed autistic Palestinian man, was killed by Israeli police. Protests erupted, with Israeli police arresting 2,142 protesters. Hamas launched rockets into Israel, prompting a severe Israeli military response. After 11 days, a ceasefire was reached, resulting in over 250 Palestinian and 13 Israeli deaths, nearly 2,000 wounded, and 72,000 Palestinians displaced.</p>
+<h2>May 2023 - ISRAELI GOVERNMENT ACTIONS</h2>
+<p>The coalition government prioritizes the expansion of Israeli settlements in the occupied West Bank, endorses discrimination against LGBTQ+ people on religious grounds, and votes to limit judicial oversight of the government.</p>
+<h2>2018-2019 - GREAT MARCH OF RETURN</h2>
+<p>Peaceful protests in Gaza against the Israeli blockade, known as the Great March of Return. Israeli forces fire on protesters, killing 223 Palestinians.</p>
+<h2>2023 - JENIN</h2>
+<p>In 2023, Israeli forces repeatedly targeted the Jenin refugee camp, and Israeli settlers attacked Palestinian villages, escalating violence. Israel conducted its first drone attack in the West Bank since 2006. In Gaza, local political groups organized a solidarity march with Jenin.</p>
+<h2>October 7, 2023</h2>
+<p>On October 7, 2023, Hamas entered Israel, abducting 250 hostages, resulting in 1,143 Israeli deaths, including 767 civilians, the majority of whom were killed by IDF fire during a Hannibal Command operation. Israel responded with a bombing campaign on Gaza, killing 2,750 people and wounding nearly 10,000 in the first week. Over three months, 45,000 bombs were dropped, causing 36,500 Palestinian deaths and 83,000 injuries. The Israeli aggression left 39 million tons of debris, with removal expected to take 14 years. The International Court of Justice ordered Israel to halt operations in Rafah.</p>
+<p><strong>1 Year of Genocide!</strong> Gaza is facing an unparalleled humanitarian disaster, with over 42,000 Palestinians reported killed and estimates suggesting the death toll could eventually exceed 186,000, or 8% of Gaza's population. The destruction of healthcare, infrastructure, and essential resources has led to thousands of indirect deaths. The UN continues to stress the need for thorough documentation of the devastation to ensure accountability.</p>
+<h2>West Bank Since 7/10</h2>
+<p>Israeli military operations in the West Bank have intensified dramatically, targeting Palestinian towns and refugee camps like Jenin and Nablus. These operations have involved large-scale raids, airstrikes, and drone attacks, marking a significant escalation in the use of military force. Over the past year:</p>
+<ul>
+<li>More than 650 Palestinians have been killed, including 146 in airstrikes, with many civilian casualties.</li>
+<li>More than 10,000 Palestinians have been arrested.</li>
+<li>Around 5,500 have been injured in clashes, raids, and settler violence.</li>
+<li>Additionally, 1,478 Palestinian structures have been demolished, displacing over 3,500 people.</li>
+<li>Settler violence has surged, with over 1,300 attacks against Palestinians, further exacerbating the situation.</li>
+</ul>
+<p>This escalation has deepened tensions, led to widespread unrest, and caused extensive destruction of homes and infrastructure.</p>
+<hr>
+<h2>STAY UPDATED</h2>
+<ul>
+<li><strong>Instagram</strong>: united.for.palestine.limassol</li>
+<li><strong>Facebook</strong>: United for Palestine - Limassol</li>
+</ul>
+
+
+
+
+
+  <section class="no-print">
+    <hgroup class="spotlight">
+      <!--  -->
+
+    <h1>Spotlight</h1>
+    <p>
+      <!-- Use the lang specific layout and block for this -->
+      </p><p>📢 <a href="/en/event/75_plus_1_year_of_genocide_paphos"><strong>26 Oct Paphos Protest!</strong> 75 + 1 Year of Genocide</a></p>
+<ul>
+<li>🔎 <a href="https://www.aljazeera.com/news/2024/10/3/what-did-al-jazeeras-investigation-into-israeli-war-crimes-in-gaza-reveal">What did Al Jazeera’s investigation into Israeli war crimes in Gaza reveal?</a></li>
+<li>📺 <a href="https://www.aljazeera.com/news/2024/10/5/failing-gaza-pro-israel-bias-uncovered-behind-the-lens-of-western-media">Failing Gaza: Pro-Israel bias uncovered behind the lens of Western media (Al Jazeera)</a></li>
+<li>🌹 <a href="https://www.youtube.com/watch?v=qNXH_G5r760">365 Days of Israel's war on Gaza, 76 years of occupation</a></li>
+</ul>
+
+    <p></p>
+    </hgroup>
+  </section>
+
+
+  </main>
+
+    <a class="no-print" href="#" id="scrollTopBtn">🔻</a>
+
+    <script>
+      const scrollBtn = document.getElementById("scrollTopBtn");
+      window.onscroll = function () {
+        if (window.scrollY > window.innerHeight / 2) {
+          scrollBtn.classList.add("show");
+        } else {
+          scrollBtn.classList.remove("show");
+        }
+      };
+    </script>
+    <style>
+
+      #scrollTopBtn {
+        outline: none;
+        font-size: 2rem;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        text-decoration: none;
+        opacity: 0;
+        transform: rotate(0deg);
+        position: fixed;
+        bottom: 8rem;
+        right: 0;
+        padding: 1ch;
+        cursor: pointer;
+        z-index: 100;
+        pointer-events: none;
+      }
+
+      #scrollTopBtn.show {
+        opacity: 1;
+        transform: rotate(180deg);
+        pointer-events: auto;
+      }
+    </style>
+
+  <footer class="no-print">
+
+
+
+    <p>
+      <a lang="en" aria-current="page" href="/en/">English</a> |
+      <a lang="el" href="/el/">ελληνικά</a> |
+      <a lang="ar" href="/ar/">عربي</a>
+    </p>
+
+    <p>
+      <a href="mailto:crept-hurt-recount@duck.com">crept-hurt-recount@duck.com</a> |
+      <a href="/feed.xml">RSS</a>
+    </p><p>
+  </p></footer>
+
+  <script id="quicklink_js" async="" src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+
+  <script>
+
+    document.getElementById("quicklink_js")
+      .addEventListener("load", () => {
+        quicklink.listen();
+      });
+
+    window.addEventListener("popstate", function () {
+      window.document.getElementById("menu").removeAttribute("open")
+    });
+
+  </script>
+
+</body>
+
+
+</html>

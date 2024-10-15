@@ -1,1 +1,1 @@
-export default './asset/protest_banner_picture.jpg'
+export default '/asset/protest_banner_picture.jpg'

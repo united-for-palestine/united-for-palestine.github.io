@@ -42,7 +42,7 @@
   </p>
 
   {% if content %}
-    {{content}}
+    {{content | markdown | safe }}
 
   {% endif %}
 

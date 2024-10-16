@@ -17,7 +17,7 @@ content.
 
 ## Translators
 
-A few things on the sight need translating. The task will be to translate
+A few things on the site need translating. The task will be to translate
 whenever new website features are added.
 
 Optionally you can contribute translated articles.

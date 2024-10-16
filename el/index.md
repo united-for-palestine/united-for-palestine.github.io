@@ -1,7 +1,23 @@
 ---
-title: Greek
+title: Πρόσφατος
 ---
 
-## Resources
+{% from 'card.njk' import card %}
 
-- [Know Your Rights (pdf)](/asset/Leaflet_know_your_rights_GR.pdf)
+{% for item in collections.el_item %}
+
+  {{card(
+    item.data.title,
+    content=item.data.description,
+    href=item.url,
+    lang="en",
+    location=item.data.location,
+    date=item.date,
+    image=item.data.image
+  )}}
+
+{% endfor %}
+
+## Πόροι
+
+- [Γνωρίστε τα δικαιώματά σας PDF](/asset/Leaflet_know_your_rights_GR.pdf)

@@ -2,6 +2,8 @@
 title: Contribute
 ---
 
+${toc}
+
 Instructions on [how to edit articles](/README).
 
 ## Writers

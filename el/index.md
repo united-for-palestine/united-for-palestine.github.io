@@ -4,7 +4,7 @@ title: Πρόσφατος
 
 {% from 'card.njk' import card %}
 
-{% for item in collections.el_item %}
+{% for item in collections.el_item | reverse | head(20) %}
 
   {{card(
     item.data.title,

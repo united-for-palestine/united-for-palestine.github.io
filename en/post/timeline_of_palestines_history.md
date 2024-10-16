@@ -5,7 +5,9 @@ date: 2024-10-15
 image: /asset/mapa_de_palestina_que_invaden_judios_israel.jpg
 ---
 
-[Timeline of Palestine's History PDF](/asset/timeline_flyer_en.pdf).
+{% from "preview.njk" import preview %}
+
+{{ preview('/asset/timeline_flyer_en.pdf', 'application/pdf') }}
 
 ${toc}
 

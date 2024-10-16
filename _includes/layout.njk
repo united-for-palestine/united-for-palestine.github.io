@@ -211,6 +211,21 @@
     }
 
   </style>
+  <script>
+    function onRef(name, cb) {
+      onRef.state.push([name, cb])
+    }
+
+    onRef.state = []
+
+    window.addEventListener('load', () => {
+      onRef.state.forEach(([name, cb]) => {
+        document
+          .querySelectorAll(`[data-ref="${name}"]`)
+          .forEach(elem => cb(elem))
+      })
+    }, 1000)
+  </script>
 </head>
 
   <div class="background-blur"></div>
@@ -467,6 +482,9 @@
     });
 
   </script>
+
+  {% renderOnce %}
+  {% endrenderOnce %}
 </body>
 
 

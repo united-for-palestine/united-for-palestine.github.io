@@ -46,6 +46,7 @@
     }
 
     :root, ::backdrop {
+      --bg-transparent: #FFFFFF44;
       --accent: #007A33;
       --accent-hover: #D50032;
     }
@@ -53,6 +54,7 @@
     @media (prefers-color-scheme: dark) {
       :root,
       ::backdrop {
+        --bg-transparent: #00000044;
         --accent: lightgreen;
         --accent-hover: #e5352d;
       }
@@ -68,6 +70,7 @@
 
     article {
       position: relative;
+      background-color: var(--bg-transparent);
     }
 
     a:focus {
@@ -75,7 +78,7 @@
     }
 
     article:has(a:hover) {
-      background: var(--accent-bg);
+      background-color: var(--accent-bg);
     }
 
     article:has(a:focus-within),
@@ -208,6 +211,21 @@
     }
 
   </style>
+  <script>
+    function onRef(name, cb) {
+      onRef.state.push([name, cb])
+    }
+
+    onRef.state = []
+
+    window.addEventListener('load', () => {
+      onRef.state.forEach(([name, cb]) => {
+        document
+          .querySelectorAll(`[data-ref="${name}"]`)
+          .forEach(elem => cb(elem))
+      })
+    }, 1000)
+  </script>
 </head>
 
   <div class="background-blur"></div>
@@ -300,7 +318,29 @@
 
 
 
-    <p><a href="/asset/timeline_flyer_en.pdf">Timeline of Palestine's History PDF</a>.</p>
+    <details data-ref="preview">
+  <summary>
+    <span>/asset/timeline_flyer_en.pdf</span>
+    <div class="actions">
+      <a href="/asset/timeline_flyer_en.pdf" title="/asset/timeline_flyer_en.pdf">↗️</a>
+      <a download="" href="/asset/timeline_flyer_en.pdf" title="/asset/timeline_flyer_en.pdf">⬇️</a>
+    </div>
+  </summary>
+  <object type="application/pdf" data-data="/asset/timeline_flyer_en.pdf">
+    <p>
+      <!-- DUPLICATION -->
+      Unable to show preview. Download or visit the link instead.
+    </p>
+  </object>
+  <noscript>
+    <object type="application/pdf" data="/asset/timeline_flyer_en.pdf">
+      <p>
+        <!-- DUPLICATION -->
+        Unable to show preview. Download or visit the link instead.
+      </p>
+    </object>
+  </noscript>
+</details>
 <nav class="table-of-contents"><ol><li><a href="#1880s-1890s">1880s-1890s </a></li><li><a href="#1922">1922 </a></li><li><a href="#1940s">1940s </a></li><li><a href="#december-1948">December 1948 </a></li><li><a href="#1967---naksa">1967 - NAKSA </a></li><li><a href="#1976---land-day">1976 - LAND DAY </a></li><li><a href="#1987---1st-intifada">1987 - 1ST INTIFADA </a></li><li><a href="#1993-2000---peace-negotiations">1993-2000 - PEACE NEGOTIATIONS </a></li><li><a href="#1900s-1910s">1900s-1910s </a></li><li><a href="#1930s">1930s </a></li><li><a href="#1948---nakba">1948 - NAKBA </a></li><li><a href="#1950-1967">1950-1967 </a></li><li><a href="#1973---october-war">1973 - OCTOBER WAR </a></li><li><a href="#1978---camp-david-accords">1978 - CAMP DAVID ACCORDS </a></li><li><a href="#1988---plo-acceptance">1988 - PLO ACCEPTANCE </a></li><li><a href="#2002---2nd-intifada">2002 - 2ND INTIFADA </a></li><li><a href="#2005---gaza-disengagement">2005 - GAZA DISENGAGEMENT </a></li><li><a href="#2007---gaza-blockade">2007 - GAZA BLOCKADE </a></li><li><a href="#2008-2021---4-wars-on-gaza">2008-2021 - 4 WARS ON GAZA </a></li><li><a href="#2018-2019---great-march-of-return">2018-2019 - GREAT MARCH OF RETURN </a></li><li><a href="#2021---settler-terrorism">2021 - SETTLER TERRORISM </a></li><li><a href="#may-2023---israeli-government-actions">May 2023 - ISRAELI GOVERNMENT ACTIONS </a></li><li><a href="#2023---jenin">2023 - JENIN </a></li><li><a href="#october-7%2C-2023">October 7, 2023 </a></li><li><a href="#west-bank-since-7%2F10">West Bank Since 7/10 </a></li><li><a href="#stay-updated">STAY UPDATED </a></li></ol></nav><h2 id="1880s-1890s" tabindex="-1">1880s-1890s <a class="header-anchor" href="#1880s-1890s">¶</a></h2>
 <p>Zionism emerged with the founding of Rishon Le Zion, the coining of the term &quot;Zionism,&quot; Theodor Herzl's publication of <em>Der Judenstaat</em>, and the First Zionist Congress.</p>
 <h2 id="1922" tabindex="-1">1922 <a class="header-anchor" href="#1922">¶</a></h2>
@@ -487,6 +527,98 @@ Leading to significant destruction and casualties.</li>
     });
 
   </script>
+
+  
+<style>
+  details object {
+    width: 100%;
+  }
+
+  details {
+    background-color: var(--bg-transparent);
+  }
+
+  details:hover {
+    background-color: var(--bg);
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  summary .actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .actions a {
+    text-decoration: none;
+  }
+
+  object[type="application/pdf"] {
+    height: 90vh;
+  }
+</style>
+
+<script>
+  onRef('preview', details => {
+    details.addEventListener('click', () => {
+      const object = details.querySelector('object[data-data]');
+
+      object.setAttribute('data', object.getAttribute('data-data'));
+    }, {once: true});
+  })
+
+</script>
+
+
+<style>
+  details object {
+    width: 100%;
+  }
+
+  details {
+    background-color: var(--bg-transparent);
+  }
+
+  details:hover {
+    background-color: var(--bg);
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  summary .actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .actions a {
+    text-decoration: none;
+  }
+
+  object[type="application/pdf"] {
+    height: 90vh;
+  }
+</style>
+
+<script>
+  onRef('preview', details => {
+    details.addEventListener('click', () => {
+      const object = details.querySelector('object[data-data]');
+
+      object.setAttribute('data', object.getAttribute('data-data'));
+    }, {once: true});
+  })
+
+</script>
+
+
 </body>
 
 

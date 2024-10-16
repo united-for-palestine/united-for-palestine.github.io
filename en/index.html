@@ -46,6 +46,7 @@
     }
 
     :root, ::backdrop {
+      --bg-transparent: #FFFFFF44;
       --accent: #007A33;
       --accent-hover: #D50032;
     }
@@ -53,6 +54,7 @@
     @media (prefers-color-scheme: dark) {
       :root,
       ::backdrop {
+        --bg-transparent: #00000044;
         --accent: lightgreen;
         --accent-hover: #e5352d;
       }
@@ -68,6 +70,7 @@
 
     article {
       position: relative;
+      background-color: var(--bg-transparent);
     }
 
     a:focus {
@@ -75,7 +78,7 @@
     }
 
     article:has(a:hover) {
-      background: var(--accent-bg);
+      background-color: var(--accent-bg);
     }
 
     article:has(a:focus-within),
@@ -208,6 +211,21 @@
     }
 
   </style>
+  <script>
+    function onRef(name, cb) {
+      onRef.state.push([name, cb])
+    }
+
+    onRef.state = []
+
+    window.addEventListener('load', () => {
+      onRef.state.forEach(([name, cb]) => {
+        document
+          .querySelectorAll(`[data-ref="${name}"]`)
+          .forEach(elem => cb(elem))
+      })
+    }, 1000)
+  </script>
 </head>
 
   <div class="background-blur"></div>
@@ -514,6 +532,98 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
     });
 
   </script>
+
+  
+<style>
+  details object {
+    width: 100%;
+  }
+
+  details {
+    background-color: var(--bg-transparent);
+  }
+
+  details:hover {
+    background-color: var(--bg);
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  summary .actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .actions a {
+    text-decoration: none;
+  }
+
+  object[type="application/pdf"] {
+    height: 90vh;
+  }
+</style>
+
+<script>
+  onRef('preview', details => {
+    details.addEventListener('click', () => {
+      const object = details.querySelector('object[data-data]');
+
+      object.setAttribute('data', object.getAttribute('data-data'));
+    }, {once: true});
+  })
+
+</script>
+
+
+<style>
+  details object {
+    width: 100%;
+  }
+
+  details {
+    background-color: var(--bg-transparent);
+  }
+
+  details:hover {
+    background-color: var(--bg);
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  summary .actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .actions a {
+    text-decoration: none;
+  }
+
+  object[type="application/pdf"] {
+    height: 90vh;
+  }
+</style>
+
+<script>
+  onRef('preview', details => {
+    details.addEventListener('click', () => {
+      const object = details.querySelector('object[data-data]');
+
+      object.setAttribute('data', object.getAttribute('data-data'));
+    }, {once: true});
+  })
+
+</script>
+
+
 </body>
 
 

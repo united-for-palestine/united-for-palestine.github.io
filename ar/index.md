@@ -1,11 +1,23 @@
 ---
-title: Arabic
-eleventyNavigation:
-  key: Arabic
-  parent: Home
-  order: 2
+title: مؤخرًا
 ---
 
-## Education
+{% from 'card.njk' import card %}
 
-- [How you can boycott Israel](https://bdsmovement.net/ar)
+{% for event in collections.ar_item | reverse | head(20) %}
+
+  {{card(
+    event.data.title,
+    content=event.data.description,
+    href=event.url,
+    lang="en",
+    location=event.data.location,
+    date=event.date,
+    image=event.data.image
+  )}}
+
+{% endfor %}
+
+## موارد
+
+- [كيف يمكنك مقاطعة إسرائيل](https://bdsmovement.net/ar)

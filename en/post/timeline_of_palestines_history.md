@@ -5,10 +5,6 @@ date: 2024-10-15
 image: /asset/mapa_de_palestina_que_invaden_judios_israel.jpg
 ---
 
-{% from "preview.njk" import preview %}
-
-{{ preview('/asset/timeline_flyer_en.pdf', 'application/pdf') }}
-
 ${toc}
 
 ## 1880s-1890s
@@ -115,6 +111,10 @@ Israeli military operations in the West Bank have intensified dramatically, targ
 - Settler violence has surged, with over 1,300 attacks against Palestinians, further exacerbating the situation.
 
 This escalation has deepened tensions, led to widespread unrest, and caused extensive destruction of homes and infrastructure.
+
+{% from "preview.njk" import preview %}
+
+{{ preview('/asset/timeline_flyer_en.pdf', 'application/pdf') }}
 
 ---
 

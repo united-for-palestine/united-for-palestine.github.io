@@ -1,0 +1,18 @@
+
+{% from 'card.njk' import card %}
+
+<h1>Drafts</h1>
+{% for item in collections.draft %}
+  {{card(
+    item.data.title,
+    podcast=item.data.podcast,
+    content=item.data.description | truncate,
+    href=item.url,
+    lang=item.data.lang,
+    lang_dir=item.data.lang_dir,
+    location=item.data.location,
+    date=item.date,
+    image=item.data.image
+  )}}
+
+{% endfor %}

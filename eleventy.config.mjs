@@ -53,14 +53,15 @@ export default function (eleventyConfig) {
     return "";
   });
 
-  let once = ''
+  let once = {}
 
   eleventyConfig.addPairedShortcode("once", function (content) {
-    once += `${content}\n`
+    once[content] = content
+    return ''
   })
 
   eleventyConfig.addPairedShortcode("renderOnce", function renderOnce() {
-    return once
+    return Object.values(once).join('\n')
   })
 
   eleventyConfig.addNunjucksAsyncFilter(

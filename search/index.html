@@ -345,7 +345,7 @@
 <h2>Results</h2>
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/en/event/end_cyprus_complicity_in_genocide/">End Cyprus Complicity in Genocide</a>
     </h3>
@@ -358,7 +358,7 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
 
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/en/event/doing_business_with_apartheid_summit_2024/">Doing Business with Apartheid Summit 2024</a>
     </h3>
@@ -374,7 +374,7 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
 
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/en/event/oct_5_2024_limassol_protest/">75 + 1 Years of Genocide</a>
     </h3>
@@ -386,7 +386,7 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
 
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/en/event/one_year_of_genocide_76_years_of_resistance/">One Year of Genocide, 76 Years of Resistance</a>
     </h3>
@@ -399,7 +399,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
 
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/en/post/timeline_of_palestines_history/">Timeline of Palestine&#39;s History</a>
     </h3>
@@ -410,7 +410,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
 
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/ar/event/75_plus_1_year_of_genocide_paphos/">٧٥+ ١ سنة من التطهير العرقي</a>
     </h3>
@@ -421,7 +421,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
 
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/el/event/75_plus_1_year_of_genocide_paphos/">75+1 ΧΡΟΝΙΑ ΓΕΝΟΚΤΟΝΙΑΣ</a>
     </h3>
@@ -432,7 +432,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
 
 
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="/en/event/75_plus_1_year_of_genocide_paphos/">75 + 1 Year of Genocide</a>
     </h3>
@@ -442,6 +442,31 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
     </article>
 
 
+
+<script>
+
+  (function() {
+    const query = document.getElementById('query');
+    query.value = window.location.queryParams.q;
+
+    const items = document.getElementsByClassName('searchable-item'); // Corrected method
+
+    function containsAllQueryTermsCaseInsensitive(item) {
+      const queryTerms = query.value.toLowerCase().split(' ').filter(Boolean); // Split and filter out empty terms
+      const itemText = item.textContent.toLowerCase(); // Get item text in lower case
+
+      return queryTerms.every(term => itemText.includes(term)); // Check if all terms are included
+    }
+
+    Array.from(items).forEach(item => { // Convert HTMLCollection to array for forEach
+      if (containsAllQueryTermsCaseInsensitive(item))
+        item.style.display = 'block'; // Show item
+      else
+        item.style.display = 'none'; // Hide item
+    });
+  })();
+
+</script>
 
 
 

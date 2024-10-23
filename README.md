@@ -42,6 +42,9 @@ In this example:
 
 The frontmatter contains placeholder metadata such as a sample title, description, image URL, and podcast file.
 
+> **TIP** You can add `override:tags: draft` to the frontmatter to prevent the
+> content from publishing while collaborating with others.
+
 The Markdown content starts below the frontmatter, with headings and text using the "Lorem ipsum" filler.
 
 
@@ -115,6 +118,7 @@ To delete a page:
 4. **Press the `Commit changes` Button:** After confirming the deletion, click the **Commit changes** button to finalize the removal.
 
 5. **Optional: Explain the Reason for Deletion:** You can provide a brief explanation of why you decided to remove this page.
+
 
 ### FAQs
 

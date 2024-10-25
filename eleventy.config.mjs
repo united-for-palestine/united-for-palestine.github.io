@@ -8,6 +8,7 @@ import mime from "mime-types";
 import * as mm from "music-metadata";
 import markdownTOC from 'markdown-it-toc-done-right';
 import markdownAnchor from 'markdown-it-anchor';
+import feed2json from 'feed2json';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -175,6 +176,33 @@ export default function (eleventyConfig) {
         file: `/${path.join(dir, file)}`,
       };
     });
+  });
+
+  eleventyConfig.on('eleventy.after', async function(a, b, c) {
+    const outputDir = a.dir.output; // Access the output directory
+
+    const feedXmlPath = path.join(outputDir, 'feed.xml');
+    const feedJsonPath = path.join(outputDir, 'feed.json');
+
+    try {
+      // Check if the XML feed file exists before proceeding
+      if (!fs.existsSync(feedXmlPath)) {
+        console.error(`File not found: ${feedXmlPath}`);
+        return;
+      }
+
+      const stream = fs.createReadStream(feedXmlPath);
+      feed2json.fromStream(stream, feedXmlPath, (err, json) => {
+        if (err) {
+          console.error('Error converting feed:', err);
+          return;
+        }
+        fs.writeFileSync(feedJsonPath, JSON.stringify(json, null, 2));
+        console.log('feed.json created successfully');
+      });
+    } catch (error) {
+      console.error('Error processing feed:', error);
+    }
   });
 
   return {

@@ -26,10 +26,6 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
 
   <style>
 
-    td, th {
-      max-width: 90vw;
-    }
-
     /* External CSS */
     @import url('https://unpkg.com/simpledotcss/simple.min.css');
 
@@ -37,6 +33,15 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
       .no-print {
         display: none !important;
       }
+    }
+
+    /* EXPERIMENT: Make page wider */
+    body {
+        grid-template-columns: 1fr min(78rem,95%) 1fr;
+    }
+
+    td, th {
+      max-width: 90vw;
     }
 
     .display-none {

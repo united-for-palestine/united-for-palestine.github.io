@@ -277,6 +277,35 @@ rest stop and propaganda tool for the IDF.">
         console.error('Notification permission denied.');
       }
     })()
+
+    window.addEventListener('click', async () => {
+        const DB_NAME = 'notificationsDB';
+
+        try {
+            // Delete IndexedDB database
+            const deleteDBRequest = indexedDB.deleteDatabase(DB_NAME);
+            deleteDBRequest.onsuccess = () => console.log(`IndexedDB "${DB_NAME}" deleted successfully.`);
+            deleteDBRequest.onerror = (event) => console.error(`Error deleting IndexedDB "${DB_NAME}":`, event.target.error);
+            deleteDBRequest.onblocked = () => console.warn(`IndexedDB "${DB_NAME}" deletion is blocked. Close other tabs using this DB.`);
+
+            // Unregister the service worker
+            if ('serviceWorker' in navigator) {
+                const registrations = await navigator.serviceWorker.getRegistrations();
+                for (const registration of registrations) {
+                    await registration.unregister();
+                    console.log('Service Worker unregistered:', registration.scope);
+                }
+            } else {
+                console.warn('Service Worker API not supported in this browser.');
+            }
+
+            console.log('Cleanup complete.');
+        } catch (error) {
+            console.error('Cleanup failed:', error);
+        }
+    })
+
+
   </script>
 
   <script>

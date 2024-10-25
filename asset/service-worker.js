@@ -1,5 +1,5 @@
 const FEED_URL = '/feed.json'; // Your JSON feed endpoint
-const DB_NAME = 'notificationsDB2';
+const DB_NAME = 'notificationsDB';
 const STORE_NAME = 'notifiedItems';
 
 self.addEventListener('message', (event) => {

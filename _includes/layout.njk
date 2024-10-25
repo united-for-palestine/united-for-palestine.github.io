@@ -30,7 +30,7 @@
   <meta property="og:title" content="{{title}}"/>
   <meta property="og:type" content="article"/>
   <meta property="og:image" content="{{image}}"/>
-  <meta property="og:url" content="{{url}}"/>
+  <meta property="og:url" content="{{url | withDomain}}"/>
   <meta property="og:description" content="{{description}}"/>
 
   <style>
@@ -291,6 +291,7 @@
 
   <main id="main" >
 
+    <!-- TODO: Consider moving to a separate file -->
     {% macro currentPage(url) %}
       {% if page.url.startsWith(url) %} aria-current="page" {% endif %} href="{{url}}"
     {% endmacro %}
@@ -333,14 +334,19 @@
       {{ title }}
     </h1>
 
+    {% from "socials.njk" import socials %}
+
     <p class="subtle">
       {% if author %}
         {{ author }} ·
       {% endif %}
       {% if date %}
-        <time>{{ date | date(lang) }}</time>
+        <time>{{date | date(lang)}}</time>
       {% endif %}
-    <p>
+
+      {{ socials(page.url | withDomain) }}
+    </p>
+
 
 
     {% if podcast %}
@@ -439,7 +445,6 @@
     {% endif %}
 
     {{ content | safe }}
-
 
 
   <section class="no-print">

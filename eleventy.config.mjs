@@ -6,9 +6,9 @@ import { fileURLToPath } from "url";
 import path from "path";
 import mime from "mime-types";
 import * as mm from "music-metadata";
-import markdownTOC from 'markdown-it-toc-done-right';
-import markdownAnchor from 'markdown-it-anchor';
-import feed2json from 'feed2json';
+import markdownTOC from "markdown-it-toc-done-right";
+import markdownAnchor from "markdown-it-anchor";
+import feed2json from "feed2json";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -53,22 +53,26 @@ export default function (eleventyConfig) {
     return "";
   });
 
-  let once = {}
+  let once = {};
+
+  eleventyConfig.on("eleventy.after", function () {
+    once = {};
+  });
 
   eleventyConfig.addPairedShortcode("once", function (content) {
-    once[content] = content
-    return ''
-  })
+    once[content] = content;
+    return "";
+  });
 
   eleventyConfig.addPairedShortcode("renderOnce", function renderOnce() {
-    return Object.values(once).join('\n')
-  })
+    return Object.values(once).join("\n");
+  });
 
-  eleventyConfig.addFilter('mimeType', filePath => {
+  eleventyConfig.addFilter("mimeType", (filePath) => {
     const absolutePath = path.join(__dirname, filePath);
 
     return mime.lookup(absolutePath);
-  })
+  });
 
   eleventyConfig.addNunjucksAsyncFilter(
     "getAudioMetadata",
@@ -127,11 +131,11 @@ export default function (eleventyConfig) {
       permalink: true,
     })
     .use(markdownTOC, {
-      level: 2
+      level: 2,
     });
 
   // Override the default table renderer
-  md.renderer.rules.table_open = () => '<figure><table>';
+  md.renderer.rules.table_open = () => "<figure><table>";
   md.renderer.rules.table_close = () => `</table>
     <!-- <figcaption>A wide table showing horizontal scroll behavior.</figcaption> -->
   </figure>`;
@@ -182,11 +186,11 @@ export default function (eleventyConfig) {
     });
   });
 
-  eleventyConfig.on('eleventy.after', async function(a, b, c) {
+  eleventyConfig.on("eleventy.after", async function (a, b, c) {
     const outputDir = a.dir.output; // Access the output directory
 
-    const feedXmlPath = path.join(outputDir, 'feed.xml');
-    const feedJsonPath = path.join(outputDir, 'feed.json');
+    const feedXmlPath = path.join(outputDir, "feed.xml");
+    const feedJsonPath = path.join(outputDir, "feed.json");
 
     try {
       // Check if the XML feed file exists before proceeding
@@ -198,15 +202,19 @@ export default function (eleventyConfig) {
       const stream = fs.createReadStream(feedXmlPath);
       feed2json.fromStream(stream, feedXmlPath, (err, json) => {
         if (err) {
-          console.error('Error converting feed:', err);
+          console.error("Error converting feed:", err);
           return;
         }
         fs.writeFileSync(feedJsonPath, JSON.stringify(json, null, 2));
-        console.log('feed.json created successfully');
+        console.log("feed.json created successfully");
       });
     } catch (error) {
-      console.error('Error processing feed:', error);
+      console.error("Error processing feed:", error);
     }
+  });
+
+  eleventyConfig.addFilter("withDomain", function (url) {
+    return new URL(url, "https://united-for-palestine.github.io").href;
   });
 
   return {

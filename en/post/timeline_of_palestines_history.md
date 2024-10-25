@@ -114,7 +114,7 @@ This escalation has deepened tensions, led to widespread unrest, and caused exte
 
 {% from "preview.njk" import preview %}
 
-{{ preview('/asset/timeline_flyer_en.pdf', 'application/pdf') }}
+{{ preview('/asset/timeline_flyer_en.pdf') }}
 
 ---
 

@@ -12,6 +12,6 @@ description: List of PDFs, image and more.
 
 {% for file in "asset" | files %}
 
-  {{ preview(file.file, file.type) }}
+  {{ preview(file.file) }}
 
 {% endfor %}

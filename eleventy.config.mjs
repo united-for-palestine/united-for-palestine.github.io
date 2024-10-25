@@ -64,6 +64,12 @@ export default function (eleventyConfig) {
     return Object.values(once).join('\n')
   })
 
+  eleventyConfig.addFilter('mimeType', filePath => {
+    const absolutePath = path.join(__dirname, filePath);
+
+    return mime.lookup(absolutePath);
+  })
+
   eleventyConfig.addNunjucksAsyncFilter(
     "getAudioMetadata",
     async function (filePath, callback) {
@@ -169,10 +175,8 @@ export default function (eleventyConfig) {
 
     return fs.readdirSync(directoryPath).map((file) => {
       const absolutePath = path.join(directoryPath, file);
-      const type = mime.lookup(absolutePath);
 
       return {
-        type,
         file: `/${path.join(dir, file)}`,
       };
     });

@@ -8,14 +8,14 @@
       <a download href="{{file}}" title="{{file}}">⬇️</a>
     </div>
   </summary>
-  <object type="{{type}}" data-data="{{file}}">
+  <object type="{{type or file | mimeType}}" data-data="{{file}}">
     <p>
       <!-- DUPLICATION -->
       Unable to show preview. Download or visit the link instead.
     </p>
   </object>
   <noscript>
-    <object type="{{type}}" data="{{file}}">
+    <object type="{{type or file | mimeType}}" data="{{file}}">
       <p>
         <!-- DUPLICATION -->
         Unable to show preview. Download or visit the link instead.

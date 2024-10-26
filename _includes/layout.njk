@@ -452,6 +452,18 @@
 
     {{ content | safe }}
 
+    {% from "preview.njk" import preview %}
+
+    {% if files and files.length > 0 %}
+      <h2>Files</h2>
+
+      {% for file in files %}
+      <p>
+        {{preview(file)}}
+      </p>
+      {% endfor %}
+    {% endif %}
+
 
   <section class="no-print">
     <hgroup class="spotlight">

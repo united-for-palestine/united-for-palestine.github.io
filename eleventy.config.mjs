@@ -32,6 +32,9 @@ export default function (eleventyConfig) {
     { url: "/en/speech/", name: "Speeches" },
   ];
 
+eleventyConfig.addFilter('urlencode', (str) => {
+  return encodeURIComponent(str);
+});
   eleventyConfig.addFilter("breadcrumb", function (currentUrl) {
     return breadcrumbNamesArray.filter(({ url }) => {
       return currentUrl.startsWith(url) && currentUrl !== url;

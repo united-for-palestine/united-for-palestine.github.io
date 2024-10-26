@@ -1,5 +1,6 @@
 ---
 title: Contribute
+nosocials: true
 ---
 
 ${toc}

@@ -1,6 +1,6 @@
 ---
 title: About
-noindex: true
+nosocials: true
 ---
 
 ## English

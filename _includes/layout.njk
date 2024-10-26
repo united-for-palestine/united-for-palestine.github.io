@@ -346,7 +346,11 @@
         <time>{{date | date(lang)}}</time>
       {% endif %}
 
-      {{ socials(page.url | withDomain) }}
+      {% if noindex %}
+        <!-- Hiding socials -->
+      {% else %}
+        {{ socials(page.url | withDomain) }}
+      {% endif %}
     </p>
 
 

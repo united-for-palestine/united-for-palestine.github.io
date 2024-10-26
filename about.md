@@ -1,5 +1,6 @@
 ---
 title: About
+noindex: true
 ---
 
 ## English

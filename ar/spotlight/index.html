@@ -590,10 +590,10 @@ contact us if you are interested.<br>
 </script>
 
 <script>
-  onRef('clipboard', copyLinkButton => {
+  onRef("clipboard", (copyLinkButton) => {
     copyLinkButton.addEventListener("click", (event) => {
       event.preventDefault();
-      event.stopPropagation()
+      event.stopPropagation();
       const link = copyLinkButton.getAttribute("href");
 
       navigator.clipboard
@@ -605,35 +605,34 @@ contact us if you are interested.<br>
           console.error("Failed to copy link: ", err);
         });
     });
+  });
 
-  })
-
-  onRef('nativeShare', button => {
+  onRef("nativeShare", (button) => {
     const href = "https://united-for-palestine.github.io/undefined";
     const subject = "";
     const body = "";
 
-    if (navigator.share && navigator.canShare({ url: href })) {
-      const parentSocials = element.closest('.socials');
+    if (!navigator.share || !navigator.canShare({ url: href })) return;
 
-      if (parentSocials) parentSocials.classList.add('socials--canShare');
+    const parentSocials = element.closest(".socials");
 
-      // Show the native share button and hide the socials list
+    if (parentSocials) parentSocials.classList.add("socials--canShare");
 
-      button.addEventListener("click", async e => {
-        e.preventDefault()
-        try {
-          await navigator.share({
-            title: subject,
-            text: body,
-            url: href
-          });
-        } catch (err) {
-          console.error("Error sharing:", err);
-        }
-      });
+    // Show the native share button and hide the socials list
 
-  })
+    button.addEventListener("click", async (e) => {
+      e.preventDefault();
+      try {
+        await navigator.share({
+          title: subject,
+          text: body,
+          url: href,
+        });
+      } catch (err) {
+        console.error("Error sharing:", err);
+      }
+    });
+  });
 </script>
 
 <style>

@@ -562,63 +562,63 @@
 </script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const copyLinkButton = document.getElementById('copyLinkButton');
+  document.addEventListener("DOMContentLoaded", () => {
+    const copyLinkButton = document.getElementById("copyLinkButton");
 
-      copyLinkButton.addEventListener('click', (event) => {
-        event.preventDefault();
-        const link = copyLinkButton.getAttribute('href');
+    copyLinkButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      const link = copyLinkButton.getAttribute("href");
 
-        navigator.clipboard.writeText(link)
-          .then(() => {
-            alert('Link copied to clipboard!');
-          })
-          .catch(err => {
-            console.error('Failed to copy link: ', err);
-          });
-      });
+      navigator.clipboard
+        .writeText(link)
+        .then(() => {
+          alert("Link copied to clipboard!");
+        })
+        .catch((err) => {
+          console.error("Failed to copy link: ", err);
+        });
     });
-  </script>
+  });
+</script>
 
-  <style>
+<style>
 
-.socials {
-    list-style: none; /* Remove default list styling */
-    padding: 0 0 0 0.5rem; /* Remove padding */
-    margin: 0; /* Remove margin */
-    display: flex; /* Use flexbox for horizontal alignment */
-    border-left: var(--accent-hover) solid 3px; /* Add left border */
-}
+  .socials {
+      list-style: none; /* Remove default list styling */
+      padding: 0 0 0 0.5rem; /* Remove padding */
+      margin: 0; /* Remove margin */
+      display: flex; /* Use flexbox for horizontal alignment */
+      border-left: var(--accent-hover) solid 3px; /* Add left border */
+  }
 
-.socials li {
-    margin: 0 0.5rem; /* Add horizontal margin to list items */
-}
+  .socials li {
+      margin: 0 0.5rem; /* Add horizontal margin to list items */
+  }
 
-.socials a {
-    padding: 0.25rem; /* Add padding inside links */
-    width: 2rem; /* Set width to allow for icon size */
-    display: flex; /* Use flexbox for centering content */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
-}
+  .socials a {
+      padding: 0.25rem; /* Add padding inside links */
+      width: 2rem; /* Set width to allow for icon size */
+      display: flex; /* Use flexbox for centering content */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically */
+      transition: background-color 0.3s ease; /* Smooth transition for hover */
+  }
 
-.socials a:hover {
-    background-color: var(--accent-hover); /* Change background on hover */
-}
+  .socials a:hover {
+      background-color: var(--accent-hover); /* Change background on hover */
+  }
 
-.socials a:hover svg {
-    fill: var(--bg); /* Change SVG color on hover */
-}
+  .socials a:hover svg {
+      fill: var(--bg); /* Change SVG color on hover */
+  }
 
-.socials svg {
-    display: block:
-    width: auto; /* Set a fixed width for SVGs */
-    height: 1.5rem; /* Maintain aspect ratio */
-    fill: var(--accent-hover); /* Set fill color */
-}
-
-  </style>
+  .socials svg {
+      display: block:
+      width: auto; /* Set a fixed width for SVGs */
+      height: 1.5rem; /* Maintain aspect ratio */
+      fill: var(--accent-hover); /* Set fill color */
+  }
+</style>
 </body>
 
 

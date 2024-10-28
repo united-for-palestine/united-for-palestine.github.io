@@ -358,7 +358,7 @@
         </a></h2>
   </header>
 
-  <p><time datetime="Mon Oct 28 2024 00:03:23 GMT+0000 (Coordinated Universal Time)">
+  <p><time datetime="Mon Oct 28 2024 00:11:22 GMT+0000 (Coordinated Universal Time)">
         October 28, 2024
       </time>
       <br>
@@ -525,48 +525,7 @@ rest stop and propaganda tool for the IDF.</p>
   </script>
 
 
-  
-<style>
-  details object {
-    width: 100%;
-  }
-
-  details {
-    background-color: var(--bg-transparent);
-  }
-
-  details:hover {
-    background-color: var(--bg);
-  }
-
-  summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  summary .actions {
-    display: flex;
-    gap: 10px;
-  }
-
-  object[type="application/pdf"] {
-    height: 90vh;
-  }
-</style>
-
-<script>
-  onRef('preview', details => {
-    details.addEventListener('click', () => {
-      const object = details.querySelector('object[data-data]');
-
-      object.setAttribute('data', object.getAttribute('data-data'));
-    }, {once: true});
-  })
-
-</script>
-
-<script>
+  <script>
   onRef("clipboard", (copyLinkButton) => {
     copyLinkButton.addEventListener("click", (event) => {
       event.preventDefault();
@@ -661,6 +620,50 @@ rest stop and propaganda tool for the IDF.</p>
       fill: var(--accent-hover); /* Set fill color */
   }
 </style>
+
+<style>
+  details object {
+    width: 100%;
+  }
+
+  details {
+    background-color: var(--bg-transparent);
+  }
+
+  details:hover {
+    background-color: var(--bg);
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  summary .actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  object[type="application/pdf"] {
+    height: 90vh;
+  }
+</style>
+
+<script>
+  onRef("preview", (details) => {
+    details.addEventListener(
+      "click",
+      () => {
+        const object = details.querySelector("object[data-data]");
+
+        object.setAttribute("data", object.getAttribute("data-data"));
+      },
+      { once: true },
+    );
+  });
+</script>
+
 </body>
 
 

@@ -556,48 +556,7 @@ like this article:">
   </script>
 
 
-  
-<style>
-  details object {
-    width: 100%;
-  }
-
-  details {
-    background-color: var(--bg-transparent);
-  }
-
-  details:hover {
-    background-color: var(--bg);
-  }
-
-  summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  summary .actions {
-    display: flex;
-    gap: 10px;
-  }
-
-  object[type="application/pdf"] {
-    height: 90vh;
-  }
-</style>
-
-<script>
-  onRef('preview', details => {
-    details.addEventListener('click', () => {
-      const object = details.querySelector('object[data-data]');
-
-      object.setAttribute('data', object.getAttribute('data-data'));
-    }, {once: true});
-  })
-
-</script>
-
-<script>
+  <script>
   onRef("clipboard", (copyLinkButton) => {
     copyLinkButton.addEventListener("click", (event) => {
       event.preventDefault();
@@ -692,6 +651,50 @@ like this article:">
       fill: var(--accent-hover); /* Set fill color */
   }
 </style>
+
+<style>
+  details object {
+    width: 100%;
+  }
+
+  details {
+    background-color: var(--bg-transparent);
+  }
+
+  details:hover {
+    background-color: var(--bg);
+  }
+
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  summary .actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  object[type="application/pdf"] {
+    height: 90vh;
+  }
+</style>
+
+<script>
+  onRef("preview", (details) => {
+    details.addEventListener(
+      "click",
+      () => {
+        const object = details.querySelector("object[data-data]");
+
+        object.setAttribute("data", object.getAttribute("data-data"));
+      },
+      { once: true },
+    );
+  });
+</script>
+
 </body>
 
 

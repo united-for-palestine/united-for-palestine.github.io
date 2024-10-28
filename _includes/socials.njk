@@ -48,7 +48,14 @@ like this article:" ) -%}
   </li>
 
   <li class="socials__item--canShare">
-    <a title="Share article" href="#" data-ref="nativeShare">
+    <a
+      title="Share article"
+      href="#"
+      data-ref="nativeShare"
+      data-href="{{href | withDomain}}"
+      data-subject="{{subject}}"
+      data-body="{{body}}"
+    >
       <span class="sr-only">Share article</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -81,9 +88,9 @@ like this article:" ) -%}
   });
 
   onRef("nativeShare", (button) => {
-    const href = "{{href | withDomain}}";
-    const subject = "{{ subject }}";
-    const body = "{{ body }}";
+    const href = button.getAttribute("data-href");
+    const subject = button.getAttribute("data-subject");
+    const body = button.getAttribute("data-body");
 
     if (!navigator.share || !navigator.canShare({ url: href })) return;
 

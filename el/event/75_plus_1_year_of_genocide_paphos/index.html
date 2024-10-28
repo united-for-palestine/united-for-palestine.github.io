@@ -379,7 +379,8 @@
   </li>
 
   <li class="socials__item--canShare">
-    <a title="Share article" href="#" data-ref="nativeShare">
+    <a title="Share article" href="#" data-ref="nativeShare" data-href="https://united-for-palestine.github.io/el/event/75_plus_1_year_of_genocide_paphos/" data-subject="Check out this article" data-body="I thought you&#39;d
+like this article:">
       <span class="sr-only">Share article</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -634,9 +635,9 @@ contact us if you are interested.<br>
   });
 
   onRef("nativeShare", (button) => {
-    const href = "https://united-for-palestine.github.io/undefined";
-    const subject = "";
-    const body = "";
+    const href = button.getAttribute("data-href");
+    const subject = button.getAttribute("data-subject");
+    const body = button.getAttribute("data-body");
 
     if (!navigator.share || !navigator.canShare({ url: href })) return;
 

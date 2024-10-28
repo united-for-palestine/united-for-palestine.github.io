@@ -358,8 +358,8 @@
         </a></h2>
   </header>
 
-  <p><time datetime="Sun Oct 27 2024 23:52:45 GMT+0000 (Coordinated Universal Time)">
-        October 27, 2024
+  <p><time datetime="Mon Oct 28 2024 00:03:23 GMT+0000 (Coordinated Universal Time)">
+        October 28, 2024
       </time>
       <br>
   </p><p>A wellness retreat and healing spa near the sleepy town of Miliou serves as a<br>
@@ -585,9 +585,9 @@ rest stop and propaganda tool for the IDF.</p>
   });
 
   onRef("nativeShare", (button) => {
-    const href = "https://united-for-palestine.github.io/undefined";
-    const subject = "";
-    const body = "";
+    const href = button.getAttribute("data-href");
+    const subject = button.getAttribute("data-subject");
+    const body = button.getAttribute("data-body");
 
     if (!navigator.share || !navigator.canShare({ url: href })) return;
 

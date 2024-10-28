@@ -584,9 +584,9 @@ and further development. Passion is more important than experience.</p>
   });
 
   onRef("nativeShare", (button) => {
-    const href = "https://united-for-palestine.github.io/undefined";
-    const subject = "";
-    const body = "";
+    const href = button.getAttribute("data-href");
+    const subject = button.getAttribute("data-subject");
+    const body = button.getAttribute("data-body");
 
     if (!navigator.share || !navigator.canShare({ url: href })) return;
 

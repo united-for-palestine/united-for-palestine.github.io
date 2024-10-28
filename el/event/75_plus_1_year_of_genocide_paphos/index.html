@@ -349,7 +349,7 @@
 
       
         </p><ul class="socials">
-  <li>
+  <li class="socials__item">
     <a title="Share article on WhatsApp" href="whatsapp://send?text=https://united-for-palestine.github.io/el/event/75_plus_1_year_of_genocide_paphos/">
       <span class="sr-only">Share article on Whatsapp</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -358,7 +358,7 @@
       </svg>
     </a>
   </li>
-  <li>
+  <li class="socials__item">
     <a title="Copy article link" href="https://united-for-palestine.github.io/el/event/75_plus_1_year_of_genocide_paphos/" data-ref="clipboard">
       <span class="sr-only">Copy article Link</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
@@ -368,7 +368,7 @@
     </a>
   </li>
 
-  <li>
+  <li class="socials__item">
     <a title="Share article via email" href="mailto:?subject=Check%20out%20this%20article&body=I%20thought%20you&#39;d%0Alike%20this%20article%3A%20https://united-for-palestine.github.io/el/event/75_plus_1_year_of_genocide_paphos/">
       <span class="sr-only">Share article via Email</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -378,15 +378,15 @@
     </a>
   </li>
 
-  <li class="socials__item--canShare">
-    <a title="Share article" href="#" data-ref="nativeShare" data-href="https://united-for-palestine.github.io/el/event/75_plus_1_year_of_genocide_paphos/" data-subject="Check out this article" data-body="I thought you&#39;d
+  <li class="socials__item socials__item--canShare">
+    <button title="Share article" data-ref="nativeShare" data-href="https://united-for-palestine.github.io/el/event/75_plus_1_year_of_genocide_paphos/" data-subject="Check out this article" data-body="I thought you&#39;d
 like this article:">
       <span class="sr-only">Share article</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
         <path d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"></path>
       </svg>
-    </a>
+    </button>
   </li>
 </ul>
       
@@ -623,11 +623,11 @@ contact us if you are interested.<br>
 
 <style>
   .socials {
-      list-style: none; /* Remove default list styling */
-      padding: 0 0 0 0.5rem; /* Remove padding */
-      margin: 0; /* Remove margin */
+      list-style: none;
+      padding: 0;
+      margin: 0;
       display: flex; /* Use flexbox for horizontal alignment */
-      border-left: var(--accent-hover) solid 3px; /* Add left border */
+      --accent-hover: var(--text);
   }
 
   .socials.socials--canShare li {
@@ -643,11 +643,16 @@ contact us if you are interested.<br>
   }
 
   .socials li {
-      margin: 0 0.5rem; /* Add horizontal margin to list items */
+      margin: 0 1rem 0 0; /* Add horizontal margin to list items */
   }
 
-  .socials a {
-      padding: 0.25rem; /* Add padding inside links */
+  .socials a, .socials button {
+      background: none;
+      border: none;
+      border-radius: var(--standard-border-radius);
+      outline-color: var(--accent-hover);
+      margin-bottom: 0.4rem;
+      padding: 0.4rem; /* Add padding inside links */
       width: 2rem; /* Set width to allow for icon size */
       display: flex; /* Use flexbox for centering content */
       justify-content: center; /* Center content horizontally */
@@ -655,11 +660,11 @@ contact us if you are interested.<br>
       transition: background-color 0.3s ease; /* Smooth transition for hover */
   }
 
-  .socials a:hover {
+  .socials a:hover, .socials button:hover {
       background-color: var(--accent-hover); /* Change background on hover */
   }
 
-  .socials a:hover svg {
+  .socials a:hover svg, .socials button:hover svg {
       fill: var(--bg); /* Change SVG color on hover */
   }
 

@@ -569,11 +569,11 @@ contact us if you are interested.<br>
 
 <style>
   .socials {
-      list-style: none; /* Remove default list styling */
-      padding: 0 0 0 0.5rem; /* Remove padding */
-      margin: 0; /* Remove margin */
+      list-style: none;
+      padding: 0;
+      margin: 0;
       display: flex; /* Use flexbox for horizontal alignment */
-      border-left: var(--accent-hover) solid 3px; /* Add left border */
+      --accent-hover: var(--text);
   }
 
   .socials.socials--canShare li {
@@ -589,11 +589,16 @@ contact us if you are interested.<br>
   }
 
   .socials li {
-      margin: 0 0.5rem; /* Add horizontal margin to list items */
+      margin: 0 1rem 0 0; /* Add horizontal margin to list items */
   }
 
-  .socials a {
-      padding: 0.25rem; /* Add padding inside links */
+  .socials a, .socials button {
+      background: none;
+      border: none;
+      border-radius: var(--standard-border-radius);
+      outline-color: var(--accent-hover);
+      margin-bottom: 0.4rem;
+      padding: 0.4rem; /* Add padding inside links */
       width: 2rem; /* Set width to allow for icon size */
       display: flex; /* Use flexbox for centering content */
       justify-content: center; /* Center content horizontally */
@@ -601,11 +606,11 @@ contact us if you are interested.<br>
       transition: background-color 0.3s ease; /* Smooth transition for hover */
   }
 
-  .socials a:hover {
+  .socials a:hover, .socials button:hover {
       background-color: var(--accent-hover); /* Change background on hover */
   }
 
-  .socials a:hover svg {
+  .socials a:hover svg, .socials button:hover svg {
       fill: var(--bg); /* Change SVG color on hover */
   }
 

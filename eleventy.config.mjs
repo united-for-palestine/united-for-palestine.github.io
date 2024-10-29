@@ -32,9 +32,9 @@ export default function (eleventyConfig) {
     { url: "/en/speech/", name: "Speeches" },
   ];
 
-eleventyConfig.addFilter('urlencode', (str) => {
-  return encodeURIComponent(str);
-});
+  eleventyConfig.addFilter("urlencode", (str) => {
+    return encodeURIComponent(str);
+  });
   eleventyConfig.addFilter("breadcrumb", function (currentUrl) {
     return breadcrumbNamesArray.filter(({ url }) => {
       return currentUrl.startsWith(url) && currentUrl !== url;
@@ -45,7 +45,7 @@ eleventyConfig.addFilter('urlencode', (str) => {
     return (this.page.layoutblock ?? {})[name];
   });
 
-  eleventyConfig.addFilter("truncate", function (str, n = 256) {
+  eleventyConfig.addFilter("truncate", function (str, n = 128) {
     if (typeof str !== "string") return "";
     return str.length > n ? str.slice(0, n - 1) + "…" : str;
   });
@@ -132,13 +132,13 @@ eleventyConfig.addFilter('urlencode', (str) => {
     .use(markdownAnchor, {
       level: 2,
       permalink: true,
-      permalinkSymbol: '#', // Optional: Adjust symbol for visual clarity
+      permalinkSymbol: "#", // Optional: Adjust symbol for visual clarity
       permalinkBefore: true,
-      permalinkClass: 'header-anchor', // Apply consistent styling if needed
+      permalinkClass: "header-anchor", // Apply consistent styling if needed
       permalinkAttrs: (slug, state) => ({
-        'aria-label': `Section titled "${slug}"`, // Provide a descriptive label
-        'title': 'Link to this section' // Tooltip for additional clarity
-      })
+        "aria-label": `Section titled "${slug}"`, // Provide a descriptive label
+        title: "Link to this section", // Tooltip for additional clarity
+      }),
     })
     .use(markdownTOC, {
       level: 2,

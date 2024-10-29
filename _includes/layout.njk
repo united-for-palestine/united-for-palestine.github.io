@@ -425,7 +425,9 @@
     {% from "preview.njk" import preview %}
 
     {% if files and files.length > 0 %}
-      <h2>Files</h2>
+      <h2 id="files">
+        <a class="header-anchor" href="#files" aria-label="Files" title="Link to this section">#</a>
+        Files</h2>
 
       {% for file in files %}
       <p>

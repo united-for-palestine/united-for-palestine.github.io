@@ -1,22 +1,14 @@
 ---
 eleventyExcludeFromCollections: true
 title: Posts
-noindex: true
+nosocials: true
 ---
 
 {% from 'card.njk' import card %}
 
-{% for post in collections.en_post %}
-
-  {{card(
-    post.data.title,
-    content=post.data.description,
-    href=post.url,
-    lang="en",
-    location=post.data.location,
-    date=post.date,
-    image=post.data.image
-  )}}
-
-
-{% endfor %}
+<div class="card-grid">
+  {% for post in collections.en_post %} {{card( post.data.title,
+  content=post.data.description, href=post.url, lang="en",
+  location=post.data.location, date=post.date, image=post.data.image )}} {%
+  endfor %}
+</div>

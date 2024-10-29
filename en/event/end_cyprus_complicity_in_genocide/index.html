@@ -70,7 +70,7 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
     }
 
     .card-grid > article {
-      box-sizing: border-box;                                         /* Include padding and border in the width calculation */
+      box-sizing: border-box;
     }
 
     .card-grid.compact > article img {
@@ -104,37 +104,8 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
       font-size: 2rem;
     }
 
-    article {
-      position: relative;
-      background-color: var(--bg-transparent);
-    }
-
     a:focus {
       outline: 2px solid;
-    }
-
-    article:has(a:hover) {
-      background-color: var(--accent-bg);
-    }
-
-    article:has(a:focus-within),
-    article:has(a:focus) {
-      outline: 2px solid;
-    }
-
-    article a {
-      outline: none !important;
-      z-index: 1;
-    }
-
-    article a::after {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      content: ' ';
-      z-index: 1;
     }
 
     h2 {
@@ -143,11 +114,6 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
 
     h3 {
       font-size: 1.2rem;
-    }
-
-    article footer {
-      font-size: 90%;
-      opacity: 0.8;
     }
 
     .breadcrumbs ul {
@@ -274,10 +240,6 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
 
     main {
       position: relative;
-    }
-
-    article > :last-child {
-      margin-bottom: 0;
     }
 
     .subtle {
@@ -723,6 +685,52 @@ like this article:">
     );
   });
 </script>
+
+
+<style>
+    article a {
+      outline: none !important;
+      z-index: 1;
+    }
+
+    article a::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: ' ';
+      z-index: 1;
+    }
+
+    article {
+      position: relative;
+      background-color: var(--bg-transparent);
+    }
+
+    article:has(a:hover) {
+      background-color: var(--accent-bg);
+    }
+
+    article:has(a:focus-within),
+    article:has(a:focus) {
+      outline: 2px solid;
+    }
+
+    article footer {
+      font-size: 90%;
+      opacity: 0.8;
+    }
+
+    article > :last-child {
+      margin-bottom: 0;
+    }
+
+    article .meta {
+    	color: var(--text-light);
+    }
+</style>
+
 
 </body>
 

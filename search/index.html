@@ -66,7 +66,7 @@
     }
 
     .card-grid > article {
-      box-sizing: border-box;                                         /* Include padding and border in the width calculation */
+      box-sizing: border-box;
     }
 
     .card-grid.compact > article img {
@@ -100,37 +100,8 @@
       font-size: 2rem;
     }
 
-    article {
-      position: relative;
-      background-color: var(--bg-transparent);
-    }
-
     a:focus {
       outline: 2px solid;
-    }
-
-    article:has(a:hover) {
-      background-color: var(--accent-bg);
-    }
-
-    article:has(a:focus-within),
-    article:has(a:focus) {
-      outline: 2px solid;
-    }
-
-    article a {
-      outline: none !important;
-      z-index: 1;
-    }
-
-    article a::after {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      content: ' ';
-      z-index: 1;
     }
 
     h2 {
@@ -139,11 +110,6 @@
 
     h3 {
       font-size: 1.2rem;
-    }
-
-    article footer {
-      font-size: 90%;
-      opacity: 0.8;
     }
 
     .breadcrumbs ul {
@@ -272,10 +238,6 @@
       position: relative;
     }
 
-    article > :last-child {
-      margin-bottom: 0;
-    }
-
     .subtle {
       opacity: 0.8;
       font-style: italic;
@@ -368,7 +330,7 @@
         </a></h3>
   </header>
 
-  <p><time datetime="Sun Aug 25 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Sun Aug 25 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         August 25, 2024
       </time>
       <br><span class="location">Larnaca Port</span>
@@ -389,7 +351,7 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
         </a></h3>
   </header>
 
-  <p><time datetime="Wed Sep 18 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Wed Sep 18 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         September 18, 2024
       </time>
       <br><span class="location">Hilton, Nicosia</span>
@@ -413,7 +375,7 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
         </a></h3>
   </header>
 
-  <p><time datetime="Sat Oct 05 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Sat Oct 05 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         October 5, 2024
       </time>
       <br><span class="location">Anexartisias Street, Limassol</span>
@@ -433,7 +395,7 @@ As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,0
         </a></h3>
   </header>
 
-  <p><time datetime="Mon Oct 07 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Mon Oct 07 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         October 7, 2024
       </time>
       <br><span class="location">Eleftheria Square, Nicosia</span>
@@ -454,7 +416,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
         </a></h3>
   </header>
 
-  <p><time datetime="Tue Oct 15 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Tue Oct 15 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         October 15, 2024
       </time>
       <br>
@@ -473,7 +435,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
         </a></h3>
   </header>
 
-  <p><time datetime="Sat Oct 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Sat Oct 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         ٢٦ أكتوبر ٢٠٢٤
       </time>
       <br><span class="location">Town Hall, Paphos</span>
@@ -493,7 +455,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
         </a></h3>
   </header>
 
-  <p><time datetime="Sat Oct 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Sat Oct 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         26 Οκτωβρίου 2024
       </time>
       <br><span class="location">Town Hall, Paphos</span>
@@ -513,7 +475,7 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
         </a></h3>
   </header>
 
-  <p><time datetime="Sat Oct 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
+  <p class="meta"><time datetime="Sat Oct 26 2024 00:00:00 GMT+0000 (Coordinated Universal Time)">
         October 26, 2024
       </time>
       <br><span class="location">Town Hall, Paphos</span>
@@ -850,6 +812,52 @@ Let us use our voice on this yearly mark to express our dismay against Apartheid
     );
   });
 </script>
+
+
+<style>
+    article a {
+      outline: none !important;
+      z-index: 1;
+    }
+
+    article a::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: ' ';
+      z-index: 1;
+    }
+
+    article {
+      position: relative;
+      background-color: var(--bg-transparent);
+    }
+
+    article:has(a:hover) {
+      background-color: var(--accent-bg);
+    }
+
+    article:has(a:focus-within),
+    article:has(a:focus) {
+      outline: 2px solid;
+    }
+
+    article footer {
+      font-size: 90%;
+      opacity: 0.8;
+    }
+
+    article > :last-child {
+      margin-bottom: 0;
+    }
+
+    article .meta {
+    	color: var(--text-light);
+    }
+</style>
+
 
 </body>
 

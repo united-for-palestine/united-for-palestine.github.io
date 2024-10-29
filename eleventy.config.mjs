@@ -132,6 +132,13 @@ eleventyConfig.addFilter('urlencode', (str) => {
     .use(markdownAnchor, {
       level: 2,
       permalink: true,
+      permalinkSymbol: '#', // Optional: Adjust symbol for visual clarity
+      permalinkBefore: true,
+      permalinkClass: 'header-anchor', // Apply consistent styling if needed
+      permalinkAttrs: (slug, state) => ({
+        'aria-label': `Section titled "${slug}"`, // Provide a descriptive label
+        'title': 'Link to this section' // Tooltip for additional clarity
+      })
     })
     .use(markdownTOC, {
       level: 2,

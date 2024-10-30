@@ -5,7 +5,7 @@ image: /asset/75_plus_one_year_of_genocide_protest.jpeg
 description: "Yesterday at 4:00 PM, residents and activists gathered in front of the Paphos Town Hall to protest in a show of solidarity with the Palestinian people and honoring the black one year anniversary since the intensification of the Israeli colonization of Palestine and the start of large-scale ethnic cleansing in Gaza. The protest, titled “75 + 1 Year of Genocide: Lasting Peace for Palestine Now”, was organized by United For Palestine (UFP) – Paphos chapter and the Cyprus Peace Council (CPC), and included speeches in Greek and English, chants in Greek, English and Arabic, and a march through the commercial center of the city."
 ---
 
-[Oct 26 Protest starting at the Paphos Town Hall](/asset/75_plus_one_year_of_genocide_protest.jpeg)
+![Oct 26 Protest starting at the Paphos Town Hall](/asset/75_plus_one_year_of_genocide_protest.jpeg)
 
 Yesterday at 4:00 PM, residents and activists gathered in front of the Paphos Town Hall to protest in a show of solidarity with the Palestinian people and honoring the black one year anniversary since the intensification of the Israeli colonization of Palestine and the start of large-scale ethnic cleansing in Gaza. The protest, titled “75 + 1 Year of Genocide: Lasting Peace for Palestine Now”, was organized by United For Palestine (UFP) – Paphos chapter and the Cyprus Peace Council (CPC), and included speeches in Greek and English, chants in Greek, English and Arabic, and a march through the commercial center of the city.
 

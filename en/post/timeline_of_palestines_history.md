@@ -1,6 +1,7 @@
 ---
 title: "Timeline of Palestine's History"
 description: Zionism emerged with the founding of Rishon Le Zion, the coining of the term "Zionism," Theodor Herzl's publication of *Der Judenstaat*, and the First Zionist Congress.
+tags: published
 date: 2024-10-15
 image: /asset/mapa_de_palestina_que_invaden_judios_israel.jpg
 ---

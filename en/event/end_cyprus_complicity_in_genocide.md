@@ -2,6 +2,7 @@
 title: End Cyprus Complicity in Genocide
 image: /asset/aug_25_larnaca_end_cyprus_complicity_en.jpg
 date: 2024-08-25
+tags: published
 location: Larnaca Port
 description: |
   Stop Cypriot complicity in Israeli atrocities!

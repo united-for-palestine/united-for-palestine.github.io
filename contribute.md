@@ -1,6 +1,7 @@
 ---
 title: Contribute
 nosocials: true
+tags: published
 ---
 
 ${toc}

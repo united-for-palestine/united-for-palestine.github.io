@@ -20,6 +20,7 @@ function secondsToHMS(seconds) {
   return [h, m, s].map((v) => (v < 10 ? "0" + v : v)).join(":");
 }
 
+
 export default function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPassthroughCopy("asset");
@@ -226,6 +227,19 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("withDomain", function (url) {
     return new URL(url, "https://united-for-palestine.github.io").href;
   });
+
+  eleventyConfig.addFilter("published", function (items) {
+    return items.filter(item => item.data.tags?.includes('published'))
+  });
+
+  eleventyConfig.addFilter("unpublished", function (items) {
+    return items.filter(item => !item.data.tags?.includes('published'))
+  });
+
+  eleventyConfig.addFilter("excludes", function (items) {
+    console.log(items)
+    return !items?.includes('published')
+  })
 
   return {
     markdownTemplateEngine: "njk",

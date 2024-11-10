@@ -1,15 +1,11 @@
 ---
-title: Home
-tags: published
-nosocials: true
+title: Published
+noindex: true
 ---
 
 {% from 'card.njk' import card %}
 
-<div class="card-grid">
-
-{% for item in collections.feed_item | published | reverse | head(20) %}
-
+{% for item in collections.all | published %}
   {{card(
     item.data.title,
     podcast=item.data.podcast,
@@ -23,4 +19,3 @@ nosocials: true
   )}}
 
 {% endfor %}
-</div>

@@ -1,11 +1,12 @@
 ---
 title: مؤخرًا
+tags: published
 nosocials: true
 ---
 
 {% from 'card.njk' import card %}
 
-{% for event in collections.ar_item | reverse | head(20) %}
+{% for event in collections.ar_item | published | reverse | head(20) %}
 
   {{card(
     event.data.title,

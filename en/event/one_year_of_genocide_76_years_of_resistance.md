@@ -1,6 +1,7 @@
 ---
 title: One Year of Genocide, 76 Years of Resistance
 image: /asset/one_year_of_genocide_76_years_of_resistance.jpg
+tags: published
 date: 2024-10-07
 location: Eleftheria Square, Nicosia
 description: |

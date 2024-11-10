@@ -3,7 +3,6 @@ title: "Cyprus: A Rest Stop and Propaganda Tool for the IDF"
 published: 2024-10-10
 edited: 2024-11-10
 image: /asset/idf_flag_waving.png
-override:tags: draft
 description: |-
   A wellness retreat and healing spa near the sleepy town of Miliou serves as a
   rest stop and propaganda tool for the IDF.

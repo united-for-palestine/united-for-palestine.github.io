@@ -47,7 +47,7 @@ eleventyImport:
     <itunes:email>{{ metadata.author.email }}</itunes:email>
   </itunes:owner>
 
-  {% for post in collections.feed_item | reverse %}
+  {% for post in collections.feed_item | published | reverse %}
   {% set absolutePostUrl %}{{ post.url | htmlBaseUrl(metadata.base) }}{% endset %}
   <item>
     <title>{{ post.data.title }}</title>

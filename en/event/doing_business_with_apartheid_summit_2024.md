@@ -2,6 +2,7 @@
 title: Doing Business with Apartheid Summit 2024
 image: /asset/doing_business_with_apartheid_en.jpg
 date: 2024-09-18
+tags: published
 location: Hilton, Nicosia
 description: |
   💶 BOYCOTT, DIVEST & SANCTION ISRAEL

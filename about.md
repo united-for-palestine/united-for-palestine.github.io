@@ -1,6 +1,7 @@
 ---
 title: About
 nosocials: true
+tags: published
 ---
 
 ## English

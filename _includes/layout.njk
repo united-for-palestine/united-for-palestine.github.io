@@ -29,7 +29,9 @@
   <link rel="manifest" href="/asset/site.webmanifest">
   <meta property="og:title" content="{{title}}"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:image" content="{{image}}"/>
+  {% if image %}
+  <meta property="og:image" content="{{image | withDomain}}"/>
+  {% endif %}
   <meta property="og:url" content="{{url | withDomain}}"/>
   <meta property="og:description" content="{{description}}"/>
 

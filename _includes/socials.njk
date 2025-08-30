@@ -3,8 +3,11 @@ like this article:" ) -%}
 
 <ul class="socials">
   <li>
-    <a href="whatsapp://send?text={{href | withDomain}}">
-      <span class="sr-only">Share on Whatsapp</span>
+    <a
+      title="Share article on WhatsApp"
+      href="whatsapp://send?text={{href | withDomain}}"
+    >
+      <span class="sr-only">Share article on Whatsapp</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
         <path
@@ -14,8 +17,12 @@ like this article:" ) -%}
     </a>
   </li>
   <li>
-    <a id="copyLinkButton" href="{{href | withDomain}}">
-      <span class="sr-only">Copy Link</span>
+    <a
+      title="Copy article link"
+      href="{{href | withDomain}}"
+      data-ref="clipboard"
+    >
+      <span class="sr-only">Copy article Link</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
         <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
         <path
@@ -27,13 +34,26 @@ like this article:" ) -%}
 
   <li>
     <a
+      title="Share article via email"
       href="mailto:?subject={{ subject | urlencode }}&body={{ body | urlencode }}%20{{ href | withDomain }}"
     >
-      <span class="sr-only">Share via Email</span>
+      <span class="sr-only">Share article via Email</span>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
         <path
           d="M64 112c-8.8 0-16 7.2-16 16l0 22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1l0-22.1c0-8.8-7.2-16-16-16L64 112zM48 212.2L48 384c0 8.8 7.2 16 16 16l384 0c8.8 0 16-7.2 16-16l0-171.8L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64l384 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 448c-35.3 0-64-28.7-64-64L0 128z"
+        />
+      </svg>
+    </a>
+  </li>
+
+  <li class="socials__item--canShare">
+    <a title="Share article" href="#" data-ref="nativeShare">
+      <span class="sr-only">Share article</span>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"
         />
       </svg>
     </a>
@@ -43,11 +63,10 @@ like this article:" ) -%}
 {%- endmacro -%} {%- once -%}
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const copyLinkButton = document.getElementById("copyLinkButton");
-
+  onRef('clipboard', copyLinkButton => {
     copyLinkButton.addEventListener("click", (event) => {
       event.preventDefault();
+      event.stopPropagation()
       const link = copyLinkButton.getAttribute("href");
 
       navigator.clipboard
@@ -59,17 +78,56 @@ like this article:" ) -%}
           console.error("Failed to copy link: ", err);
         });
     });
-  });
+
+  })
+
+  onRef('nativeShare', button => {
+    const href = "{{href | withDomain}}";
+    const subject = "{{ subject }}";
+    const body = "{{ body }}";
+
+    if (navigator.share && navigator.canShare({ url: href })) {
+      const parentSocials = element.closest('.socials');
+
+      if (parentSocials) parentSocials.classList.add('socials--canShare');
+
+      // Show the native share button and hide the socials list
+
+      button.addEventListener("click", async e => {
+        e.preventDefault()
+        try {
+          await navigator.share({
+            title: subject,
+            text: body,
+            url: href
+          });
+        } catch (err) {
+          console.error("Error sharing:", err);
+        }
+      });
+
+  })
 </script>
 
 <style>
-
   .socials {
       list-style: none; /* Remove default list styling */
       padding: 0 0 0 0.5rem; /* Remove padding */
       margin: 0; /* Remove margin */
       display: flex; /* Use flexbox for horizontal alignment */
       border-left: var(--accent-hover) solid 3px; /* Add left border */
+  }
+
+  .socials.socials--canShare li {
+    display: none;
+  }
+
+  .socials li.socials__item--canShare {
+    display: none;
+  }
+
+  .socials.socials--canShare li.socials__item--canShare {
+    display: inline-block;
   }
 
   .socials li {

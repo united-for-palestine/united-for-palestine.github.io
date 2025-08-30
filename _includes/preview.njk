@@ -3,11 +3,12 @@
 <details data-ref="preview">
   <summary>
     <span>{{file}}</span>
-    <div class="actions">
-      <a href="{{file}}" title="{{file}}">↗️</a>
-      <a download href="{{file}}" title="{{file}}">⬇️</a>
-    </div>
   </summary>
+
+  <a href="{{file}}" title="{{file}}">Link<span class="sr-only"> to {{file}}</span></a>
+  <span> · </span>
+  <a download href="{{file}}" title="{{file}}">Download<span class="sr-only"> {{file}}</span></a>
+
   <object type="{{type or file | mimeType}}" data-data="{{file}}">
     <p>
       <!-- DUPLICATION -->
@@ -48,10 +49,6 @@
   summary .actions {
     display: flex;
     gap: 10px;
-  }
-
-  .actions a {
-    text-decoration: none;
   }
 
   object[type="application/pdf"] {

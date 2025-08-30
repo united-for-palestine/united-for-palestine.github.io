@@ -9,7 +9,6 @@ import * as mm from "music-metadata";
 import markdownTOC from 'markdown-it-toc-done-right';
 import markdownAnchor from 'markdown-it-anchor';
 
-
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -121,8 +120,14 @@ export default function (eleventyConfig) {
       permalink: true,
     })
     .use(markdownTOC, {
-    level: 2
-  });
+      level: 2
+    });
+
+  // Override the default table renderer
+  md.renderer.rules.table_open = () => '<figure><table>';
+  md.renderer.rules.table_close = () => `</table>
+    <!-- <figcaption>A wide table showing horizontal scroll behavior.</figcaption> -->
+  </figure>`;
 
   md.renderer.rules.image = (tokens, idx, options, env, self) => {
     const token = tokens[idx];

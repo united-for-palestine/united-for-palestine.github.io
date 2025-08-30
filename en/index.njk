@@ -2,11 +2,9 @@
 title: Recent
 ---
 
-<h2>Events</h2>
-
 {% from 'card.njk' import card %}
 
-{% for event in collections.event | reverse | head(1) %}
+{% for event in collections.en_item | reverse | head(20) %}
 
   {{card(
     event.data.title,
@@ -19,30 +17,6 @@ title: Recent
   )}}
 
 {% endfor %}
-
-<em>
-  <a href="/en/event">More events</a>
-</em>
-
-
-<h2>Posts</h2>
-
-{% for post in collections.en_post | reverse | head(2) %}
-  {{card(
-    post.data.title,
-    content=post.data.description,
-    href=post.url,
-    lang="en",
-    location=post.data.location,
-    date=post.date,
-    image=post.data.image
-  )}}
-
-{% endfor %}
-
-<em>
-  <a href="/en/post">More posts</a>
-</em>
 
 <h2>Resources</h2>
 <ul>

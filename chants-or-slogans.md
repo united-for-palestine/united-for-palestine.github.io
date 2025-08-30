@@ -35,6 +35,11 @@ tags: published
 
 ### English
 
+- Death death to the IOF/IDF
+- Cyprus facilitates / Israel annihalates
+- Israel Israel you can't hide / we charge you with genocide
+- Niko niko you can't hide / you're supporting genocide
+
 - Free, free Palestine
 - Free, free Palestine / Stop the genocide
 - Hands off Lebanon

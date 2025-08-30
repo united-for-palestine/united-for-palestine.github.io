@@ -6,7 +6,6 @@ tags: published
 
 # United for Palestine Website
 
-
 - [File Format](#file-format)
 - [Editors](#editors)
   - [Uploading Files](#uploading-files)
@@ -17,7 +16,6 @@ tags: published
 - [Developers](#developers)
   - [Develop](#develop)
   - [Publish](#publish)
-
 
 ## File Format
 
@@ -52,7 +50,6 @@ The frontmatter contains placeholder metadata such as a sample title, descriptio
 > content from publishing while collaborating with others on it.
 
 The Markdown content starts below the frontmatter, with headings and text using the "Lorem ipsum" filler.
-
 
 ## Editors
 
@@ -125,7 +122,6 @@ To delete a page:
 
 5. **Optional: Explain the Reason for Deletion:** You can provide a brief explanation of why you decided to remove this page.
 
-
 ### FAQs
 
 1. **Can I revert changes?** Yes! You can revert to a previous version of a file by navigating to the file, clicking on the **History** button, selecting the commit you want to revert to, and then clicking **Revert**.
@@ -139,7 +135,7 @@ To delete a page:
 1. Make sure you have a recent version of **node** and **npm** installed.
 2. Clone the project.
 3. Navigate to the project _root_ directory.
-4. Run `npx @11ty/eleventy --serve --watch` for a server.
+4. Run `npm start` for a server.
 5. Start editing the site.
 
 ### Publish

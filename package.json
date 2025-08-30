@@ -7,7 +7,7 @@
     "format": "npx prettier -w .",
     "fmt-check": "npx prettier -c .",
     "build": "eleventy",
-    "serve": "eleventy --serve --watch"
+    "start": "eleventy --serve --watch"
   },
   "keywords": [],
   "author": "",

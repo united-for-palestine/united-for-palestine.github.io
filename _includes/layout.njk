@@ -126,7 +126,7 @@
 
     article a {
       outline: none !important;
-      z-index: 100;
+      z-index: 1;
     }
 
     article a::after {
@@ -136,7 +136,7 @@
       left: 0;
       right: 0;
       content: ' ';
-      z-index: 100;
+      z-index: 1;
     }
 
     h2 {
@@ -179,22 +179,6 @@
 
     body {
       word-wrap: break-word;
-    }
-
-    #menu {
-      z-index: 1000;
-      margin: 1vw;
-      position: sticky;
-      top: 1vw;
-      overflow-y: auto;
-      max-height: 100vh;
-      grid-column: 1 / -1;
-    }
-
-    @media (min-width: 180ch) {
-      #menu {
-        grid-column: 3;
-      }
     }
 
     figure embed {
@@ -278,6 +262,7 @@
 
 <style>
   body:before {
+    z-index: -1;
     content: '';
     position: fixed;
     top: 0;
@@ -497,7 +482,7 @@
         right: 0;
         padding: 1ch;
         cursor: pointer;
-        z-index: 100;
+        z-index: 2;
         pointer-events: none;
       }
 
@@ -508,7 +493,7 @@
       }
     </style>
 
-  <footer style="z-index: 10000;" class="no-print">
+  <footer class="no-print">
 
     <button id="reset">RESET</button>
 

@@ -1,11 +1,12 @@
 ---
 title: Πρόσφατος
+tags: published
 nosocials: true
 ---
 
 {% from 'card.njk' import card %}
 
-{% for item in collections.el_item | reverse | head(20) %}
+{% for item in collections.el_item | published | reverse | head(20) %}
 
   {{card(
     item.data.title,

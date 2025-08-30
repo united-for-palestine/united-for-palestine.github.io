@@ -1,3 +1,9 @@
+---
+title: README
+description: Read this to know how the website works.
+tags: published
+---
+
 # United for Palestine Website
 
 
@@ -42,8 +48,8 @@ In this example:
 
 The frontmatter contains placeholder metadata such as a sample title, description, image URL, and podcast file.
 
-> **TIP** You can add `override:tags: draft` to the frontmatter to prevent the
-> content from publishing while collaborating with others.
+> Webpages will only be made public when adding the `published` tag. This prevents the
+> content from publishing while collaborating with others on it.
 
 The Markdown content starts below the frontmatter, with headings and text using the "Lorem ipsum" filler.
 

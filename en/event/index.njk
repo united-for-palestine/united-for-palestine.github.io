@@ -1,6 +1,7 @@
 ---
 eleventyExcludeFromCollections: true
 title: Events
+tags: published
 nosocials: true
 ---
 
@@ -8,7 +9,7 @@ nosocials: true
 
 <div class="card-grid">
 
-  {% for event in collections.en_event | reverse %}
+  {% for event in collections.en_event | published | reverse %}
 
       {{card(
         event.data.title,

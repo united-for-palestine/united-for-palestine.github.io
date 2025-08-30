@@ -4,6 +4,7 @@ date: 2024-10-26
 location: Town Hall, Paphos
 image: /asset/75_plus_one_year_of_genocide.jpeg
 description: Let’s show solidarity with the Palestinian national-liberation struggle and commemorate the black one-year anniversary of the intensification of the Zionist colonization of Palestine, manifesting itself as the genocidal war of extermination which the Zionist settler colony launched following the Al Aqsa Flood operation.
+tags: published
 podcast:
   file: /asset/John_King_-_Free_Palestine__HUMAYUN.mp3
 ---

@@ -1,12 +1,13 @@
 ---
 title: Recent
+tags: published
 nosocials: true
 ---
 
 {% from 'card.njk' import card %}
 
 <div class="card-grid">
-  {% for event in collections.en_item | reverse | head(20) %} {{card(
+  {% for event in collections.en_item | published | reverse | head(20) %} {{card(
   event.data.title, content=event.data.description, href=event.url, lang="en",
   location=event.data.location, date=event.date, image=event.data.image )}} {%
   endfor %}

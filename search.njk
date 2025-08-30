@@ -1,4 +1,6 @@
 ---
+title: Search
+tags: published
 noindex: true
 ---
 
@@ -13,7 +15,7 @@ noindex: true
 
 <h2>Results</h2>
 <div id="results" aria-live="polite">
-  {% for item in collections.feed_item %}
+  {% for item in collections.feed_item | published %}
 
 
   {{card(

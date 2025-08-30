@@ -1,3 +1,7 @@
+---
+noindex: true
+---
+
 📢 [**26 Oct Paphos Protest!** 75 + 1 Year of Genocide](/en/event/75_plus_1_year_of_genocide_paphos)
 
 

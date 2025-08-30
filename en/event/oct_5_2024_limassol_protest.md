@@ -1,6 +1,7 @@
 ---
 title: 75 + 1 Years of Genocide
 date: 2024-10-05
+tags: published
 image: /asset/oct_5_limassol_protest_en.jpg
 location: Anexartisias Street, Limassol
 description: |

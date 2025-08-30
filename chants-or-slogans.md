@@ -1,5 +1,6 @@
 ---
 title: Chants or Slogans
+tags: published
 ---
 
 <div lang="el">

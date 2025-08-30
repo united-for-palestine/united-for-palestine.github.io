@@ -2,7 +2,7 @@
 
 
 - [File Format](#file-format)
-- [Editing](#editing)
+- [Editors](#editors)
   - [Uploading Files](#uploading-files)
   - [Adding a New Page](#adding-a-new-page)
   - [Editing a Page](#editing-a-page)

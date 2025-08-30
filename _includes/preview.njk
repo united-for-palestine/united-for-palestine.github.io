@@ -1,13 +1,10 @@
-
-{% macro preview(file, type) %}
+{% from "socials.njk" import socials %} {% macro preview(file, type) %}
 <details data-ref="preview">
   <summary>
     <span>{{file}}</span>
   </summary>
 
-  <a href="{{file}}" title="{{file}}">Link<span class="sr-only"> to {{file}}</span></a>
-  <span> · </span>
-  <a download href="{{file}}" title="{{file}}">Download<span class="sr-only"> {{file}}</span></a>
+  {{ socials(file, subject="UFP / Asset {{file}}", body="Link: {{file}}") }}
 
   <object type="{{type or file | mimeType}}" data-data="{{file}}">
     <p>
@@ -24,9 +21,7 @@
     </object>
   </noscript>
 </details>
-{% endmacro %}
-
-{% once %}
+{% endmacro %} {% once %}
 <style>
   details object {
     width: 100%;
@@ -57,13 +52,16 @@
 </style>
 
 <script>
-  onRef('preview', details => {
-    details.addEventListener('click', () => {
-      const object = details.querySelector('object[data-data]');
+  onRef("preview", (details) => {
+    details.addEventListener(
+      "click",
+      () => {
+        const object = details.querySelector("object[data-data]");
 
-      object.setAttribute('data', object.getAttribute('data-data'));
-    }, {once: true});
-  })
-
+        object.setAttribute("data", object.getAttribute("data-data"));
+      },
+      { once: true },
+    );
+  });
 </script>
 {% endonce %}

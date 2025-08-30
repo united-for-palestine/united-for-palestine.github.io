@@ -10,7 +10,8 @@ noindex: true
 </form>
 
 <h2>Results</h2>
-{% for item in collections.feed_item %}
+<div id="results" aria-live="polite">
+  {% for item in collections.feed_item %}
 
     <article class="searchable-item">
     <h3>
@@ -21,7 +22,8 @@ noindex: true
     </p>
     </article>
 
-{% endfor %}
+  {% endfor %}
+</div>
 
 <script>
 

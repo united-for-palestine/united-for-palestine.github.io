@@ -1,3 +1,4 @@
 {
-  "tags": ["post_el", "post", "feed_item"]
+  "tags": ["post_el", "post", "feed_item", "el_item"],
+  "lang": "el"
 }

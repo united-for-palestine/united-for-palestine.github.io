@@ -6,11 +6,11 @@ title: Chants or Slogans
 
 <div dir='rtl' lang="ar">
 
-- من النهر والماء / فلسطين عربية men elmaye lelmaye / falastin arabie (From the \[river\] water to the \[sea\] water / Palestine is Arab)
-- بالروح / بالدم / نفديك يا غزة bilroh / bildam / nafdik ya ghazza (With our souls / With our blood / We’ll sacrifice ourselves for you, oh Gaza)
-- يا فلسطين / يا فلسطين / احنا وراكي ليوم الدين ya falastin / ya falastin / ahna wraky lyom eldin (Oh Palestine / Oh Palestine / We are behind you until the Day of Judgment)
-- يا محتل اطلع برة / فلسطين دولة حرة ya mhtal etle bara / falastin dawla hora (Oh occupier, get out / Palestine is a free nation)
-- مهما تهدم من بيوت / تحيا فلسطين حتى نموت mahma tahdem men beyut / tahya falastin hta namot (No matter how many houses are destroyed / Palestine will live until we die)
+- من النهر والماء / فلسطين عربية
+- بالروح / بالدم / نفديك يا غزة
+- يا فلسطين / يا فلسطين / احنا وراكي ليوم الدين
+- يا محتل اطلع برة / فلسطين دولة حرة
+- مهما تهدم من بيوت / تحيا فلسطين حتى نموت
 
 </div>
 

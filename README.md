@@ -1,4 +1,4 @@
-# Uniter for Palestine Website
+# United for Palestine Website
 
 
 - [File Format](#file-format)

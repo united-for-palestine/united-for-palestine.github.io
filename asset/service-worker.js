@@ -1,5 +1,5 @@
 const FEED_URL = '/feed.json'; // Your JSON feed endpoint
-const DB_NAME = 'notificationsDB';
+const DB_NAME = 'notificationsDB2';
 const STORE_NAME = 'notifiedItems';
 
 self.addEventListener('message', (event) => {
@@ -23,17 +23,15 @@ async function checkForNewFeedItems() {
         oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1); // Subtract one month
 
         for (const item of items) {
-            const title = item.title; // Adjust based on your JSON structure
-            const description = item.description; // Adjust based on your JSON structure
-            const guid = item.guid; // Adjust based on your JSON structure
-            const link = item.link; // Adjust based on your JSON structure
-            const date = new Date(item.date_published); // Assuming item.date is the date property
+            console.log(item)
+            const { title, summary, guid, url, date_published } = item;
+            const date = new Date(date_published); // Assuming item.date is the date property
 
             // Check if the item date is within the last month
             if (date >= oneMonthAgo) {
                 if (!notifiedItems.includes(guid)) {
                     // Notify the user
-                    await self.registration.showNotification(title, { body: description, data: { url: link } });
+                    await self.registration.showNotification(title, { body: summary, data: { url } });
 
                     // Store notified item
                     await storeNotifiedItem(guid);
@@ -96,6 +94,7 @@ async function openDatabase() {
 
 // Handle notification click
 self.addEventListener('notificationclick', (event) => {
+    console.log(event)
     event.notification.close();
     event.waitUntil(clients.openWindow(event.notification.data.url));
 });

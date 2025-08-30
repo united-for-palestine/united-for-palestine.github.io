@@ -17,7 +17,7 @@
     </{{level}}>
   </header>
 
-  <p>
+  <p class="meta">
     {%- if date -%}
       <time datetime="{{ date }}">
         {{ date | date(lang)  }}
@@ -40,3 +40,50 @@
 </article>
 
 {% endmacro %}
+
+{% once %}
+<style>
+    article a {
+      outline: none !important;
+      z-index: 1;
+    }
+
+    article a::after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: ' ';
+      z-index: 1;
+    }
+
+    article {
+      position: relative;
+      background-color: var(--bg-transparent);
+    }
+
+    article:has(a:hover) {
+      background-color: var(--accent-bg);
+    }
+
+    article:has(a:focus-within),
+    article:has(a:focus) {
+      outline: 2px solid;
+    }
+
+    article footer {
+      font-size: 90%;
+      opacity: 0.8;
+    }
+
+    article > :last-child {
+      margin-bottom: 0;
+    }
+
+    article .meta {
+    	color: var(--text-light);
+    }
+</style>
+
+{% endonce %}

@@ -1,5 +1,6 @@
 ---
 title: مؤخرًا
+noindex: true
 ---
 
 {% from 'card.njk' import card %}

@@ -12,7 +12,6 @@ date: 2024-10-15
 - [1976 - LAND DAY](#1976---land-day)
 - [1987 - 1ST INTIFADA](#1987---1st-intifada)
 - [1993-2000 - PEACE NEGOTIATIONS](#1993-2000---peace-negotiations)
-- [2005 - GAZA DISENGAGEMENT](#2005---gaza-disengagement)
 - [1900s-1910s](#1900s-1910s)
 - [1930s](#1930s)
 - [1948 - NAKBA](#1948---nakba)
@@ -21,11 +20,12 @@ date: 2024-10-15
 - [1978 - CAMP DAVID ACCORDS](#1978---camp-david-accords)
 - [1988 - PLO ACCEPTANCE](#1988---plo-acceptance)
 - [2002 - 2ND INTIFADA](#2002---2nd-intifada)
+- [2005 - GAZA DISENGAGEMENT](#2005---gaza-disengagement)
 - [2007 - GAZA BLOCKADE](#2007---gaza-blockade)
 - [2008-2021 - 4 WARS ON GAZA](#2008-2021---4-wars-on-gaza)
+- [2018-2019 - GREAT MARCH OF RETURN](#2018-2019---great-march-of-return)
 - [2021 - SETTLER TERRORISM](#2021---settler-terrorism)
 - [May 2023 - ISRAELI GOVERNMENT ACTIONS](#may-2023---israeli-government-actions)
-- [2018-2019 - GREAT MARCH OF RETURN](#2018-2019---great-march-of-return)
 - [2023 - JENIN](#2023---jenin)
 - [October 7, 2023](#october-7-2023)
 - [West Bank Since 7/10](#west-bank-since-710)
@@ -60,9 +60,6 @@ From 1993 to 2000, key peace negotiations included:
 - The 1995 Oslo II Accord granting limited autonomy
 - The 1997 Hebron Agreement for partial Israeli withdrawal
 - The 2000 Camp David II Summit for final status negotiations
-
-## 2005 - GAZA DISENGAGEMENT
-Israel conducts its "disengagement" from Gaza, withdrawing settlements and military presence.
 
 ## 1900s-1910s
 Key developments included:
@@ -100,6 +97,9 @@ The PLO accepts UN Resolutions 242 and 338, recognizing the State of Israel.
 ## 2002 - 2ND INTIFADA
 Israel reoccupies Palestinian cities in the West Bank during the Second Intifada.
 
+## 2005 - GAZA DISENGAGEMENT
+Israel conducts its "disengagement" from Gaza, withdrawing settlements and military presence.
+
 ## 2007 - GAZA BLOCKADE
 After Hamas seized control of the Gaza Strip, Israel imposed an indefinite blockade of Gaza.
 
@@ -110,14 +110,14 @@ This period saw multiple Israeli military operations against Gaza:
 - "Operation Protective Edge" in 2014
 Leading to significant destruction and casualties.
 
+## 2018-2019 - GREAT MARCH OF RETURN
+Peaceful protests in Gaza against the Israeli blockade, known as the Great March of Return. Israeli forces fire on protesters, killing 223 Palestinians.
+
 ## 2021 - SETTLER TERRORISM
 In May 2021, a court ruled to evict Palestinian families from East Jerusalem, leading to far-right Zionist groups occupying these properties and invading East Jerusalem, the Al-Aqsa Mosque, and Palestinian neighborhoods. On May 30, Eyad al-Hallaq, an unarmed autistic Palestinian man, was killed by Israeli police. Protests erupted, with Israeli police arresting 2,142 protesters. Hamas launched rockets into Israel, prompting a severe Israeli military response. After 11 days, a ceasefire was reached, resulting in over 250 Palestinian and 13 Israeli deaths, nearly 2,000 wounded, and 72,000 Palestinians displaced.
 
 ## May 2023 - ISRAELI GOVERNMENT ACTIONS
 The coalition government prioritizes the expansion of Israeli settlements in the occupied West Bank, endorses discrimination against LGBTQ+ people on religious grounds, and votes to limit judicial oversight of the government.
-
-## 2018-2019 - GREAT MARCH OF RETURN
-Peaceful protests in Gaza against the Israeli blockade, known as the Great March of Return. Israeli forces fire on protesters, killing 223 Palestinians.
 
 ## 2023 - JENIN
 In 2023, Israeli forces repeatedly targeted the Jenin refugee camp, and Israeli settlers attacked Palestinian villages, escalating violence. Israel conducted its first drone attack in the West Bank since 2006. In Gaza, local political groups organized a solidarity march with Jenin.

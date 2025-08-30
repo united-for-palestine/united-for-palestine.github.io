@@ -1,0 +1,24 @@
+---
+noindex: true
+---
+
+<h1>Search</h1>
+<form action="/search" method="GET">
+  <label class="sr-only" for="query">Query</label>
+  <input type="text" placeholder="Query..." id="query" name="q"/>
+  <button type="submit">Search</button>
+</form>
+
+<h2>Results</h2>
+{% for item in collections.feed_item %}
+
+    <article>
+    <h3>
+    <a href="{{item.url}}">{{item.data.title}}</a>
+    </h3>
+    <p>
+    {{item.data.description}}
+    </p>
+    </article>
+
+{% endfor %}

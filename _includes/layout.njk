@@ -215,9 +215,32 @@
 
   </style>
 </head>
+
+  <div class="background-blur"></div>
+
 <body>
 
-  <main id="main">
+
+
+<style>
+.background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('{{image or background}}') center/cover no-repeat;
+  opacity: 0.05;
+  /* background-color: rgba(255, 255, 255, 0.7); High-opacity overlay */
+  filter: blur(10px); /* Apply blur effect */
+}
+
+    main {
+      position: relative;
+    }
+</style>
+
+  <main id="main" >
 
     {% macro currentPage(url) %}
       {% if page.url.startsWith(url) %} aria-current="page" {% endif %} href="{{url}}"
@@ -265,13 +288,8 @@
     {% if podcast %}
     <style>
       .podcast_player {
-        position: fixed;
-        bottom: 0;
         width: 100%;
-        left: 0;
-        background-color: var(--bg);
-        border: 1px solid var(--border);
-        padding: 1rem;
+        display: block;
       }
     </style>
 
@@ -361,8 +379,8 @@
     {% endif %}
 
 
-    {{ content | safe }}
 
+    {{ content | safe }}
 
 
 
@@ -377,7 +395,6 @@
     </p>
     </hgroup>
   </section>
-
 
   </main>
 
@@ -448,7 +465,6 @@
     });
 
   </script>
-
 </body>
 
 

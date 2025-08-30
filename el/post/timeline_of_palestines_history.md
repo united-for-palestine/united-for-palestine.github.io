@@ -23,6 +23,8 @@
 - [Μάιος 2023 - ΕΝΕΡΓΕΙΕΣ ΤΗΣ ΙΣΡΑΗΛΙΝΗΣ ΚΥΒΕΡΝΗΣΗΣ](#%CE%BC%CE%AC%CE%B9%CE%BF%CF%82-2023---%CE%B5%CE%BD%CE%B5%CF%81%CE%B3%CE%B5%CE%B9%CE%B5%CF%82-%CF%84%CE%B7%CF%82-%CE%B9%CF%83%CF%81%CE%B1%CE%B7%CE%BB%CE%B9%CE%BD%CE%B7%CF%82-%CE%BA%CF%85%CE%B2%CE%B5%CF%81%CE%BD%CE%B7%CF%83%CE%B7%CF%82)
 - [ΜΕΙΝΕΤΕ ΕΝΗΜΕΡΩΜΕΝΟΙ](#%CE%BC%CE%B5%CE%B9%CE%BD%CE%B5%CF%84%CE%B5-%CE%B5%CE%BD%CE%B7%CE%BC%CE%B5%CF%81%CF%89%CE%BC%CE%B5%CE%BD%CE%BF%CE%B9)
 
+> See [PDF](/asset/timeline_flyer_el.pdf).
+
 ## 1880s-1890s
 Ο Σιωνισμός αναδύθηκε με την ίδρυση του Rishon Le Zion, την επινόηση του όρου «Σιωνισμός», τη δημοσίευση του βιβλίου του Theodor Herzl *Der Judenstaat* και το Πρώτο Σιωνιστικό Συνέδριο.
 

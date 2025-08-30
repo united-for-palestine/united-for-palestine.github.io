@@ -12,7 +12,7 @@ noindex: true
 <h2>Results</h2>
 {% for item in collections.feed_item %}
 
-    <article>
+    <article class="searchable-item">
     <h3>
     <a href="{{item.url}}">{{item.data.title}}</a>
     </h3>
@@ -22,3 +22,28 @@ noindex: true
     </article>
 
 {% endfor %}
+
+<script>
+
+  (function() {
+    const query = document.getElementById('query');
+    query.value = window.location.queryParams.q;
+
+    const items = document.getElementsByClassName('searchable-item'); // Corrected method
+
+    function containsAllQueryTermsCaseInsensitive(item) {
+      const queryTerms = query.value.toLowerCase().split(' ').filter(Boolean); // Split and filter out empty terms
+      const itemText = item.textContent.toLowerCase(); // Get item text in lower case
+
+      return queryTerms.every(term => itemText.includes(term)); // Check if all terms are included
+    }
+
+    Array.from(items).forEach(item => { // Convert HTMLCollection to array for forEach
+      if (containsAllQueryTermsCaseInsensitive(item))
+        item.style.display = 'block'; // Show item
+      else
+        item.style.display = 'none'; // Hide item
+    });
+  })();
+
+</script>

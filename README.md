@@ -14,6 +14,11 @@
 
 Please contact us if you wish to become an editor.
 
+Once you have been granted editor permissions you can edit the site using the
+github website.
+
+[https://github.com/united-for-palestine/united-for-palestine.github.io](https://github.com/united-for-palestine/united-for-palestine.github.io)
+
 ### Uploading Files
 
 To upload PDFs, images, and other documents:

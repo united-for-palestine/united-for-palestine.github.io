@@ -1,19 +1,21 @@
 # Uniter for Palestine Website
 
 - [Editing](#editing)
-  * [Uploading Files](#uploading-files)
-  * [Adding a New Page](#adding-a-new-page)
-  * [Editing a Page](#editing-a-page)
-  * [Removing a Page](#removing-a-page)
-  * [FAQs](#faqs)
+  - [Uploading Files](#uploading-files)
+  - [Adding a New Page](#adding-a-new-page)
+  - [Editing a Page](#editing-a-page)
+  - [Removing a Page](#removing-a-page)
+  - [FAQs](#faqs)
 - [Developers](#developers)
-  * [Develop](#develop)
-  * [Publish](#publish)
+  - [Develop](#develop)
+  - [Publish](#publish)
 
 ## Editors
+
 Please contact us if you wish to become an editor.
 
 ### Uploading Files
+
 To upload PDFs, images, and other documents:
 
 1. **Navigate to the `/asset` Directory:** In your GitHub repository, find the directory named `/asset`, where you will upload your files.
@@ -29,6 +31,7 @@ To upload PDFs, images, and other documents:
 6. **Press the `Commit changes` Button:** After uploading your files, scroll down and click the green **Commit changes** button to save your uploads.
 
 ### Adding a New Page
+
 To create a new page in your repository:
 
 1. **Navigate to the Correct Directory:** Go to the directory where you want to add the new page.
@@ -44,6 +47,7 @@ To create a new page in your repository:
 6. **Optional: Describe Your Changes:** In the dialog box, you can provide a brief explanation of what this new page is about and any changes you made.
 
 ### Editing a Page
+
 To modify an existing page:
 
 1. **Navigate to the Correct Directory:** Find the directory containing the page you want to edit.
@@ -59,6 +63,7 @@ To modify an existing page:
 6. **Optional: Explain Your Changes:** Use the text box to describe what changes you made and why they are important.
 
 ### Removing a Page
+
 To delete a page:
 
 1. **Navigate to the Correct Directory:** Go to the directory where the file you want to remove is located.
@@ -72,6 +77,7 @@ To delete a page:
 5. **Optional: Explain the Reason for Deletion:** You can provide a brief explanation of why you decided to remove this page.
 
 ### FAQs
+
 1. **Can I revert changes?** Yes! You can revert to a previous version of a file by navigating to the file, clicking on the **History** button, selecting the commit you want to revert to, and then clicking **Revert**.
 
 2. **What if I make a mistake while editing?** If you realize you've made an error after committing, you can always edit the file again to make the necessary corrections.
@@ -82,14 +88,13 @@ To delete a page:
 
 1. Make sure you have a recent version of **node** and **npm** installed.
 2. Clone the project.
-3. Navigate to the project *root* directory.
+3. Navigate to the project _root_ directory.
 4. Run `npx @11ty/eleventy --serve --watch` for a server.
 5. Start editing the site.
 
 ### Publish
 
-1. Navigate to the project *root* directory.
+1. Navigate to the project _root_ directory.
 2. Run `npx @11ty/eleventy --output docs`.
 3. `git add docs` and `git commit`.
 4. `git push`
-

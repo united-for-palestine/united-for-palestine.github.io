@@ -29,9 +29,10 @@ noindex: true
 
   (function() {
     const query = document.getElementById('query');
-    query.value = window.location.queryParams.q;
-
+    const params = new URLSearchParams(window.location.search);
     const items = document.getElementsByClassName('searchable-item'); // Corrected method
+
+    query.value = params.get('q') ?? ''
 
     function containsAllQueryTermsCaseInsensitive(item) {
       const queryTerms = query.value.toLowerCase().split(' ').filter(Boolean); // Split and filter out empty terms

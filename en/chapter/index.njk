@@ -1,0 +1,22 @@
+---
+eleventyExcludeFromCollections: true
+title: Posts
+---
+
+{% for chapter in collections.chapter %}
+
+
+  <article>
+    <header>
+      <h2>
+        <a href="{{ chapter.url }}">{{ chapter.data.title }}</a>
+      </h2>
+    </header>
+
+    <p>{{ chapter.data.description }}</p>
+
+    <footer>
+    </footer>
+  </article>
+
+{% endfor %}

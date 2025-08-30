@@ -1,0 +1,48 @@
+{% macro card(title, lang="", location="", image="", href="", image_alt="", level='h2', image='', content='', date='') %}
+<article>
+
+  {% if image %}
+    <img alt="{{image_alt}}" src="{{image}}"/>
+  {% endif %}
+
+  <header>
+    <{{level}}>
+
+      {% if href %}
+        <a href="{{href}}">
+          {{title}}
+        </a>
+      {% else %}
+        {{title}}
+      {% endif %}
+
+    </{{level}}>
+  </header>
+
+  <p>
+
+    {% if date %}
+      <time datetime="{{ date }}">
+        {{ date | date(lang)  }}
+      </time>
+      <br/>
+    {% endif %}
+
+    {% if location %}
+      <span class="location">{{location}}</span>
+      <br/>
+    {% endif %}
+
+  </p>
+
+  {% if content %}
+    <hr>
+    {{content}}
+  {% endif %}
+
+  <footer>
+  </footer>
+
+</article>
+
+{% endmacro %}

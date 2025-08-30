@@ -1,0 +1,23 @@
+---
+eleventyExcludeFromCollections: true
+title: Events
+---
+
+{% from 'card.njk' import card %}
+
+<div class="card-grid">
+
+  {% for event in collections.en_event | reverse %}
+
+      {{card(
+        event.data.title,
+        content=event.data.description,
+        href=event.url,
+        lang="en",
+        location=event.data.location,
+        date=event.date,
+        image=event.data.image
+      )}}
+
+  {% endfor %}
+</div>

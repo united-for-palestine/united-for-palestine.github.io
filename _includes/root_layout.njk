@@ -1,0 +1,11 @@
+{% extends 'layout.njk' %}
+
+{% block menu %}
+<ul>
+  <li><a {{currentPageExact("/")}}>Recent</a></li>
+  <li><a {{currentPage("/asset")}}>Assets</a></li>
+  <li><a {{currentPage("/contribute")}}>Contribute</a></li>
+  <li><a {{currentPage("/about")}}>About</a></li>
+</ul>
+{% endblock %}
+

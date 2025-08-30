@@ -1,5 +1,7 @@
 # Uniter for Palestine Website
 
+
+- [File Format](#file-format)
 - [Editing](#editing)
   - [Uploading Files](#uploading-files)
   - [Adding a New Page](#adding-a-new-page)
@@ -9,6 +11,39 @@
 - [Developers](#developers)
   - [Develop](#develop)
   - [Publish](#publish)
+
+
+## File Format
+
+Pages on the United for Palestine website are written in Markdown files (`.md`) and use **11ty frontmatter** to define metadata. This is placed at the top of each file and helps to structure how the content appears.
+
+### Example Frontmatter and Content
+
+```markdown
+---
+date: 2024-10-15
+title: "Lorem Ipsum Dolor Sit Amet"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+image: "/assets/images/lorem-ipsum.jpg"
+podcast:
+  file: "/assets/podcasts/lorem-episode.mp3"
+---
+
+## Introduction
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.
+
+## History
+
+Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
+```
+
+In this example:
+
+The frontmatter contains placeholder metadata such as a sample title, description, image URL, and podcast file.
+
+The Markdown content starts below the frontmatter, with headings and text using the "Lorem ipsum" filler.
+
 
 ## Editors
 

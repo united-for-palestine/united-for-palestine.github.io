@@ -1,6 +1,6 @@
 ---
 title: Πρόσφατος
-noindex: true
+nosocials: true
 ---
 
 {% from 'card.njk' import card %}

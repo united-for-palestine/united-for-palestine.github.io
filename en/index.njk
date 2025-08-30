@@ -27,7 +27,7 @@ title: Recent
 
 <h2>Posts</h2>
 
-{% for post in collections.home_post %}
+{% for post in collections.en_post | reverse | head(2) %}
   {{card(
     post.data.title,
     content=post.data.description,

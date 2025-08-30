@@ -453,17 +453,9 @@
     {% endif %}
 
 
-  <section class="no-print">
-    <hgroup class="spotlight">
-      <!-- {% block spotlight %}{% endblock %} -->
-
-    <h1>Spotlight</h1>
-    <p>
-      <!-- Use the lang specific layout and block for this -->
-      {{ ("/" ~ lang ~ "/spotlight.md") | markdownFile | safe }}
-    </p>
-    </hgroup>
-  </section>
+  <hgroup class="spotlight no-print">
+    {% block spotlight %}{% endblock %}
+  </hgroup>
 
   </main>
 

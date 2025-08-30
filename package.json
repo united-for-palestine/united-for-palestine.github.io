@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "npx prettier -w .",
     "fmt-check": "npx prettier -c .",
-    "build": "npx @11ty/eleventy"
+    "build": "eleventy"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,8 @@
     "markdown-it": "^14.1.0",
     "mime-types": "^2.1.35",
     "music-metadata": "^10.5.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
   }
 }

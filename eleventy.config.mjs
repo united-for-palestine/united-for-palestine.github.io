@@ -53,9 +53,15 @@ export default function (eleventyConfig) {
     return "";
   });
 
-  eleventyConfig.setNunjucksEnvironmentOptions({
-    // throwOnUndefined: true,
-  });
+  let once = ''
+
+  eleventyConfig.addPairedShortcode("once", function (content) {
+    once += `${content}\n`
+  })
+
+  eleventyConfig.addPairedShortcode("renderOnce", function renderOnce() {
+    return once
+  })
 
   eleventyConfig.addNunjucksAsyncFilter(
     "getAudioMetadata",

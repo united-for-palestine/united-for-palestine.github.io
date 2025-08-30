@@ -3,70 +3,15 @@ title: Assets
 description: List of PDFs, image and more.
 ---
 
+{% from "preview.njk" import preview %}
+
 <p>
   Shoot us an email at <a href="mailto:crept-hurt-recount@duck.com">crept-hurt-recount@duck.com</a> with
   attachments if you have assets that need hosting here.
 </p>
 
-<style>
-  details object {
-    width: 100%;
-  }
-
-  summary {
-    display: flex; /* Use flexbox for the summary */
-    justify-content: space-between; /* Space between the title and actions */
-    align-items: center; /* Center vertically */
-  }
-
-  summary .actions {
-    display: flex; /* Use flexbox for actions */
-    gap: 10px; /* Optional: Add space between the links */
-  }
-
-  .actions a {
-    text-decoration: none;
-  }
-
-  object[type="application/pdf"] {
-    height: 90vh;
-  }
-</style>
-
-
 {% for file in "asset" | files %}
 
-  <details>
-    <summary>
-      {{file.file}}
-
-      <div class="actions">
-        <a href="{{file.file}}" title="Link {{file.file}}">↗️</a>
-        <a download href="{{file.file}}" title="Download {{file.file}}">⬇️</a>
-      </div>
-
-    </summary>
-
-    <object type="{{file.type}}" data-data="{{file.file}}">
-      Failed to show preview.
-    </object>
-
-  </details>
+  {{ preview(file.file, file.type) }}
 
 {% endfor %}
-
-<script>
-  // Select all object elements with data-data attribute
-  const pdfObjects = document.querySelectorAll('object[data-data]');
-
-  pdfObjects.forEach(pdfObject => {
-    // Get the closest details element
-    const details = pdfObject.closest('details');
-
-    // Add event listener for toggle on the details element
-    details.addEventListener('click', () => {
-      // Set the data attribute for the object element to the value of data-data
-      pdfObject.setAttribute('data', pdfObject.getAttribute('data-data'));
-    });
-  });
-</script>

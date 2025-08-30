@@ -6,6 +6,9 @@ import { fileURLToPath } from "url";
 import path from "path";
 import mime from "mime-types";
 import * as mm from "music-metadata";
+import markdownTOC from 'markdown-it-toc-done-right';
+import markdownAnchor from 'markdown-it-anchor';
+
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -105,6 +108,13 @@ export default function (eleventyConfig) {
     breaks: true,
     html: true,
     linkify: true,
+  })
+    .use(markdownAnchor, {
+      level: 2,
+      permalink: true,
+    })
+    .use(markdownTOC, {
+    level: 2
   });
 
   md.renderer.rules.image = (tokens, idx, options, env, self) => {

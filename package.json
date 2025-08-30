@@ -14,14 +14,14 @@
   "license": "ISC",
   "description": "",
   "type": "module",
-  "dependencies": {
+  "devDependencies": {
     "@11ty/eleventy-img": "^5.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "markdown-it": "^14.1.0",
+    "markdown-it-anchor": "^9.2.0",
+    "markdown-it-toc-done-right": "^4.2.0",
     "mime-types": "^2.1.35",
-    "music-metadata": "^10.5.0"
-  },
-  "devDependencies": {
+    "music-metadata": "^10.5.0",
     "@11ty/eleventy": "^3.0.0"
   }
 }

@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "npx prettier -w .",
     "fmt-check": "npx prettier -c .",
-    "build": "eleventy"
+    "build": "eleventy",
+    "serve": "eleventy --serve --watch"
   },
   "keywords": [],
   "author": "",

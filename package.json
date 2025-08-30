@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "npx prettier -w .",
     "fmt-check": "npx prettier -c .",
-    "build": "npx @11ty/eleventy --output ./docs"
+    "build": "npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",

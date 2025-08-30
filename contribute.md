@@ -2,6 +2,8 @@
 title: Contribute
 ---
 
+Instructions on [how to edit articles](/README).
+
 ## Writers
 
 We are looking for people to write articles in Arabic, Greek, and English.

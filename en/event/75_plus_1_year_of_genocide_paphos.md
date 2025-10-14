@@ -6,11 +6,11 @@ image: /asset/75_plus_one_year_of_genocide.jpeg
 imageAlt: 75 + 1 Year of Genocide at Paphos Poster
 description: Let’s show solidarity with the Palestinian national-liberation struggle and commemorate the black one-year anniversary of the intensification of the Zionist colonization of Palestine, manifesting itself as the genocidal war of extermination which the Zionist settler colony launched following the Al Aqsa Flood operation.
 tags: published
+files:
+- /asset/26_10_2024_Protest_Chants.pdf
 podcast:
   file: /asset/John_King_-_Free_Palestine__HUMAYUN.mp3
 ---
-
-{% from 'preview.njk' import preview %}
 
 Let’s show solidarity with the Palestinian national-liberation struggle and commemorate the black one-year anniversary of the intensification of the Zionist colonization of Palestine, manifesting itself as the genocidal war of extermination which the Zionist settler colony launched following the Al Aqsa Flood operation.
 
@@ -34,8 +34,6 @@ All friends of the struggle welcome. Bring your kuffiyehs and Palestinian flags.
 
 ## Files
 
-{{ preview("/asset/75_plus_one_year_of_genocide.jpeg") }}
-{{ preview("/asset/26_10_2024_Protest_Chants.pdf") }}
 
 ## Links
 

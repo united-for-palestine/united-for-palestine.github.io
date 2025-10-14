@@ -5,6 +5,8 @@ tags: published
 date: 2024-10-15
 image: /asset/mapa_de_palestina_que_invaden_judios_israel.jpg
 imageAlt: Shrinking Palestine over time
+files:
+ - /asset/timeline_flyer_en.pdf
 ---
 
 ## 1880s-1890s
@@ -142,9 +144,7 @@ Israeli military operations in the West Bank have intensified dramatically, targ
 
 This escalation has deepened tensions, led to widespread unrest, and caused extensive destruction of homes and infrastructure.
 
-{% from "preview.njk" import preview %}
 
-{{ preview('/asset/timeline_flyer_en.pdf') }}
 
 ---
 

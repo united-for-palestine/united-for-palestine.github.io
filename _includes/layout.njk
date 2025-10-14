@@ -268,6 +268,7 @@
     {% endmacro %}
 
 
+  {% if false %}
   <nav class="menu menu--main no-print">
 
     <ul>
@@ -291,10 +292,13 @@
 
   <hr class="no-margin">
 
+
   <nav class="menu no-print">
     {% block menu %}
     {% endblock %}
   </nav>
+
+  {% endif %}
 
   <!--
   <nav class="breadcrumbs">
@@ -423,17 +427,25 @@
 
     </script>
 
-
     {% endif %}
 
     {{ content | safe }}
 
     {% from "preview.njk" import preview %}
 
+    <h2 id="files">
+      <a class="header-anchor" href="#files" aria-label="Files" title="Link to this section">#</a>
+      Resources</h2>
+      <p>
+      {{ preview("/asset/Leaflet_know_your_rights_EN.pdf") }}
+      </p>
+      <p>
+      {{ preview("/asset/Leaflet_know_your_rights_GR.pdf") }}
+      </p>
+
+      <hr>
+      
     {% if files and files.length > 0 %}
-      <h2 id="files">
-        <a class="header-anchor" href="#files" aria-label="Files" title="Link to this section">#</a>
-        Files</h2>
 
       {% for file in files %}
       <p>
@@ -443,9 +455,12 @@
     {% endif %}
 
 
+  {% if false %}
   <hgroup class="spotlight no-print">
     {% block spotlight %}{% endblock %}
   </hgroup>
+  {% endif %}
+
 
   </main>
 
@@ -488,10 +503,14 @@
 
   <footer class="no-print">
 
-    <button id="reset">RESET</button>
+
+    <p>
+      <a href="https://www.facebook.com/profile.php?id=61561620395144">Facebook</a>
+      <a href="https://www.instagram.com/united.for.palestine.paphos/">Instagram</a>
+    </p>
 
 
-
+    {% if false %}
     <p>
       <a lang="en" {{currentPage("/en/")}}>English</a> |
       <a lang="el" {{currentPage("/el/")}}>ελληνικά</a> |
@@ -502,6 +521,7 @@
       <a href="mailto:crept-hurt-recount@duck.com">crept-hurt-recount@duck.com</a> |
       <a href="/feed.xml">RSS</a>
     <p>
+    {% endif %}
   </footer>
 
   <script id="quicklink_js" async src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
@@ -543,36 +563,6 @@
         console.error('Notification permission denied.');
       }
     })()
-
-    //TODO
-    console.log(window.reset.addEventListener)
-    window.reset.addEventListener('click', async () => {
-        console.log("RESET")
-        const DB_NAME = 'notificationsDB';
-
-        try {
-            // Delete IndexedDB database
-            const deleteDBRequest = indexedDB.deleteDatabase(DB_NAME);
-            deleteDBRequest.onsuccess = () => console.log(`IndexedDB "${DB_NAME}" deleted successfully.`);
-            deleteDBRequest.onerror = (event) => console.error(`Error deleting IndexedDB "${DB_NAME}":`, event.target.error);
-            deleteDBRequest.onblocked = () => console.warn(`IndexedDB "${DB_NAME}" deletion is blocked. Close other tabs using this DB.`);
-
-            // Unregister the service worker
-            if ('serviceWorker' in navigator) {
-                const registrations = await navigator.serviceWorker.getRegistrations();
-                for (const registration of registrations) {
-                    await registration.unregister();
-                    console.log('Service Worker unregistered:', registration.scope);
-                }
-            } else {
-                console.warn('Service Worker API not supported in this browser.');
-            }
-
-            console.log('Cleanup complete.');
-        } catch (error) {
-            console.error('Cleanup failed:', error);
-        }
-    })
 
 
   </script>

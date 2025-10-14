@@ -13,6 +13,8 @@ import feed2json from "feed2json";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const DOMAIN = process.env.DOMAIN ?? "https://united-for-palestine.github.io"
+
 function secondsToHMS(seconds) {
   const h = Math.floor(seconds / 3600);
   const m = Math.floor((seconds % 3600) / 60);
@@ -238,7 +240,7 @@ export default function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("withDomain", function (url) {
-    return new URL(url, "https://united-for-palestine.github.io").href;
+    return new URL(url, DOMAIN).href;
   });
 
   eleventyConfig.addFilter("published", function (items) {

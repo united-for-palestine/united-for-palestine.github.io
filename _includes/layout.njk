@@ -333,6 +333,33 @@
       {% endif %}
     </p>
 
+    {% if image %}
+      <img src="{{image | withDomain}}" alt="{{imageAlt}}">
+    {% endif %}
+
+    {% if event %}
+
+      <dl>
+
+        <dt>
+          Location
+        </dt>
+        <dd>
+          <a target="_blank" href="{{event.location.url}}">{{event.location.label}}</a>
+        </dd>
+
+        <dt>
+          Date & Time
+        </dt>
+        <dd>
+          <time datetime="{{event.datetime}}">
+            {{event.datetime | datetime}}
+          </time>
+        </dd>
+
+      </dl>
+    
+    {% endif %}
 
 
     {% if podcast %}
@@ -433,6 +460,7 @@
 
     {% from "preview.njk" import preview %}
 
+    <div class="no-print">
     <h2 id="files">
       <a class="header-anchor" href="#files" aria-label="Files" title="Link to this section">#</a>
       Resources</h2>
@@ -453,6 +481,7 @@
       </p>
       {% endfor %}
     {% endif %}
+  </div>
 
 
   {% if false %}
@@ -503,11 +532,10 @@
 
   <footer class="no-print">
 
-
     <p>
-      <a href="https://www.facebook.com/profile.php?id=61561620395144">Facebook</a>
-      <a href="https://www.instagram.com/united.for.palestine.paphos/">Instagram</a>
-      <a href="https://chat.whatsapp.com/COp2XfESLCtJbVyzny3Wg6?mode=ems_qr_t">WhatsApp</a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=61561620395144">Facebook</a>
+      <a target="_blank" href="https://www.instagram.com/united.for.palestine.paphos/">Instagram</a>
+      <a target="_blank" href="https://chat.whatsapp.com/COp2XfESLCtJbVyzny3Wg6?mode=ems_qr_t">WhatsApp</a>
     </p>
 
 

@@ -125,6 +125,22 @@ export default function (eleventyConfig) {
     return new Date(date).toLocaleString(lang || "en", options);
   });
 
+  
+  eleventyConfig.addFilter("datetime", function (date, lang) {
+    if (!date) return "";
+
+    const options = {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    };
+
+    return new Date(date).toLocaleString(lang || "en", options);
+  });
+
   const md = markdownIt({
     breaks: true,
     html: true,

@@ -1,6 +1,8 @@
 ---
 title: Zionists and Yoseph Hadded not welcome here.
 description: WIP
+image: /asset/zionists-and-yoseph-haddad-not-welcome-in-cyprus.jpg
+imageAlt: '"Zionists not welcome in Markideio Theathre" poster'
 date: 2025-10-14
 tags: []
 event:

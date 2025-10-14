@@ -1,8 +1,8 @@
 ---
 title: Paphos
+image: /asset/paphos_logo.jpeg
+imageAlt: United for Palestine Paphos Chapter Logo
 ---
-
-![United for Palestine Paphos Chapter Logo](/asset/paphos_logo.jpeg)
 
 ## Register
 

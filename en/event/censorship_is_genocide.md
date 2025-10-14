@@ -4,11 +4,10 @@ description: "This November 2nd, your voice and presence is now needed more than
 tags: published
 location: Kyrenias Street, Nicosia
 image: /asset/censorship_is_genocide.jpg
+imageAlt: '"Censorship is Genocide" Poster'
 files:
   - /asset/censorship_is_genocide.jpg
 ---
-
-!["Censorship is Genocide" Poster](/asset/censorship_is_genocide.jpg)
 
 This November 2nd, your voice and presence is now needed more than ever to call out Media outlets, in Cyprus and universally, for their abhorrent coverage of the current Genocide taking place in Palestine.
 

@@ -4,12 +4,11 @@ date: 2024-10-26
 tags: published
 location: Town Hall, Paphos
 image: /asset/75_plus_one_year_of_genocide_ar.jpeg
+imageAlt: '"75 + 1 Year of Genocide" Poster'
 description: فلنتضامن مع الشعب الفلسطيني في نضاله من أجل التحرير الوطني ولنحيي الذكرى السنوية الأولى لتكثيف الاستعمار الصهيوني لفلسطين وهي حرب الإبادة الجماعية التي بدأت من الاستيطانية الصهيونية بعد عملية طوفان الأقصى.
 podcast:
   file: /asset/Meavy_Boy_-_Hauntology.mp3
 ---
-
-!["75 + 1 Year of Genocide" Poster](/asset/75_plus_one_year_of_genocide_ar.jpeg)
 
 فلنتضامن مع الشعب الفلسطيني في نضاله من أجل التحرير الوطني ولنحيي الذكرى السنوية الأولى لتكثيف الاستعمار الصهيوني لفلسطين وهي حرب الإبادة الجماعية التي بدأت من الاستيطانية الصهيونية بعد عملية طوفان الأقصى.
 

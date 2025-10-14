@@ -1,6 +1,7 @@
 ---
 title: End Cyprus Complicity in Genocide
 image: /asset/aug_25_larnaca_end_cyprus_complicity_en.jpg
+imageAlt: End Cyprus Complicity in Genocide Poster
 date: 2024-08-25
 tags: published
 location: Larnaca Port
@@ -8,8 +9,6 @@ description: |
   Stop Cypriot complicity in Israeli atrocities!
   As of August 15th, 2024, the ongoing genocide has claimed the lives of over 40,000 Palestinian civilians at the hands of the Israeli army, including 16,500 children. More than 92,400 individuals have been injured, and over 10,000 remain missing, buried beneath the rubble. The genocide and atrocities against the Palestinian people continue unabated.
 ---
-
-![End Cyprus Complicity in Genocide Poster](/asset/aug_25_larnaca_end_cyprus_complicity_en.jpg)
 
 Stop Cypriot complicity in Israeli atrocities!
 

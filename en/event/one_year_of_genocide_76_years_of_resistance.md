@@ -1,6 +1,7 @@
 ---
 title: One Year of Genocide, 76 Years of Resistance
 image: /asset/one_year_of_genocide_76_years_of_resistance.jpg
+imageAlt: One Year of Genocide, 76 Years of Resistance Poster
 tags: published
 date: 2024-10-07
 location: Eleftheria Square, Nicosia
@@ -8,8 +9,6 @@ description: |
   The Nakba never ended.
   Let us use our voice on this yearly mark to express our dismay against Apartheid, Settler Colonialism and Brutal military occupation imposed on the Palestinian people.
 ---
-
-![One Year of Genocide, 76 Years of Resistance Poster](/asset/one_year_of_genocide_76_years_of_resistance.jpg)
 
 The Nakba never ended.
 

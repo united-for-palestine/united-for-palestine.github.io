@@ -334,7 +334,10 @@
     </p>
 
     {% if image %}
-      <img src="{{image | withDomain}}" alt="{{imageAlt}}">
+      <figure>
+        <img src="{{image | withDomain}}" alt="{{imageAlt}}">
+        <figcaption>{{imageAlt}}</figcaption>
+      </figure>
     {% endif %}
 
     {% if event %}

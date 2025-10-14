@@ -3,12 +3,11 @@ title: 75 + 1 Years of Genocide
 date: 2024-10-05
 tags: published
 image: /asset/oct_5_limassol_protest_en.jpg
+imageAlt: Limassol Oct 5th Protest Poster
 location: Anexartisias Street, Limassol
 description: |
   🇵🇸 Join us to commemorate the victims of Israeli war crimes in Palestine and Lebanon as we approach the one year mark in which the live-streamed genocide has opened the Western public's eyes to the horrifying impact of Zionism and colonialism.
 ---
-
-![Limassol Oct 5th Protest Poster](/asset/oct_5_limassol_protest_en.jpg)
 
 🇵🇸 Join us to commemorate the victims of Israeli war crimes in Palestine and Lebanon as we approach the one year mark in which the live-streamed genocide has opened the Western public's eyes to the horrifying impact of Zionism and colonialism.
 

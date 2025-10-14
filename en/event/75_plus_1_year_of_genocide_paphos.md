@@ -3,6 +3,7 @@ title: "75 + 1 Year of Genocide"
 date: 2024-10-26
 location: Town Hall, Paphos
 image: /asset/75_plus_one_year_of_genocide.jpeg
+imageAlt: 75 + 1 Year of Genocide at Paphos Poster
 description: Let’s show solidarity with the Palestinian national-liberation struggle and commemorate the black one-year anniversary of the intensification of the Zionist colonization of Palestine, manifesting itself as the genocidal war of extermination which the Zionist settler colony launched following the Al Aqsa Flood operation.
 tags: published
 podcast:
@@ -10,9 +11,6 @@ podcast:
 ---
 
 {% from 'preview.njk' import preview %}
-
-
-![75 + 1 Year of Genocide at Paphos Poster](/asset/75_plus_one_year_of_genocide.jpeg)
 
 Let’s show solidarity with the Palestinian national-liberation struggle and commemorate the black one-year anniversary of the intensification of the Zionist colonization of Palestine, manifesting itself as the genocidal war of extermination which the Zionist settler colony launched following the Al Aqsa Flood operation.
 

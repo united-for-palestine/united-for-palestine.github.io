@@ -12,8 +12,6 @@ event:
   datetime: 2025-10-20 19:30
 ---
 
-## English
-
 On 20/10, Yoseph Haddad - defender of Israeli war crimes - is holding an event at Markideio Theatre Paphos.
 
 He claims we "rarely get to hear from the people living this reality" [1], disregarding the Palestinian voices from the ground in Gaza that documented this genocide for two years [3]. He claims the event is free from politics, yet his words and beliefs echo the same Zionist propaganda as the Israeli regime. He claims the Israel-Palestine "conversation" is filled with "noise" [1]. It is not noise to stand with the oppressed. It is not noise to stand for truth.

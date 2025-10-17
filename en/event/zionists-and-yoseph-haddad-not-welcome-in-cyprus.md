@@ -7,7 +7,7 @@ date: 2025-10-17
 tags: published
 event:
   location:
-    label: Markideio Theathre
+    label: Markideio Theathre, Paphos
     url: https://maps.app.goo.gl/eGDVkWvsDRT7uW2x9
   datetime: 2025-10-20 19:30
 ---

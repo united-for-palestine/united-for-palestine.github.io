@@ -20,6 +20,9 @@ With his words that Gazans are "barbaric terrorists" who should be "eliminated" 
 
 How do you feel about your cultural spaces being used to support genocide? In a country with hate speech laws the government fails to enforce [4], it's critical we make a stand against Zionism. Join us on 20/10 for a silent protest outside Markideio Theatre.
 
+- https://www.facebook.com/share/p/1AJJZ5vfya/
+- https://www.instagram.com/p/DP5sI-tjPzX/
+
 [1]:https://yosephhaddadcyprus.com/ 
 [2]:https://x.com/YosephHaddad/status/1780673111957917756
 [3]:https://www.linkedin.com/posts/yoseph-haddad-a97a47198_we-have-been-waiting-for-two-years-for-this-activity-7383423326993690625-JEbW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC9IVKkBtMPO5EBqZAb8pKZRwMbI0DvpGvM

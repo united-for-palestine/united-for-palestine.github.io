@@ -1,6 +1,6 @@
 ---
 title: Paphos Says NO to Zionist Propaganda
-description: On 20 Oct at Markideio Theatre Paphos, Yoseph Haddad brings Israeli propaganda to our stage. We won’t stay silent while our cultural spaces are used to justify genocide. Join the silent protest — stand with Palestine, stand against Zionism, stand for truth.
+description: On 20 Oct at Markideio Theatre Paphos, Yoseph Haddad brings Israeli propaganda to our country. We won’t idle while our cultural spaces are used to justify genocide. Join the silent protest — stand with Palestine, stand against Zionism, stand for truth.
 image: /asset/zionists-and-yoseph-haddad-not-welcome-in-cyprus.jpg
 imageAlt: '"Paphos Says NO to Zionist Propaganda" poster'
 date: 2025-10-14

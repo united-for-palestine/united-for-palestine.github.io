@@ -4,7 +4,7 @@ description: On 20 Oct at Markideio Theatre Paphos, Yoseph Haddad brings Israeli
 image: /asset/zionists-and-yoseph-haddad-not-welcome-in-cyprus.jpg
 imageAlt: '"Paphos Says NO to Zionist Propaganda" poster'
 date: 2025-10-14
-tags: []
+tags: published
 event:
   location:
     label: Markideio Theathre

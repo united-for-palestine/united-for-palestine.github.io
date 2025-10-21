@@ -5,6 +5,8 @@ image: /asset/zionists-and-yoseph-haddad-not-welcome-in-cyprus.jpg
 imageAlt: '"Paphos Says NO to Zionist Propaganda" poster'
 date: 2025-10-17
 tags: published
+files:
+  - /asset/the-people-of-paphos-knew-better.txt
 event:
   location:
     label: Outside the Markideio Theathre, Paphos
